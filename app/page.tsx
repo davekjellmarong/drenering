@@ -121,7 +121,6 @@ export default function Hjem() {
               "Tønsberg",
               "Moss",
               "Haugesund",
-              "Sandefjord",
               "Arendal",
               "Bodø",
               "Tromsø",
