@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import WizardForm from "@/components/WizardForm";
 import { Clock, Home, PiggyBank } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hjem() {
   return (
@@ -29,6 +30,64 @@ export default function Hjem() {
         <div className="-translate-y-32 px-4">
           <WizardForm />
         </div>
+
+        <section className="bg-brand-50 py-16">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-8 text-brand-900">
+              Lær mer om drenering
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold mb-4 text-brand-800">
+                  Drenering for Boligeiere
+                </h3>
+                <p className="mb-4 text-brand-700">
+                  Lær hvorfor god drenering er viktig for din bolig og hvordan
+                  du kan oppdage dreneringsproblemer.
+                </p>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="text-brand-500 border-brand-500 hover:bg-brand-100"
+                >
+                  <Link href="/drenering-for-boligeiere">Les mer</Link>
+                </Button>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold mb-4 text-brand-800">
+                  Drenering og Klimaendringer
+                </h3>
+                <p className="mb-4 text-brand-700">
+                  Forstå hvordan klimaendringer påvirker behovet for effektiv
+                  drenering og hvordan vi kan tilpasse oss.
+                </p>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="text-brand-500 border-brand-500 hover:bg-brand-100"
+                >
+                  <Link href="/drenering-og-klimaendringer">Les mer</Link>
+                </Button>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold mb-4 text-brand-800">
+                  Bærekraftig Drenering
+                </h3>
+                <p className="mb-4 text-brand-700">
+                  Utforsk moderne, miljøvennlige dreneringsløsninger som
+                  beskytter både din eiendom og miljøet.
+                </p>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="text-brand-500 border-brand-500 hover:bg-brand-100"
+                >
+                  <Link href="/baerekraftig-drenering">Les mer</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Choose Best Offer Section */}
         <section className="container mx-auto px-4 py-16 md:py-24">
