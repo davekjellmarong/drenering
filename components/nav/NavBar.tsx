@@ -2,13 +2,51 @@
 
 import { useState } from "react";
 import Link from "next/link";
-// import Image from "next/image";
+import { ChevronDown } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { navItems, type NavItem } from "./items";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const renderNavItem = (item: NavItem) => {
+    if (item.children) {
+      return (
+        <DropdownMenu key={item.href}>
+          <DropdownMenuTrigger className="text-brand-700 hover:text-brand-900 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+            {item.title} <ChevronDown className="ml-1 h-4 w-4" />
+          </DropdownMenuTrigger>
+          <DropdownMenuContent>
+            {item.children.map((child) => (
+              <DropdownMenuItem key={child.href}>
+                <Link href={child.href} className="w-full">
+                  {child.title}
+                </Link>
+              </DropdownMenuItem>
+            ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
+      );
+    }
+
+    return (
+      <Link
+        key={item.href}
+        href={item.href}
+        className="text-brand-700 hover:text-brand-900 px-3 py-2 rounded-md text-sm font-medium"
+      >
+        {item.title}
+      </Link>
+    );
   };
 
   return (
@@ -24,31 +62,20 @@ export default function Navbar() {
                 height={32}
                 className="h-8 w-auto"
               /> */}
-              <span className="ml-2 text-xl font-semibold text-gray-900">
-                KjellerDrenering
+              <span className="ml-2 text-xl font-semibold text-brand-900">
+                DreneringsExperten
               </span>
             </Link>
           </div>
           <div className="flex items-center">
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-              <Link
-                href="/"
-                className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Hjem
-              </Link>
-              <Link
-                href="/om-oss"
-                className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Om oss
-              </Link>
+              {navItems.map(renderNavItem)}
             </div>
             <div className="sm:hidden">
               {/* Mobile menu button */}
               <button
                 type="button"
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+                className="inline-flex items-center justify-center p-2 rounded-md text-brand-400 hover:text-brand-500 hover:bg-brand-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-500"
                 aria-controls="mobile-menu"
                 aria-expanded={isMobileMenuOpen}
                 onClick={toggleMobileMenu}
@@ -98,20 +125,29 @@ export default function Navbar() {
         id="mobile-menu"
       >
         <div className="pt-2 pb-3 space-y-1">
-          <Link
-            href="/"
-            className="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Hjem
-          </Link>
-          <Link
-            href="/om-oss"
-            className="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Om oss
-          </Link>
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="text-brand-700 hover:text-brand-900 block px-3 py-2 rounded-md text-base font-medium"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {item.title}
+            </Link>
+          ))}
+          {navItems
+            .filter((item) => item.children)
+            .flatMap((item) => item.children || [])
+            .map((child) => (
+              <Link
+                key={child.href}
+                href={child.href}
+                className="text-brand-700 hover:text-brand-900 block pl-6 py-2 rounded-md text-base font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {child.title}
+              </Link>
+            ))}
         </div>
       </div>
     </nav>
