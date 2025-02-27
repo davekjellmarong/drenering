@@ -1,98 +1,116 @@
-import { mockBlogPosts } from "@/mock";
+import { Article, Tag } from "@/src/utils/types";
+import { ArticleMethods } from "@/src/queryFactory/Article";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import ReactMarkdown from "react-markdown";
 
-export const generateMetadata = ({ params }: { params: { slug: string } }) => {
-  const post = mockBlogPosts.find((post) => post.slug === params.slug);
+// Generate static paths for all articles
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
+  const articles: Article[] = await ArticleMethods.getAll();
 
-  if (!post) {
-    return {
-      title: "Post Not Found",
-    };
-  }
-
-  return {
-    title: `${post.title} - DreneringsExperten Blog`,
-    description: post.subtitle,
-  };
-};
-
-export const generateStaticParams = () => {
-  return mockBlogPosts.map((post) => ({
-    slug: post.slug,
+  return articles.map((article) => ({
+    slug: article.slug,
   }));
-};
+}
 
-const BlogPost = ({ params }: { params: { slug: string } }) => {
-  const post = mockBlogPosts.find((post) => post.slug === params.slug);
+// Article Page Component
+export default async function Page({ params }: { params: { slug: string } }) {
+  const { slug } = params;
+  const article: Article | null = await ArticleMethods.getBySlug(slug);
 
-  if (!post) {
-    notFound();
-  }
-
-  const relatedPosts = post.relatedPosts
-    .map((id) => mockBlogPosts.find((p) => p.id === id))
-    .filter(Boolean);
+  if (!article) return notFound(); // Handle 404 if article not found
 
   return (
     <article className="container mx-auto px-4 py-8">
+      {/* Featured Image */}
       <Image
-        src={post.featuredImage || "/placeholder.svg"}
-        alt={post.title}
+        src={article.featuredImage?.url || "/placeholder.svg"}
+        alt={article.title}
         width={1200}
         height={600}
         className="w-full h-64 object-cover mb-8"
       />
-      <h1 className="text-4xl font-bold mb-4 text-brand-900">{post.title}</h1>
-      <p className="text-xl text-brand-700 mb-6">{post.subtitle}</p>
-      <div className="flex items-center mb-6">
-        <Image
-          src={post.author.avatar || "/placeholder.svg"}
-          alt={post.author.name}
-          width={60}
-          height={60}
-          className="rounded-full mr-4"
-        />
-        <div>
-          <p className="font-semibold text-brand-800">{post.author.name}</p>
-          <p className="text-sm text-brand-600">{post.author.role}</p>
+
+      {/* Title & Subtitle */}
+      <h1 className="text-4xl font-bold mb-4 text-brand-900">
+        {article.title}
+      </h1>
+      {article.subtitle && (
+        <p className="text-xl text-brand-700 mb-6">{article.subtitle}</p>
+      )}
+
+      {/* Author Info */}
+      {article.author && (
+        <div className="flex items-center mb-6">
+          <Image
+            src={article.author.avatar?.url || "/placeholder.svg"}
+            alt={article.author.name}
+            width={60}
+            height={60}
+            className="rounded-full mr-4"
+          />
+          <div>
+            <p className="font-semibold text-brand-800">
+              {article.author.name}
+            </p>
+            {article.author.role && (
+              <p className="text-sm text-brand-600">{article.author.role}</p>
+            )}
+          </div>
         </div>
-      </div>
+      )}
+
+      {/* Meta Information */}
       <p className="text-brand-600 mb-6">
-        Publisert: {new Date(post.publishedAt).toLocaleDateString("no-NO")} •{" "}
-        {post.readingTime} min lestid
+        Publisert:{" "}
+        {article.publishedAt
+          ? new Date(article.publishedAt).toLocaleDateString("no-NO")
+          : "Ukjent dato"}{" "}
+        •{" "}
+        {article.readingTime
+          ? `${article.readingTime} min lestid`
+          : "Ukjent tid"}
       </p>
-      <div className="flex flex-wrap gap-2 mb-8">
-        {post.tags.map((tag) => (
-          <span
-            key={tag}
-            className="bg-brand-100 text-brand-800 text-sm px-3 py-1 rounded"
-          >
-            {tag}
-          </span>
-        ))}
-      </div>
-      <div className="prose prose-lg max-w-none text-brand-700">
-        {post.content.split("\n").map((paragraph, index) => (
+
+      {/* Tags */}
+      {article.tags && article.tags.length > 0 && (
+        <div className="flex flex-wrap gap-2 mb-8">
+          {article.tags.map((tag: Tag) => (
+            <span
+              key={tag.id}
+              className="bg-brand-100 text-brand-800 text-sm px-3 py-1 rounded"
+            >
+              {tag.name}
+            </span>
+          ))}
+        </div>
+      )}
+
+      {/* Article Content */}
+      {/* <ReactMarkdown>{article.content}</ReactMarkdown> */}
+      {/* <div className="prose prose-lg max-w-none text-brand-700">
+        {article.content.split("\n").map((paragraph, index) => (
           <p key={index} className="mb-4">
             {paragraph}
           </p>
         ))}
-      </div>
-      {relatedPosts.length > 0 && (
+      </div> */}
+
+      {/* Related Articles */}
+      {article.articles && article.articles.length > 0 && (
         <div className="mt-12">
           <h2 className="text-2xl font-bold mb-6 text-brand-900">
             Relaterte artikler
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {relatedPosts.map((relatedPost) => (
+            {article.articles.map((relatedPost: Article) => (
               <div
                 key={relatedPost.id}
                 className="bg-white shadow-md rounded-lg overflow-hidden"
               >
                 <Image
-                  src={relatedPost.featuredImage || "/placeholder.svg"}
+                  src={relatedPost.featuredImage?.url || "/placeholder.svg"}
                   alt={relatedPost.title}
                   width={400}
                   height={200}
@@ -108,10 +126,15 @@ const BlogPost = ({ params }: { params: { slug: string } }) => {
                     </Link>
                   </h3>
                   <p className="text-sm text-brand-600 mb-2">
-                    {new Date(relatedPost.publishedAt).toLocaleDateString(
-                      "no-NO"
-                    )}{" "}
-                    • {relatedPost.readingTime} min lestid
+                    {relatedPost.publishedAt
+                      ? new Date(relatedPost.publishedAt).toLocaleDateString(
+                          "no-NO"
+                        )
+                      : "Ukjent dato"}{" "}
+                    •{" "}
+                    {relatedPost.readingTime
+                      ? `${relatedPost.readingTime} min lestid`
+                      : "Ukjent tid"}
                   </p>
                   <Link
                     href={`/blog/${relatedPost.slug}`}
@@ -127,6 +150,4 @@ const BlogPost = ({ params }: { params: { slug: string } }) => {
       )}
     </article>
   );
-};
-
-export default BlogPost;
+}

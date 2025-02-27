@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "@/components/nav/NavBar";
 import { PostHogProvider } from "@/src/providers/PosthogProvider";
+import Navbar from "@/src/components/nav/NavBar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

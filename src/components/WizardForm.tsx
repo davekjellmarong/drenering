@@ -1,19 +1,19 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Label } from "@/components/ui/label";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
+import { Button } from "@/src/components/ui/button";
+import { RadioGroup, RadioGroupItem } from "@/src/components/ui/radio-group";
+import { Label } from "@/src/components/ui/label";
+import { Card, CardContent } from "@/src/components/ui/card";
+import { Input } from "@/src/components/ui/input";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
+} from "@/src/components/ui/select";
+import { Textarea } from "@/src/components/ui/textarea";
 import { CheckCircle, ArrowLeft, ArrowRight } from "lucide-react";
 import type React from "react"; // Added import for React
 

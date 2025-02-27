@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import WizardForm from "@/components/WizardForm";
+import { Button } from "@/src/components/ui/button";
+import WizardForm from "@/src/components/WizardForm";
 import { Clock, Home, PiggyBank } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
