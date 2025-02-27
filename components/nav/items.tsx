@@ -18,5 +18,6 @@ export const navItems: NavItem[] = [
   },
   { title: "Klima og Drenering", href: "/drenering-og-klimaendringer" },
   { title: "Bærekraftig Drenering", href: "/baerekraftig-drenering" },
+  { title: "Blog", href: "/blog" },
   { title: "Kontakt Ekspert", href: "/kontakt-ekspert" },
 ];
