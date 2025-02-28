@@ -1,13 +1,13 @@
 import { Article, Tag } from "@/src/utils/types";
 import { ArticleMethods } from "@/src/queryFactory/Article";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import { notFound } from "next/navigation";
-import MarkdownRenderer from "@/src/components/features/blog/Markdown";
-import Markdown from "react-markdown";
+import ContentRenderer from "@/src/components/features/blog/Content";
+import { Metadata } from "next";
 
 // Generate static paths for all articles
-export async function generateStaticParams(): Promise<{ slug: string }[]> {
+export async function generateStaticParams() {
   const articles: Article[] = await ArticleMethods.getAll();
 
   return articles.map((article) => ({
@@ -15,15 +15,39 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
   }));
 }
 
-// Article Page Component
-export default async function Page({ params }: { params: { slug: string } }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
   const { slug } = await params;
   const article = await ArticleMethods.getBySlug(slug);
-  console.log(article[0]);
+
+  if (!article) return { title: "Artikkel ikke funnet" };
+
+  return {
+    title: `${article[0].title} | DreneringsBloggen`,
+    description: article[0].subtitle || "Les mer om drenering og fuktsikring.",
+    openGraph: {
+      title: article[0].title,
+      description:
+        article[0].subtitle || "Les mer om drenering og fuktsikring.",
+      images: article[0].featuredImage ? [article[0].featuredImage.url] : [],
+    },
+  };
+}
+
+// export const revalidate = 20;
+
+// Article Page Component
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const article = await ArticleMethods.getBySlug(slug);
   if (!article) return notFound(); // Handle 404 if article not found
-  const cleanedContent = article[0].content
-    .replace(/\\n/g, "\n") // Convert escaped newlines
-    .replace(/\r/g, "");
   return (
     <article className="container mx-auto px-4 py-8">
       {/* Featured Image */}
@@ -92,15 +116,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
       {/* Article Content */}
 
-      <Markdown>{JSON.parse(`"${article[0].content}"`)}</Markdown>
-      {/* <div className="prose prose-lg max-w-none text-brand-700">
-        {article[0].content.split("\n").map((paragraph, index) => (
-          <p key={index} className="mb-4">
-            {paragraph}
-          </p>
-        ))}
-      </div> */}
-
+      <ContentRenderer content={article[0].content} />
       {/* Related Articles */}
       {article[0].articles && article[0].articles.length > 0 && (
         <div className="mt-12">
@@ -108,7 +124,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
             Relaterte artikler
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {article[0].articles.map((relatedPost: Article) => (
+            {/* {article[0].articles.map((relatedPost: Article) => (
               <div
                 key={relatedPost.id}
                 className="bg-white shadow-md rounded-lg overflow-hidden"
@@ -148,7 +164,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                   </Link>
                 </div>
               </div>
-            ))}
+            ))} */}
           </div>
         </div>
       )}

@@ -16,3 +16,19 @@ export const getPublicData = async (query: string) => {
     throw error;
   }
 };
+
+export const getPublicDataFetch = async (query: string) => {
+  try {
+    const url = apiUrl + query;
+    const response = await fetch(url);
+    const data = await response.json();
+    if (data?.data) {
+      return data.data;
+    } else {
+      return data;
+    }
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    throw error;
+  }
+};

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/src/components/ui/button";
 
-export default function DreneringOgKlimaendringer() {
+export default async function DreneringOgKlimaendringer() {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-6 text-brand-900">

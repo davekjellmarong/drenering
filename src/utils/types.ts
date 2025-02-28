@@ -1,3 +1,5 @@
+import { BlocksContent } from "@strapi/blocks-react-renderer";
+
 // Global ID type
 type ID = number | string;
 
@@ -40,7 +42,7 @@ export interface Article {
   author?: Author; // Many-to-One Relation (Each article has one author)
   articles?: Article[]; // One-to-Many Self-Relation (Linked articles)
   tags?: Tag[]; // One-to-Many Relation (An article can have multiple tags)
-  content: string;
+  content: BlocksContent;
   publishedAt: string;
   updatedAt: string;
   createdAt: string;
