@@ -8,7 +8,7 @@ export const ArticleMethods = {
   getById: async (id: string | number): Promise<Article> => {
     return getPublicData(`/Articles/${id}`);
   },
-  getBySlug: async (slug: string | number): Promise<Article> => {
+  getBySlug: async (slug: string | number): Promise<Article[]> => {
     return getPublicData(`/articles?filters[slug][$eq]=${slug}`);
   },
 };

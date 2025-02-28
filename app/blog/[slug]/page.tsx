@@ -3,7 +3,8 @@ import { ArticleMethods } from "@/src/queryFactory/Article";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import ReactMarkdown from "react-markdown";
+import MarkdownRenderer from "@/src/components/features/blog/Markdown";
+import Markdown from "react-markdown";
 
 // Generate static paths for all articles
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
@@ -16,17 +17,19 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
 
 // Article Page Component
 export default async function Page({ params }: { params: { slug: string } }) {
-  const { slug } = params;
-  const article: Article | null = await ArticleMethods.getBySlug(slug);
-
+  const { slug } = await params;
+  const article = await ArticleMethods.getBySlug(slug);
+  console.log(article[0]);
   if (!article) return notFound(); // Handle 404 if article not found
-
+  const cleanedContent = article[0].content
+    .replace(/\\n/g, "\n") // Convert escaped newlines
+    .replace(/\r/g, "");
   return (
     <article className="container mx-auto px-4 py-8">
       {/* Featured Image */}
       <Image
-        src={article.featuredImage?.url || "/placeholder.svg"}
-        alt={article.title}
+        src={article[0].featuredImage?.url || "/placeholder.svg"}
+        alt={article[0].title}
         width={1200}
         height={600}
         className="w-full h-64 object-cover mb-8"
@@ -34,28 +37,28 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
       {/* Title & Subtitle */}
       <h1 className="text-4xl font-bold mb-4 text-brand-900">
-        {article.title}
+        {article[0].title}
       </h1>
-      {article.subtitle && (
-        <p className="text-xl text-brand-700 mb-6">{article.subtitle}</p>
+      {article[0].subtitle && (
+        <p className="text-xl text-brand-700 mb-6">{article[0].subtitle}</p>
       )}
 
       {/* Author Info */}
-      {article.author && (
+      {article[0].author && (
         <div className="flex items-center mb-6">
           <Image
-            src={article.author.avatar?.url || "/placeholder.svg"}
-            alt={article.author.name}
+            src={article[0].author.avatar?.url || "/placeholder.svg"}
+            alt={article[0].author.name}
             width={60}
             height={60}
             className="rounded-full mr-4"
           />
           <div>
             <p className="font-semibold text-brand-800">
-              {article.author.name}
+              {article[0].author.name}
             </p>
-            {article.author.role && (
-              <p className="text-sm text-brand-600">{article.author.role}</p>
+            {article[0].author.role && (
+              <p className="text-sm text-brand-600">{article[0].author.role}</p>
             )}
           </div>
         </div>
@@ -64,19 +67,19 @@ export default async function Page({ params }: { params: { slug: string } }) {
       {/* Meta Information */}
       <p className="text-brand-600 mb-6">
         Publisert:{" "}
-        {article.publishedAt
-          ? new Date(article.publishedAt).toLocaleDateString("no-NO")
+        {article[0].publishedAt
+          ? new Date(article[0].publishedAt).toLocaleDateString("no-NO")
           : "Ukjent dato"}{" "}
         •{" "}
-        {article.readingTime
-          ? `${article.readingTime} min lestid`
+        {article[0].readingTime
+          ? `${article[0].readingTime} min lestid`
           : "Ukjent tid"}
       </p>
 
       {/* Tags */}
-      {article.tags && article.tags.length > 0 && (
+      {article[0].tags && article[0].tags.length > 0 && (
         <div className="flex flex-wrap gap-2 mb-8">
-          {article.tags.map((tag: Tag) => (
+          {article[0].tags.map((tag: Tag) => (
             <span
               key={tag.id}
               className="bg-brand-100 text-brand-800 text-sm px-3 py-1 rounded"
@@ -88,9 +91,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
       )}
 
       {/* Article Content */}
-      {/* <ReactMarkdown>{article.content}</ReactMarkdown> */}
+
+      <Markdown>{JSON.parse(`"${article[0].content}"`)}</Markdown>
       {/* <div className="prose prose-lg max-w-none text-brand-700">
-        {article.content.split("\n").map((paragraph, index) => (
+        {article[0].content.split("\n").map((paragraph, index) => (
           <p key={index} className="mb-4">
             {paragraph}
           </p>
@@ -98,13 +102,13 @@ export default async function Page({ params }: { params: { slug: string } }) {
       </div> */}
 
       {/* Related Articles */}
-      {article.articles && article.articles.length > 0 && (
+      {article[0].articles && article[0].articles.length > 0 && (
         <div className="mt-12">
           <h2 className="text-2xl font-bold mb-6 text-brand-900">
             Relaterte artikler
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {article.articles.map((relatedPost: Article) => (
+            {article[0].articles.map((relatedPost: Article) => (
               <div
                 key={relatedPost.id}
                 className="bg-white shadow-md rounded-lg overflow-hidden"
