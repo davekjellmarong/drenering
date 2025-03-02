@@ -47,3 +47,14 @@ export interface Article {
   updatedAt: string;
   createdAt: string;
 }
+
+export interface City {
+  id: ID;
+  name: string;
+  average_price_meter: number;
+  price_range: string;
+  region: string;
+  publishedAt: string;
+  updatedAt: string;
+  createdAt: string;
+}
