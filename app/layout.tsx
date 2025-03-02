@@ -3,14 +3,15 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { PostHogProvider } from "@/src/providers/PosthogProvider";
 import Navbar from "@/src/components/nav/NavBar";
+import Footer from "@/src/components/features/footer/Footer";
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "../src/fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "../src/fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
@@ -34,6 +35,7 @@ export default function RootLayout({
           <Navbar />
         </header>
         <PostHogProvider>{children}</PostHogProvider>
+        <Footer />
       </body>
     </html>
   );

@@ -1,4 +1,5 @@
 import { CityMethods } from "@/src/queryFactory/City";
+import WizardContainer from "@/src/components/wizard/WizardContainer";
 import { Metadata } from "next";
 import React from "react";
 
@@ -36,58 +37,58 @@ const CityPage = async ({ params }: { params: Promise<{ city: string }> }) => {
   }
 
   return (
-    <article className="container mx-auto px-4 py-8">
-      {/* Hero Section */}
-      <section className="mb-8 text-center">
-        <h1 className="text-4xl font-bold text-brand-900">
-          Drenering i {city}
-        </h1>
-        <p className="text-lg text-brand-700 mt-2">
-          Få oversikt over dreneringspriser i {city}.
-        </p>
-      </section>
+    <>
+      {/* Hero Section with Wizard */}
+      <WizardContainer
+        title={`Få gode tilbud på drenering i ${city}`}
+        description={`Sammenlign flere tilbud og velg den beste løsningen for drenering i ${city}.`}
+        backgroundImage="/manSign.jpg"
+      />
 
-      {/* City Pricing Info */}
-      <section className="mb-6 bg-brand-100 p-6 rounded-lg shadow-md">
-        <h2 className="text-2xl font-semibold text-brand-800">
-          Hva koster drenering i {city}?
-        </h2>
-        <p className="text-brand-700 mt-2">
-          <strong>Gjennomsnittlig pris per meter:</strong>{" "}
-          {cityData[0].average_price_meter} NOK
-        </p>
-        <p className="text-brand-700 mt-1">
-          <strong>Typisk prisintervall:</strong> {cityData[0].price_range}
-        </p>
-      </section>
+      {/* Main Content */}
+      <article className="container mx-auto px-4 py-8">
+        {/* City Pricing Info */}
+        <section className="mb-6 bg-brand-100 p-6 rounded-lg shadow-md">
+          <h2 className="text-2xl font-semibold text-brand-800">
+            Hva koster drenering i {city}?
+          </h2>
+          <p className="text-brand-700 mt-2">
+            <strong>Gjennomsnittlig pris per meter:</strong>{" "}
+            {cityData[0].average_price_meter} NOK
+          </p>
+          <p className="text-brand-700 mt-1">
+            <strong>Typisk prisintervall:</strong> {cityData[0].price_range}
+          </p>
+        </section>
 
-      {/* Placeholder for companies (since you don’t have this data yet) */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-brand-800 mb-4">
-          Finn dreneringsfirmaer i {city}
-        </h2>
-        <p className="text-brand-600">
-          Vi jobber med å samle en liste over firmaer som tilbyr drenering i{" "}
-          {city}. Kom tilbake senere for mer informasjon!
-        </p>
-      </section>
+        {/* Placeholder for companies */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-brand-800 mb-4">
+            Finn dreneringsfirmaer i {city}
+          </h2>
+          <p className="text-brand-600">
+            Vi jobber med å samle en liste over firmaer som tilbyr drenering i{" "}
+            {city}. Kom tilbake senere for mer informasjon!
+          </p>
+        </section>
 
-      {/* Call-to-Action (CTA) */}
-      <section className="text-center bg-brand-50 p-6 rounded-lg shadow-md">
-        <h2 className="text-2xl font-semibold text-brand-900">
-          Trenger du drenering i {city}?
-        </h2>
-        <p className="text-brand-700 mt-2">
-          Få prisoverslag og sammenlign dreneringsfirmaer i ditt område.
-        </p>
-        <a
-          href="/tilbud"
-          className="mt-4 inline-block bg-brand-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-600 transition"
-        >
-          Få gratis tilbud
-        </a>
-      </section>
-    </article>
+        {/* Call-to-Action (CTA) */}
+        <section className="text-center bg-brand-50 p-6 rounded-lg shadow-md">
+          <h2 className="text-2xl font-semibold text-brand-900">
+            Trenger du drenering i {city}?
+          </h2>
+          <p className="text-brand-700 mt-2">
+            Få prisoverslag og sammenlign dreneringsfirmaer i ditt område.
+          </p>
+          <a
+            href="/tilbud"
+            className="mt-4 inline-block bg-brand-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-600 transition"
+          >
+            Få gratis tilbud
+          </a>
+        </section>
+      </article>
+    </>
   );
 };
 

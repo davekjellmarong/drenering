@@ -57,7 +57,7 @@ export default function WizardForm() {
 
   return (
     <div className="w-full max-w-4xl mx-auto">
-      <Card className="bg-slate-800/95 text-white p-8 rounded-xl shadow-xl">
+      <Card className="bg-slate-800/95 text-white p-8 rounded-xl shadow-xl min-h-[900px]">
         <CardContent>
           {/* Progress Indicator */}
           <div className="mb-8">
