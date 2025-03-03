@@ -207,13 +207,13 @@ export default async function Footer() {
                 Drenering i {city.name}
               </Link>
             ))}
-            <Button
+            {/* <Button
               variant="link"
               asChild
               className="text-brand-500 hover:text-brand-600"
             >
               <Link href="/drenering/city">Se alle byer</Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
 

@@ -58,7 +58,6 @@ export const navItems: NavItem[] = [
   //     },
   //   ],
   // },
-  // { title: "Priser & Kostnader", href: "/priser-og-kostnader" },
   // {
   //   title: "Sammenlign Dreneringsfirmaer",
   //   href: "/sammenlign-dreneringsfirmaer",
