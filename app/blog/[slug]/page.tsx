@@ -28,6 +28,7 @@ export async function generateMetadata({
   return {
     title: `${article[0].title} | DreneringsBloggen`,
     description: article[0].subtitle || "Les mer om drenering og fuktsikring.",
+    keywords: `drenering blogg, ${slug}, tips for drenering`,
     openGraph: {
       title: article[0].title,
       description:

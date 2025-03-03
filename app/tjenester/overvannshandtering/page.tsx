@@ -1,6 +1,12 @@
 import { Button } from "@/src/components/ui/button";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Overvannshåndtering | Håndtering av Store Vannmengder",
+  description:
+    "Lær hvordan du håndterer overvann effektivt for å unngå flomskader. Finn de beste metodene for overvannshåndtering.",
+};
+
 export default function OvervannshandteringPage() {
   return (
     <div className="container mx-auto px-4 py-8">

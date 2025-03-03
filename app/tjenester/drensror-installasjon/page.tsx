@@ -1,6 +1,12 @@
 import { Button } from "@/src/components/ui/button";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Drensrør Installasjon | Effektiv Drenering for Eiendommen din",
+  description:
+    "Finn ut hvordan drensrør installasjon kan forbedre dreneringen av eiendommen din. Se løsninger og få uforpliktende tilbud.",
+};
+
 export default function DrensrorInstallasjonPage() {
   return (
     <div className="container mx-auto px-4 py-8">

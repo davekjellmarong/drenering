@@ -2,10 +2,10 @@ import ArticleCard from "@/src/components/features/blog/ArticleCard";
 import { ArticleMethods } from "@/src/queryFactory/Article";
 
 export const metadata = {
-  title: "Blog - DreneringsExperten",
-  description: "Les våre siste artikler om drenering og vannhåndtering",
+  title: "DreneringsBlogg | Nyheter, Tips og Råd om Drenering",
+  description:
+    "Les de nyeste artiklene om drenering, vedlikehold og bærekraftige løsninger. Finn eksperttips og råd for ditt dreneringsprosjekt.",
 };
-
 const BlogPage = async () => {
   const articles = await ArticleMethods.getAll();
   return (
