@@ -27,7 +27,7 @@ export default function BoligdreneringPage() {
         <li>Terrengarrondering for optimal overflateavrenning</li>
       </ul>
       <Button asChild className="bg-brand-500 hover:bg-brand-600 text-white">
-        <Link href="/fa-tilbud">Få gratis tilbud på boligdrenering</Link>
+        <Link href="/tilbud">Få gratis tilbud på boligdrenering</Link>
       </Button>
     </div>
   );

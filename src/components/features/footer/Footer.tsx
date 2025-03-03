@@ -178,7 +178,7 @@ export default async function Footer() {
                 asChild
                 className="w-full bg-brand-500 hover:bg-brand-600"
               >
-                <Link href="/fa-tilbud">Få tilbud nå</Link>
+                <Link href="/tilbud">Få tilbud nå</Link>
               </Button>
               <div className="flex items-center space-x-2">
                 <Button variant="outline" size="icon" asChild>

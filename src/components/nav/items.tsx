@@ -63,5 +63,5 @@ export const navItems: NavItem[] = [
   //   href: "/sammenlign-dreneringsfirmaer",
   // },
   // { title: "Blogg & Artikler", href: "/blog" },
-  // { title: "Få Tilbud", href: "/fa-tilbud", className: "cta" }, // Added className for styling
+  // { title: "Få Tilbud", href: "/tilbud", className: "cta" }, // Added className for styling
 ];

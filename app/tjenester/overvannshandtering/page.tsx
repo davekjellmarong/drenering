@@ -29,7 +29,7 @@ export default function OvervannshandteringPage() {
         <li>Integrerte løsninger for gjenbruk av regnvann</li>
       </ul>
       <Button asChild className="bg-brand-500 hover:bg-brand-600 text-white">
-        <Link href="/fa-tilbud">Få tilbud på overvannshåndtering</Link>
+        <Link href="/tilbud">Få tilbud på overvannshåndtering</Link>
       </Button>
     </div>
   );
