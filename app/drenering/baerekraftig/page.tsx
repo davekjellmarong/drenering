@@ -1,6 +1,12 @@
 import Link from "next/link";
 import { Button } from "@/src/components/ui/button";
 
+export const metadata = {
+  title: "Bærekraftig Drenering | Miljøvennlige Løsninger",
+  description:
+    "Utforsk miljøvennlige dreneringsløsninger og hvordan bærekraftige metoder kan bidra til å redusere klimaavtrykket ditt.",
+};
+
 export default function BaerekraftigDrenering() {
   return (
     <div className="container mx-auto px-4 py-8">

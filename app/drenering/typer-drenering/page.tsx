@@ -1,6 +1,12 @@
 import Link from "next/link";
 import { Button } from "@/src/components/ui/button";
 
+export const metadata = {
+  title: "Typer Drenering | Finn Riktig Dreneringsløsning",
+  description:
+    "Utforsk ulike typer drenering og finn den beste løsningen for din eiendom. Lær om overflate-, underjordisk- og fransk drenering.",
+};
+
 export default function TyperDrenering() {
   return (
     <div className="container mx-auto px-4 py-8">

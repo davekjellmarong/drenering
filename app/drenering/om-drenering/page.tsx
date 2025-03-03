@@ -1,6 +1,12 @@
 import Link from "next/link";
 import { Button } from "@/src/components/ui/button";
 
+export const metadata = {
+  title: "Om Drenering | Alt du Trenger å Vite om Drenering",
+  description:
+    "Lær hva drenering er, hvorfor det er viktig, og hvordan det fungerer. Få innsikt i dreneringsmetoder og beste praksis.",
+};
+
 export default function OmDrenering() {
   return (
     <div className="container mx-auto px-4 py-8">
