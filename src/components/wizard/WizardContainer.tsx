@@ -14,7 +14,7 @@ const WizardContainer = ({
 }) => {
   return (
     <div
-      className="relative w-full min-h-[900px] flex flex-col lg:flex-row items-center justify-center lg:justify-between px-6 lg:px-8 text-white pt-16 lg:pt-0"
+      className="relative w-full min-h-[900px] flex flex-col lg:flex-row items-center justify-center lg:justify-between px-2 lg:px-8 text-white pt-16 lg:pt-0"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
@@ -31,7 +31,7 @@ const WizardContainer = ({
       </div>
 
       {/* Wizard Form - Below Text on Mobile, Floating Right on Desktop */}
-      <div className="relative z-10 w-full max-w-md mt-8 lg:mt-0 lg:absolute lg:top-20 lg:right-10 bg-white shadow-xl rounded-lg p-4 lg:w-[450px]">
+      <div className="relative z-10 w-full max-w-md mt-8 lg:mt-0 lg:absolute lg:top-20 lg:right-10 bg-white shadow-xl rounded-lg p-0 lg:w-[450px]">
         <WizardForm />
       </div>
     </div>
