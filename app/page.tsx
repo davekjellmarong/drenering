@@ -33,9 +33,12 @@ export default async function Hjem() {
                 Det er gratis og uforpliktende å motta tilbud. Er du ikke
                 fornøyd med tilbudene, kan du enkelt takke nei.
               </p>
-              <Button className="bg-brand-500 hover:bg-brand-600 text-white px-8 py-3 rounded-full">
+              <Link
+                href="/tilbud"
+                className="bg-brand-500 hover:bg-brand-600 text-white px-6 py-3 rounded-full text-sm"
+              >
                 Få uforpliktende tilbud nå
-              </Button>
+              </Link>
             </div>
             <div>
               <Image
@@ -85,9 +88,12 @@ export default async function Hjem() {
               </div>
             </div>
             <div className="text-center mt-12">
-              <Button className="bg-brand-500 hover:bg-brand-600 text-white px-8 py-3 rounded-full">
+              <Link
+                href="/tilbud"
+                className="bg-brand-500 hover:bg-brand-600 text-white px-6 py-3 rounded-full text-sm"
+              >
                 Få tilbud på drenering nå
-              </Button>
+              </Link>
             </div>
           </div>
         </section>

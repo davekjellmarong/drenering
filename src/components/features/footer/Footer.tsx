@@ -147,7 +147,7 @@ export default async function Footer() {
               </li>
               <li>
                 <Link
-                  href="/personvern"
+                  href="/juridisk/personvern"
                   className="text-brand-600 hover:text-brand-700"
                 >
                   Personvern
@@ -155,7 +155,7 @@ export default async function Footer() {
               </li>
               <li>
                 <Link
-                  href="/brukervilkar"
+                  href="/juridisk/brukervilkar"
                   className="text-brand-600 hover:text-brand-700"
                 >
                   Brukervilkår
