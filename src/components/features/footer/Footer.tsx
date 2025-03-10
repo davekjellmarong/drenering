@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { Facebook } from "lucide-react";
-import { Button } from "../../ui/button";
 import { CityMethods } from "@/src/queryFactory/City";
 
 export default async function Footer() {
@@ -9,15 +7,15 @@ export default async function Footer() {
     <footer className="bg-white border-t">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Drenering */}
+          {/* Drenering Guides */}
           <div>
             <h3 className="text-lg font-semibold text-brand-900 mb-4">
-              Om Drenering
+              Drenering – Lær Mer
             </h3>
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/drenering/om-drenering"
+                  href="/drenering/hva-er-drenering"
                   className="text-brand-600 hover:text-brand-700"
                 >
                   Hva er drenering?
@@ -29,6 +27,22 @@ export default async function Footer() {
                   className="text-brand-600 hover:text-brand-700"
                 >
                   Typer drenering
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/drenering/drenering-rundt-hus"
+                  className="text-brand-600 hover:text-brand-700"
+                >
+                  Drenering rundt hus
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/drenering/drenerings-renne"
+                  className="text-brand-600 hover:text-brand-700"
+                >
+                  Dreneringsrenne
                 </Link>
               </li>
               <li>
@@ -60,7 +74,7 @@ export default async function Footer() {
                   href="/drenering/pris"
                   className="text-brand-600 hover:text-brand-700"
                 >
-                  Priser og kostnader
+                  Drenering priser og kostnader
                 </Link>
               </li>
             </ul>
@@ -145,6 +159,15 @@ export default async function Footer() {
                   Blogg & artikler
                 </Link>
               </li>
+            </ul>
+          </div>
+
+          {/* Juridisk */}
+          <div>
+            <h3 className="text-lg font-semibold text-brand-900 mb-4">
+              Juridisk informasjon
+            </h3>
+            <ul className="space-y-2">
               <li>
                 <Link
                   href="/juridisk/personvern"
@@ -163,33 +186,6 @@ export default async function Footer() {
               </li>
             </ul>
           </div>
-
-          {/* Kontakt */}
-          <div>
-            <h3 className="text-lg font-semibold text-brand-900 mb-4">
-              Kontakt oss
-            </h3>
-            <div className="space-y-4">
-              <p className="text-brand-600">
-                Få gratis og uforpliktende tilbud fra kvalifiserte
-                dreneringseksperter i ditt område.
-              </p>
-              <Button
-                asChild
-                className="w-full bg-brand-500 hover:bg-brand-600"
-              >
-                <Link href="/tilbud">Få tilbud nå</Link>
-              </Button>
-              <div className="flex items-center space-x-2">
-                <Button variant="outline" size="icon" asChild>
-                  <Link href="https://facebook.com/dreneringsexperten">
-                    <Facebook className="h-4 w-4" />
-                    <span className="sr-only">Facebook</span>
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Populære byer */}
@@ -207,13 +203,6 @@ export default async function Footer() {
                 Drenering i {city.name}
               </Link>
             ))}
-            {/* <Button
-              variant="link"
-              asChild
-              className="text-brand-500 hover:text-brand-600"
-            >
-              <Link href="/drenering/city">Se alle byer</Link>
-            </Button> */}
           </div>
         </div>
 
