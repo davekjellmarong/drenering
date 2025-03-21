@@ -162,6 +162,22 @@ export default async function Footer() {
             </ul>
           </div>
 
+          <div>
+            <h3 className="text-lg font-semibold text-brand-900 mb-4">
+              For Bedrifter
+            </h3>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/bli-partner"
+                  className="text-brand-600 hover:text-brand-700"
+                >
+                  Bli Partner
+                </Link>
+              </li>
+            </ul>
+          </div>
+
           {/* Juridisk */}
           <div>
             <h3 className="text-lg font-semibold text-brand-900 mb-4">
