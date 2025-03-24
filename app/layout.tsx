@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { PostHogProvider } from "@/src/providers/PosthogProvider";
-import Navbar from "@/src/components/nav/NavBar";
+// import Navbar from "@/src/components/nav/NavBar";
 import Footer from "@/src/components/features/footer/Footer";
+import { Header } from "@/src/components/features/header/Header";
 
 const geistSans = localFont({
   src: "../src/fonts/GeistVF.woff",
@@ -34,10 +35,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header>
-          <Navbar />
-        </header>
-        <PostHogProvider>{children}</PostHogProvider>
+        <Header />
+
+        <PostHogProvider>
+          <main className="">{children}</main>
+        </PostHogProvider>
         <Footer />
       </body>
     </html>
