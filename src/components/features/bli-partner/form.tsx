@@ -87,6 +87,7 @@ export function PartnerSignupForm() {
       //     "Vi vil kontakte deg innen 48 timer for å diskutere partnerskap.",
       // });
     } catch (error) {
+      console.error("Error submitting quote request:", error);
       // toast({
       //   title: "Noe gikk galt",
       //   description: "Kunne ikke sende skjemaet. Vennligst prøv igjen senere.",

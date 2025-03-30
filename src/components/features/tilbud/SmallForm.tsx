@@ -46,7 +46,7 @@ interface QuoteRequest {
 }
 
 interface QuoteFormProps {
-  onSubmit: any;
+  onSubmit?: (formData: QuoteRequest) => Promise<void>;
   selectedCompanyId?: string;
 }
 
@@ -207,7 +207,8 @@ export function QuoteForm({ onSubmit }: QuoteFormProps) {
     setIsSubmitting(true);
 
     try {
-      await onSubmit(formData);
+      console.log(onSubmit);
+      // await onSubmit(formData);
       //   toast({
       //     title: "Tilbudsforespørsel sendt!",
       //     description:

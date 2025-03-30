@@ -11,6 +11,8 @@ const WizardContainer = ({
   description: string;
   backgroundImage: string;
 }) => {
+  console.log(title);
+  console.log(backgroundImage);
   return (
     <div className="relative w-full py-16 lg:py-24 bg-gradient-to-b from-blue-50 to-white">
       <div className="container mx-auto px-4">
