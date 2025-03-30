@@ -1,3 +1,5 @@
+import UnderConstruction from "@/src/components/features/under-development/UnderDevelopment";
+
 export const metadata = {
   title: "Personvern | Hvordan vi håndterer dine data",
   description:
@@ -5,6 +7,8 @@ export const metadata = {
 };
 
 export default function PersonvernPage() {
+  return <UnderConstruction pageName="'Personvern'" />;
+
   return (
     <div className="container mx-auto px-4 py-16">
       <h1 className="text-4xl font-bold text-brand-900">Personvernerklæring</h1>

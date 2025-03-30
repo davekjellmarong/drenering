@@ -1,3 +1,5 @@
+import UnderConstruction from "@/src/components/features/under-development/UnderDevelopment";
+
 export const metadata = {
   title: "Brukervilkår | Regler for bruk av våre tjenester",
   description:
@@ -5,6 +7,8 @@ export const metadata = {
 };
 
 export default function BrukervilkarPage() {
+  return <UnderConstruction pageName="'Brukervilkår'" />;
+
   return (
     <div className="container mx-auto px-4 py-16">
       <h1 className="text-4xl font-bold text-brand-900">Brukervilkår</h1>

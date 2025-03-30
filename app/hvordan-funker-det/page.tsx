@@ -9,6 +9,7 @@ import {
   Shield,
   Users,
 } from "lucide-react";
+import UnderConstruction from "@/src/components/features/under-development/UnderDevelopment";
 
 export const metadata = {
   title: "Hvordan Det Fungerer - DreneringsExperten",
@@ -116,6 +117,8 @@ export default function HowItWorks() {
         "Ja, men for akutte nødssituasjoner anbefaler vi at du angir dette tydelig i forespørselen din, slik at vi kan prioritere å finne tilgjengelige fagfolk så raskt som mulig.",
     },
   ];
+
+  return <UnderConstruction pageName="'Hvordan Fungerer Det?'" />;
 
   return (
     <div className="bg-gradient-to-b from-blue-50 to-white py-16 lg:py-24">

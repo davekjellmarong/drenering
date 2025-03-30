@@ -1,3 +1,5 @@
+import UnderConstruction from "@/src/components/features/under-development/UnderDevelopment";
+
 export const metadata = {
   title: "Vår Visjon | Bærekraftige dreneringsløsninger",
   description:
@@ -5,6 +7,8 @@ export const metadata = {
 };
 
 export default function VisjonPage() {
+  return <UnderConstruction pageName="'Visjon'" />;
+
   return (
     <div className="container mx-auto px-4 py-16 text-center">
       <h1 className="text-4xl font-bold text-brand-900">Vår Visjon</h1>

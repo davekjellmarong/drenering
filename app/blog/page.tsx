@@ -1,4 +1,5 @@
 import ArticleCard from "@/src/components/features/blog/ArticleCard";
+import UnderConstruction from "@/src/components/features/under-development/UnderDevelopment";
 import { ArticleMethods } from "@/src/queryFactory/Article";
 
 export const metadata = {
@@ -8,6 +9,8 @@ export const metadata = {
 };
 const BlogPage = async () => {
   const articles = await ArticleMethods.getAll();
+  return <UnderConstruction pageName="'Blog'" />;
+
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-8 text-brand-900">

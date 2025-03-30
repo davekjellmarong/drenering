@@ -2,6 +2,7 @@ import { CityMethods } from "@/src/queryFactory/City";
 import WizardContainer from "@/src/components/wizard/WizardContainer";
 import { Metadata } from "next";
 import React from "react";
+import UnderConstruction from "@/src/components/features/under-development/UnderDevelopment";
 
 export async function generateStaticParams() {
   const cities = await CityMethods.getAll();
@@ -27,6 +28,8 @@ export async function generateMetadata({
 const CityPage = async ({ params }: { params: Promise<{ city: string }> }) => {
   const { city } = await params;
   const cityData = await CityMethods.getByName(city);
+
+  return <UnderConstruction pageName={`Drenering i ${city}`} />;
 
   if (!cityData) {
     return (

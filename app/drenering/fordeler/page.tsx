@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/src/components/ui/button";
+import UnderConstruction from "@/src/components/features/under-development/UnderDevelopment";
 
 export const metadata = {
   title: "Fordeler med Drenering | Beskytt Hjemmet ditt",
@@ -8,6 +9,8 @@ export const metadata = {
 };
 
 export default function FordelerMedDrenering() {
+  return <UnderConstruction pageName="'Fordeler med Drenering'" />;
+
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-6 text-brand-900">
