@@ -97,6 +97,8 @@ export interface Company {
   maalform: string;
   aktivitet?: string[];
   registrertIPartiregisteret: boolean;
+  telefon: string;
+  epostadresse: string;
 }
 
 export interface FormData {

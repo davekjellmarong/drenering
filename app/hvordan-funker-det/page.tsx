@@ -9,7 +9,6 @@ import {
   Shield,
   Users,
 } from "lucide-react";
-import UnderConstruction from "@/src/components/features/under-development/UnderDevelopment";
 
 export const metadata = {
   title: "Hvordan Det Fungerer - DreneringsExperten",
@@ -118,7 +117,7 @@ export default function HowItWorks() {
     },
   ];
 
-  return <UnderConstruction pageName="'Hvordan Fungerer Det?'" />;
+  // return <UnderConstruction pageName="'Hvordan Fungerer Det?'" />;
 
   return (
     <div className="bg-gradient-to-b from-blue-50 to-white py-16 lg:py-24">

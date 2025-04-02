@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/src/components/ui/button";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,7 +30,7 @@ export function Header() {
     { name: "Hjem", path: "/" },
     // { name: "Selskaper", path: "/selskaper" },
     { name: "Hvordan Det Fungerer", path: "/hvordan-funker-det" },
-    // { name: "Kontrollpanel", path: "/kontrollpanel" },
+    { name: "Kontrollpanel", path: "/kontrollpanel" },
   ];
 
   return (
@@ -42,7 +43,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className="inline-block mr-2">
+            {/* <span className="inline-block mr-2">
               <svg
                 width="32"
                 height="32"
@@ -64,7 +65,14 @@ export function Header() {
                 />
               </svg>
             </span>
-            <span className="font-bold text-xl">DreneringsExperten</span>
+            <span className="font-bold text-xl">DreneringsExperten</span> */}
+            <Image
+              src="/logo.png"
+              alt="DreneringsExperten Logo"
+              width={150}
+              height={150}
+              // className="ml-2 h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

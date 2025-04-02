@@ -1,104 +1,71 @@
 "use client";
 
 import type React from "react";
-
 import { useState } from "react";
 import { Button } from "@/src/components/ui/button";
 import { Input } from "@/src/components/ui/input";
 import { Textarea } from "@/src/components/ui/textarea";
 import { Label } from "@/src/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/src/components/ui/select";
 import { ArrowRight, Check } from "lucide-react";
 import { Checkbox } from "../../ui/checkbox";
+import CompanySearchInput from "./CompanySearchInput";
 
 interface PartnerFormData {
   companyName: string;
-  contactName: string;
   email: string;
   phone: string;
+  contactName: string;
   website: string;
+  address: string;
+  postalCode: string;
   city: string;
   services: string[];
-  employeeCount: string;
   description: string;
   termsAccepted: boolean;
 }
 
 export function PartnerSignupForm() {
-  // const { toast } = useToast();
   const [formData, setFormData] = useState<PartnerFormData>({
     companyName: "",
-    contactName: "",
     email: "",
     phone: "",
+    contactName: "",
     website: "",
+    address: "",
+    postalCode: "",
     city: "",
     services: [],
-    employeeCount: "",
     description: "",
     termsAccepted: false,
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-
   const updateForm = (fields: Partial<PartnerFormData>) => {
     setFormData((prev) => ({ ...prev, ...fields }));
   };
 
   const handleServiceChange = (service: string) => {
-    const currentServices = [...formData.services];
-    if (currentServices.includes(service)) {
-      updateForm({ services: currentServices.filter((s) => s !== service) });
-    } else {
-      updateForm({ services: [...currentServices, service] });
-    }
+    const updated = formData.services.includes(service)
+      ? formData.services.filter((s) => s !== service)
+      : [...formData.services, service];
+    updateForm({ services: updated });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
-    if (!formData.termsAccepted) {
-      // toast({
-      //   title: "Feil",
-      //   description: "Du må godta vilkårene for å fortsette.",
-      //   variant: "destructive",
-      // });
-      return;
-    }
-
+    if (!formData.termsAccepted) return;
     setIsSubmitting(true);
-
     try {
-      // Here you would normally send the data to your backend
-      // For now, we'll just simulate a successful submission
       await new Promise((resolve) => setTimeout(resolve, 1500));
-
       setIsSuccess(true);
-      // toast({
-      //   title: "Registrering mottatt!",
-      //   description:
-      //     "Vi vil kontakte deg innen 48 timer for å diskutere partnerskap.",
-      // });
-    } catch (error) {
-      console.error("Error submitting quote request:", error);
-      // toast({
-      //   title: "Noe gikk galt",
-      //   description: "Kunne ikke sende skjemaet. Vennligst prøv igjen senere.",
-      //   variant: "destructive",
-      // });
+    } catch (err) {
+      console.error("Error submitting form", err);
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  // Common service types in the drain/sewer industry
   const SERVICE_TYPES = [
     "Dreneringsrensing",
     "Drensrørreparasjon",
@@ -109,8 +76,6 @@ export function PartnerSignupForm() {
     "Annet",
   ];
 
-  const EMPLOYEE_COUNT_OPTIONS = ["1-5", "6-20", "21-50", "51-100", "100+"];
-
   if (isSuccess) {
     return (
       <div className="text-center py-8">
@@ -119,8 +84,7 @@ export function PartnerSignupForm() {
         </div>
         <h3 className="text-xl font-semibold mb-2">Takk for din interesse!</h3>
         <p className="text-muted-foreground mb-6">
-          Vi har mottatt din forespørsel om å bli en DreneringsExperten partner.
-          En av våre representanter vil kontakte deg innen 48 timer.
+          Vi har mottatt din forespørsel. En representant vil kontakte deg.
         </p>
         <Button variant="outline" onClick={() => setIsSuccess(false)}>
           Send et nytt skjema
@@ -131,24 +95,41 @@ export function PartnerSignupForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      <div className="space-y-2">
-        <Label htmlFor="companyName">Bedriftsnavn *</Label>
-        <Input
-          id="companyName"
-          required
-          value={formData.companyName}
-          onChange={(e) => updateForm({ companyName: e.target.value })}
-        />
-      </div>
+      <CompanySearchInput
+        id="companySearch"
+        label="Søk med firmanavn eller org.nr"
+        value={formData.companyName}
+        onChange={(e) => updateForm({ companyName: e.target.value })}
+        onCompanySelect={(company) => {
+          updateForm({
+            companyName: company.navn,
+            address: company.forretningsadresse?.adresse[0] || "",
+            postalCode: company.forretningsadresse?.postnummer || "",
+            city: company.forretningsadresse?.poststed || "",
+            email: company.epostadresse || "",
+            phone: company.telefon || "",
+          });
+        }}
+      />
 
-      <div className="space-y-2">
-        <Label htmlFor="contactName">Kontaktperson *</Label>
-        <Input
-          id="contactName"
-          required
-          value={formData.contactName}
-          onChange={(e) => updateForm({ contactName: e.target.value })}
-        />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="space-y-2">
+          <Label htmlFor="address">Adresse *</Label>
+          <Input id="address" required value={formData.address} readOnly />
+        </div>
+        <div className="space-y-2">
+          <Label htmlFor="postalCode">Postnummer *</Label>
+          <Input
+            id="postalCode"
+            required
+            value={formData.postalCode}
+            readOnly
+          />
+        </div>
+        <div className="space-y-2">
+          <Label htmlFor="city">By/Kommune *</Label>
+          <Input id="city" required value={formData.city} readOnly />
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -162,7 +143,6 @@ export function PartnerSignupForm() {
             onChange={(e) => updateForm({ email: e.target.value })}
           />
         </div>
-
         <div className="space-y-2">
           <Label htmlFor="phone">Telefonnummer *</Label>
           <Input
@@ -174,26 +154,24 @@ export function PartnerSignupForm() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="space-y-2">
-          <Label htmlFor="website">Nettside</Label>
-          <Input
-            id="website"
-            placeholder="https://"
-            value={formData.website}
-            onChange={(e) => updateForm({ website: e.target.value })}
-          />
-        </div>
+      <div className="space-y-2">
+        <Label htmlFor="contactName">Kontaktperson *</Label>
+        <Input
+          id="contactName"
+          required
+          value={formData.contactName}
+          onChange={(e) => updateForm({ contactName: e.target.value })}
+        />
+      </div>
 
-        <div className="space-y-2">
-          <Label htmlFor="city">By/Kommune *</Label>
-          <Input
-            id="city"
-            required
-            value={formData.city}
-            onChange={(e) => updateForm({ city: e.target.value })}
-          />
-        </div>
+      <div className="space-y-2">
+        <Label htmlFor="website">Nettside</Label>
+        <Input
+          id="website"
+          placeholder="https://"
+          value={formData.website}
+          onChange={(e) => updateForm({ website: e.target.value })}
+        />
       </div>
 
       <div className="space-y-2">
@@ -206,41 +184,17 @@ export function PartnerSignupForm() {
                 checked={formData.services.includes(service)}
                 onCheckedChange={() => handleServiceChange(service)}
               />
-              <Label
-                htmlFor={`service-${service}`}
-                className="cursor-pointer font-normal"
-              >
-                {service}
-              </Label>
+              <Label htmlFor={`service-${service}`}>{service}</Label>
             </div>
           ))}
         </div>
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="employeeCount">Antall ansatte</Label>
-        <Select
-          value={formData.employeeCount}
-          onValueChange={(value) => updateForm({ employeeCount: value })}
-        >
-          <SelectTrigger>
-            <SelectValue placeholder="Velg antall ansatte" />
-          </SelectTrigger>
-          <SelectContent>
-            {EMPLOYEE_COUNT_OPTIONS.map((option) => (
-              <SelectItem key={option} value={option}>
-                {option}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
-      </div>
-
-      <div className="space-y-2">
         <Label htmlFor="description">Kort om din bedrift</Label>
         <Textarea
           id="description"
-          placeholder="Fortell oss litt om din bedrift og hva som gjør dere unike..."
+          placeholder="Fortell oss litt om din bedrift..."
           rows={3}
           value={formData.description}
           onChange={(e) => updateForm({ description: e.target.value })}
@@ -255,7 +209,7 @@ export function PartnerSignupForm() {
             updateForm({ termsAccepted: checked === true })
           }
         />
-        <Label htmlFor="terms" className="text-sm cursor-pointer font-normal">
+        <Label htmlFor="terms" className="text-sm">
           Jeg godtar{" "}
           <a href="/terms" className="text-primary hover:underline">
             vilkårene

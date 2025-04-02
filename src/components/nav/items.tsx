@@ -7,6 +7,10 @@ export interface NavItem {
 
 export const navItems: NavItem[] = [
   { title: "Hjem", href: "/" },
+  {
+    title: "Kontrollpanel",
+    href: "/kontrollpanel",
+  },
   // {
   //   title: "Om Drenering",
   //   href: "/om-drenering",
