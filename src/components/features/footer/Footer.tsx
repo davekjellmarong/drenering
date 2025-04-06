@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { CityMethods } from "@/src/queryFactory/City";
+import Image from "next/image";
 
 export default async function Footer() {
-  const cities = await CityMethods.getAll();
+  const cities = await CityMethods.getRouteHandlerCities();
 
   return (
     <footer className="bg-white border-t">
@@ -12,7 +13,14 @@ export default async function Footer() {
           {/* Logo and description */}
           <div>
             <Link href="/" className="flex items-center">
-              <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white">
+              <Image
+                src="/logo.png"
+                alt="Logo"
+                width={150}
+                height={100}
+                className=""
+              />
+              {/* <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -27,10 +35,10 @@ export default async function Footer() {
                   <path d="M12 16v-4" />
                   <path d="M12 8h.01" />
                 </svg>
-              </div>
-              <span className="ml-3 text-xl font-bold text-gray-900">
-                DreneringsExperten
-              </span>
+              </div> */}
+              {/* <span className="ml-3 text-xl font-bold text-gray-900">
+                DinDrenering
+              </span> */}
             </Link>
             <p className="mt-4 text-gray-600">
               Kobler huseiere med pålitelige dreneringsselskaper for raske,
@@ -265,7 +273,7 @@ export default async function Footer() {
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-gray-200">
           <p className="text-center text-gray-500 text-sm">
-            © {new Date().getFullYear()} DreneringsExperten. Alle rettigheter
+            © {new Date().getFullYear()} DinDrenering. Alle rettigheter
             reservert.
           </p>
         </div>

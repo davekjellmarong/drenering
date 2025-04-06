@@ -1,7 +1,14 @@
-import { getPublicData, getPublicDataFetch } from "../utils/Request";
+import {
+  getPublicData,
+  getPublicDataFetch,
+  getRouteHandler,
+} from "../utils/Request";
 import { City } from "../utils/types";
 
 export const CityMethods = {
+  getRouteHandlerCities: async (): Promise<City[]> => {
+    return getRouteHandler("/cities");
+  },
   getAll: async (): Promise<City[]> => {
     return getPublicDataFetch("/Cities?populate=*");
   },

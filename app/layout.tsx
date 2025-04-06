@@ -5,6 +5,8 @@ import { PostHogProvider } from "@/src/providers/PosthogProvider";
 // import Navbar from "@/src/components/nav/NavBar";
 import Footer from "@/src/components/features/footer/Footer";
 import { Header } from "@/src/components/features/header/Header";
+import ReactQueryProvider from "@/src/providers/ReactQueryProvider";
+import { Toaster } from "sonner";
 
 const geistSans = localFont({
   src: "../src/fonts/GeistVF.woff",
@@ -36,10 +38,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-
-        <PostHogProvider>
-          <main className="">{children}</main>
-        </PostHogProvider>
+        <ReactQueryProvider>
+          <PostHogProvider>
+            <main className="">{children}</main>
+            <Toaster richColors />
+          </PostHogProvider>
+        </ReactQueryProvider>
         <Footer />
       </body>
     </html>

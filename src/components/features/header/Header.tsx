@@ -30,7 +30,7 @@ export function Header() {
     { name: "Hjem", path: "/" },
     // { name: "Selskaper", path: "/selskaper" },
     { name: "Hvordan Det Fungerer", path: "/hvordan-funker-det" },
-    { name: "Kontrollpanel", path: "/kontrollpanel" },
+    // { name: "Kontrollpanel", path: "/kontrollpanel" },
   ];
 
   return (
@@ -65,10 +65,10 @@ export function Header() {
                 />
               </svg>
             </span>
-            <span className="font-bold text-xl">DreneringsExperten</span> */}
+            <span className="font-bold text-xl">DinDrenering</span> */}
             <Image
               src="/logo.png"
-              alt="DreneringsExperten Logo"
+              alt="DinDrenering Logo"
               width={150}
               height={150}
               // className="ml-2 h-8 w-auto"

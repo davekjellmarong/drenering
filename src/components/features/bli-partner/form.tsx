@@ -1,14 +1,18 @@
 "use client";
 
 import type React from "react";
+import { toast } from "sonner";
 import { useState } from "react";
 import { Button } from "@/src/components/ui/button";
 import { Input } from "@/src/components/ui/input";
-import { Textarea } from "@/src/components/ui/textarea";
+// import { Textarea } from "@/src/components/ui/textarea";
 import { Label } from "@/src/components/ui/label";
 import { ArrowRight, Check } from "lucide-react";
 import { Checkbox } from "../../ui/checkbox";
 import CompanySearchInput from "./CompanySearchInput";
+import { useMutation } from "@tanstack/react-query";
+import { addCompanyToHubspot } from "@/src/server_actions/Hubspot";
+import { useRouter } from "next/navigation";
 
 interface PartnerFormData {
   companyName: string;
@@ -19,8 +23,8 @@ interface PartnerFormData {
   address: string;
   postalCode: string;
   city: string;
-  services: string[];
-  description: string;
+  // services: string[];
+  // description: string;
   termsAccepted: boolean;
 }
 
@@ -34,47 +38,59 @@ export function PartnerSignupForm() {
     address: "",
     postalCode: "",
     city: "",
-    services: [],
-    description: "",
+    // services: [],
+    // description: "",
     termsAccepted: false,
   });
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  // const [isSubmitting, setIsSubmitting] = useState(false);
+  const router = useRouter();
   const [isSuccess, setIsSuccess] = useState(false);
   const updateForm = (fields: Partial<PartnerFormData>) => {
     setFormData((prev) => ({ ...prev, ...fields }));
   };
 
-  const handleServiceChange = (service: string) => {
-    const updated = formData.services.includes(service)
-      ? formData.services.filter((s) => s !== service)
-      : [...formData.services, service];
-    updateForm({ services: updated });
-  };
+  const { mutate, isPending } = useMutation({
+    mutationFn: addCompanyToHubspot,
+    onSuccess: () => {
+      toast.success("Søknaden er registrert!");
+      router.push("/bli-partner/takk");
+    },
+    onError: (error) => {
+      toast.error(error.message);
+    },
+  });
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.termsAccepted) return;
-    setIsSubmitting(true);
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-      setIsSuccess(true);
-    } catch (err) {
-      console.error("Error submitting form", err);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  // const handleServiceChange = (service: string) => {
+  //   const updated = formData.services.includes(service)
+  //     ? formData.services.filter((s) => s !== service)
+  //     : [...formData.services, service];
+  //   updateForm({ services: updated });
+  // };
 
-  const SERVICE_TYPES = [
-    "Dreneringsrensing",
-    "Drensrørreparasjon",
-    "Dreneringsinstallasjon",
-    "Rørskifte",
-    "Nøddrenering",
-    "Dreneringsinspeksjon",
-    "Annet",
-  ];
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   if (!formData.termsAccepted) return;
+  //   setIsSubmitting(true);
+  //   try {
+  //     await new Promise((resolve) => setTimeout(resolve, 1500));
+  //     setIsSuccess(true);
+  //   } catch (err) {
+  //     console.error("Error submitting form", err);
+  //   } finally {
+  //     setIsSubmitting(false);
+  //   }
+  // };
+
+  // const SERVICE_TYPES = [
+  //   "Dreneringsrensing",
+  //   "Drensrørreparasjon",
+  //   "Dreneringsinstallasjon",
+  //   "Rørskifte",
+  //   "Nøddrenering",
+  //   "Dreneringsinspeksjon",
+  //   "Annet",
+  // ];
 
   if (isSuccess) {
     return (
@@ -94,7 +110,7 @@ export function PartnerSignupForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form action={mutate} className="space-y-4">
       <CompanySearchInput
         id="companySearch"
         label="Søk med firmanavn eller org.nr"
@@ -115,12 +131,19 @@ export function PartnerSignupForm() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-2">
           <Label htmlFor="address">Adresse *</Label>
-          <Input id="address" required value={formData.address} readOnly />
+          <Input
+            id="address"
+            name="address"
+            required
+            value={formData.address}
+            readOnly
+          />
         </div>
         <div className="space-y-2">
           <Label htmlFor="postalCode">Postnummer *</Label>
           <Input
             id="postalCode"
+            name="postalCode"
             required
             value={formData.postalCode}
             readOnly
@@ -128,7 +151,13 @@ export function PartnerSignupForm() {
         </div>
         <div className="space-y-2">
           <Label htmlFor="city">By/Kommune *</Label>
-          <Input id="city" required value={formData.city} readOnly />
+          <Input
+            id="city"
+            name="city"
+            required
+            value={formData.city}
+            readOnly
+          />
         </div>
       </div>
 
@@ -136,6 +165,7 @@ export function PartnerSignupForm() {
         <div className="space-y-2">
           <Label htmlFor="email">E-postadresse *</Label>
           <Input
+            name="email"
             id="email"
             type="email"
             required
@@ -147,6 +177,7 @@ export function PartnerSignupForm() {
           <Label htmlFor="phone">Telefonnummer *</Label>
           <Input
             id="phone"
+            name="phone"
             required
             value={formData.phone}
             onChange={(e) => updateForm({ phone: e.target.value })}
@@ -158,6 +189,7 @@ export function PartnerSignupForm() {
         <Label htmlFor="contactName">Kontaktperson *</Label>
         <Input
           id="contactName"
+          name="contactName"
           required
           value={formData.contactName}
           onChange={(e) => updateForm({ contactName: e.target.value })}
@@ -168,13 +200,14 @@ export function PartnerSignupForm() {
         <Label htmlFor="website">Nettside</Label>
         <Input
           id="website"
+          name="website"
           placeholder="https://"
           value={formData.website}
           onChange={(e) => updateForm({ website: e.target.value })}
         />
       </div>
 
-      <div className="space-y-2">
+      {/* <div className="space-y-2">
         <Label>Tjenester dere tilbyr *</Label>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           {SERVICE_TYPES.map((service) => (
@@ -188,18 +221,19 @@ export function PartnerSignupForm() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
-      <div className="space-y-2">
+      {/* <div className="space-y-2">
         <Label htmlFor="description">Kort om din bedrift</Label>
         <Textarea
           id="description"
+          name="description"
           placeholder="Fortell oss litt om din bedrift..."
           rows={3}
           value={formData.description}
           onChange={(e) => updateForm({ description: e.target.value })}
         />
-      </div>
+      </div> */}
 
       <div className="flex items-center space-x-2 pt-2">
         <Checkbox
@@ -224,9 +258,9 @@ export function PartnerSignupForm() {
       <Button
         type="submit"
         className="w-full bg-blue-600 hover:bg-blue-700 text-white"
-        disabled={isSubmitting}
+        disabled={isPending}
       >
-        {isSubmitting ? "Sender..." : "Send inn søknad"}
+        {isPending ? "Sender..." : "Send inn søknad"}
         <ArrowRight className="ml-2 h-4 w-4" />
       </Button>
     </form>

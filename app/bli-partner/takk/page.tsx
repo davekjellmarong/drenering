@@ -3,13 +3,13 @@ import { CheckCircle } from "lucide-react";
 import { Button } from "@/src/components/ui/button";
 
 export const metadata = {
-  title: "Takk for din registrering - DreneringsExperten",
-  description: "Din registrering som partner hos DreneringsExperten er mottatt",
+  title: "Takk for din registrering - DinDrenering",
+  description: "Din registrering som partner hos DinDrenering er mottatt",
 };
 
 export default function TakkPage() {
   return (
-    <div className="container mx-auto px-4 py-16">
+    <div className="container mx-auto px-4 py-20">
       <div className="max-w-2xl mx-auto text-center">
         <div className="flex justify-center mb-6">
           <div className="bg-green-100 p-4 rounded-full">
@@ -22,9 +22,9 @@ export default function TakkPage() {
         </h1>
 
         <p className="text-lg text-brand-700 mb-8">
-          Vi har mottatt din søknad om å bli partner hos DreneringsExperten. En
-          av våre representanter vil gjennomgå informasjonen og kontakte deg
-          innen 1-2 virkedager for å fullføre registreringsprosessen.
+          Vi har mottatt din søknad om å bli partner hos DinDrenering. En av
+          våre representanter vil gjennomgå informasjonen og kontakte deg innen
+          1-2 virkedager for å fullføre registreringsprosessen.
         </p>
 
         <div className="bg-brand-50 p-6 rounded-lg mb-8 text-left">

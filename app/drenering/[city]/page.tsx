@@ -1,8 +1,6 @@
 import { CityMethods } from "@/src/queryFactory/City";
-import WizardContainer from "@/src/components/wizard/WizardContainer";
 import { Metadata } from "next";
 import React from "react";
-import UnderConstruction from "@/src/components/features/under-development/UnderDevelopment";
 
 export async function generateStaticParams() {
   const cities = await CityMethods.getAll();
@@ -29,7 +27,7 @@ const CityPage = async ({ params }: { params: Promise<{ city: string }> }) => {
   const { city } = await params;
   const cityData = await CityMethods.getByName(city);
 
-  return <UnderConstruction pageName={`Drenering i ${city}`} />;
+  // return <UnderConstruction pageName={`Drenering i ${city}`} />;
 
   if (!cityData) {
     return (
@@ -42,14 +40,14 @@ const CityPage = async ({ params }: { params: Promise<{ city: string }> }) => {
   return (
     <>
       {/* Hero Section with Wizard */}
-      <WizardContainer
+      {/* <WizardContainer
         title={`Få gode tilbud på drenering i ${city}`}
         description={`Sammenlign flere tilbud og velg den beste løsningen for drenering i ${city}.`}
         backgroundImage="/manSign.jpg"
-      />
+      /> */}
 
       {/* Main Content */}
-      <article className="container mx-auto px-4 py-8">
+      <article className="container mx-auto px-4 py-20">
         {/* City Pricing Info */}
         <section className="mb-6 bg-brand-100 p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold text-brand-800">

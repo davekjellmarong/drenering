@@ -21,7 +21,7 @@ export default function KontaktPage() {
           📞 Telefon: <strong>+47 123 456 789</strong>
         </p>
         <p className="text-brand-700">
-          📧 E-post: <strong>kontakt@dreneringsexperten.no</strong>
+          📧 E-post: <strong>kontakt@DinDrenering.no</strong>
         </p>
         <p className="text-brand-700">
           📍 Adresse: <strong>Oslo, Norge</strong>

@@ -11,9 +11,9 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Hvordan Det Fungerer - DreneringsExperten",
+  title: "Hvordan Det Fungerer - DinDrenering",
   description:
-    "Lær hvordan DreneringsExperten gjør det enkelt å finne pålitelige dreneringstjenester i ditt område",
+    "Lær hvordan DinDrenering gjør det enkelt å finne pålitelige dreneringstjenester i ditt område",
 };
 
 export default function HowItWorks() {
@@ -93,7 +93,7 @@ export default function HowItWorks() {
     {
       question: "Koster det noe å bruke tjenesten?",
       answer:
-        "Nei, DreneringsExperten er helt gratis å bruke for kunder. Du betaler kun for arbeidet som utføres av fagfolkene du velger.",
+        "Nei, DinDrenering er helt gratis å bruke for kunder. Du betaler kun for arbeidet som utføres av fagfolkene du velger.",
     },
     {
       question: "Hvor raskt vil jeg motta tilbud?",
@@ -131,7 +131,7 @@ export default function HowItWorks() {
             Enkel Prosess for å Finne Pålitelige Dreneringstjenester
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            DreneringsExperten gjør det enkelt å finne og sammenligne de beste
+            DinDrenering gjør det enkelt å finne og sammenligne de beste
             dreneringsprofesjonelle i ditt område på bare noen få enkle trinn.
           </p>
           <Button
@@ -197,7 +197,7 @@ export default function HowItWorks() {
         <div className="bg-blue-50 rounded-2xl p-8 md:p-12 mb-24">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-gray-900">
-              Fordelene med DreneringsExperten
+              Fordelene med DinDrenering
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Vi er dedikert til å gjøre prosessen med å finne pålitelige

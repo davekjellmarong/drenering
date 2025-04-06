@@ -32,7 +32,7 @@ export default function UnderConstruction({
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Button
-              asChild
+              // asChild
               variant="outline"
               className="flex items-center gap-2"
             >
@@ -43,7 +43,7 @@ export default function UnderConstruction({
             </Button>
 
             <Button
-              onClick={() => window.history.back()}
+              // onClick={() => window.history.back()}
               className="bg-blue-600 hover:bg-blue-700 text-white flex items-center gap-2"
             >
               <ArrowLeft className="h-4 w-4" />

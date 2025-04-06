@@ -10,7 +10,7 @@ import { Shield, CheckCircle, Building, Users } from "lucide-react";
 import { PartnerSignupForm } from "@/src/components/features/bli-partner/form";
 
 export const metadata: Metadata = {
-  title: "Bli Partner - DreneringsExperten",
+  title: "Bli Partner - DinDrenering",
   description:
     "Få flere kunder og vekst for din dreneringsbedrift ved å bli en del av vårt nettverk",
 };
@@ -22,7 +22,7 @@ export default function PartnerSignupPage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">
-              Bli en DreneringsExperten Partner
+              Bli en DinDrenering Partner
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Få flere kunder og vekst for din dreneringsbedrift ved å bli en
@@ -95,7 +95,7 @@ export default function PartnerSignupPage() {
                   </CardTitle>
                   <CardDescription>
                     Fyll ut skjemaet under for å starte prosessen med å bli en
-                    DreneringsExperten partner
+                    DinDrenering partner
                   </CardDescription>
                 </CardHeader>
                 <CardContent>

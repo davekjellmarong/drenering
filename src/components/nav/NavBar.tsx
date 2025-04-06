@@ -63,7 +63,7 @@ export default function Navbar() {
                 className="h-8 w-auto"
               /> */}
               <span className="ml-2 text-xl font-semibold text-brand-900">
-                DreneringsExperten
+                DinDrenering
               </span>
             </Link>
           </div>
