@@ -4,7 +4,7 @@ import { CityMethods } from "@/src/queryFactory/City";
 import Image from "next/image";
 
 export default async function Footer() {
-  const cities = await CityMethods.getRouteHandlerCities();
+  const cities = await CityMethods.getAll();
 
   return (
     <footer className="bg-white border-t">

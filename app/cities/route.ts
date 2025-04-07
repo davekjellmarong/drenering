@@ -5,5 +5,6 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   const cities = await getPublicDataFetch("/Cities?populate=*");
+
   return NextResponse.json(cities);
 }

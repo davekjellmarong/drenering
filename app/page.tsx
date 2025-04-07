@@ -5,7 +5,7 @@ import WizardContainer from "@/src/components/wizard/WizardContainer";
 import { CityMethods } from "@/src/queryFactory/City";
 
 export default async function HomePage() {
-  const cities = await CityMethods.getRouteHandlerCities();
+  const cities = await CityMethods.getAll();
 
   return (
     <main className="min-h-screen">
