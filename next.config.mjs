@@ -4,6 +4,7 @@ const nextConfig = {
     domains: [
       "images.unsplash.com",
       "hebbkx1anhila5yf.public.blob.vercel-storage.com",
+      "145975019.fs1.hubspotusercontent-eu1.net",
     ],
   },
 };
