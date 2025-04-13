@@ -42,7 +42,7 @@ const DreneringRundtHus = async () => {
   const postContent = post.postBody || "";
 
   return (
-    <div className="bg-gradient-to-b from-blue-50 to-white">
+    <div className="bg-gradient-to-b from-brand-50 to-white">
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           {/* Hero Section */}

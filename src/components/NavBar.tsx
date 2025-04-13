@@ -33,13 +33,13 @@ export default function Navbar() {
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
               <Link
                 href="/"
-                className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
+                className="text-gray-900 hover:text-brand-600 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Hjem
               </Link>
               <Link
                 href="/om-oss"
-                className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
+                className="text-gray-900 hover:text-brand-600 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Om oss
               </Link>
@@ -48,7 +48,7 @@ export default function Navbar() {
               {/* Mobile menu button */}
               <button
                 type="button"
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-500"
                 aria-controls="mobile-menu"
                 aria-expanded={isMobileMenuOpen}
                 onClick={toggleMobileMenu}
@@ -100,14 +100,14 @@ export default function Navbar() {
         <div className="pt-2 pb-3 space-y-1">
           <Link
             href="/"
-            className="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-900 hover:text-brand-600 block px-3 py-2 rounded-md text-base font-medium"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Hjem
           </Link>
           <Link
             href="/om-oss"
-            className="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-900 hover:text-brand-600 block px-3 py-2 rounded-md text-base font-medium"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Om oss

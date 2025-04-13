@@ -41,17 +41,10 @@ export default function TakkPage() {
         </div>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <Button
-            asChild
-            variant="outline"
-            className="border-brand-500 text-brand-500 hover:bg-brand-50"
-          >
+          <Button asChild variant="outline">
             <Link href="/">Gå til forsiden</Link>
           </Button>
-          <Button
-            asChild
-            className="bg-brand-500 hover:bg-brand-600 text-white"
-          >
+          <Button asChild>
             <Link href="/kontakt">Kontakt oss</Link>
           </Button>
         </div>

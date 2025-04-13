@@ -20,7 +20,7 @@ export default async function Footer() {
                 height={100}
                 className=""
               />
-              {/* <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white">
+              {/* <div className="w-10 h-10 rounded-full bg-brand-500 flex items-center justify-center text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -45,16 +45,16 @@ export default async function Footer() {
               rimelige løsninger.
             </p>
             <div className="flex space-x-4 mt-4">
-              <Link href="#" className="text-gray-400 hover:text-blue-500">
+              <Link href="#" className="text-gray-400 hover:text-brand-500">
                 <Facebook className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-blue-500">
+              <Link href="#" className="text-gray-400 hover:text-brand-500">
                 <Twitter className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-blue-500">
+              <Link href="#" className="text-gray-400 hover:text-brand-500">
                 <Instagram className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-blue-500">
+              <Link href="#" className="text-gray-400 hover:text-brand-500">
                 <Linkedin className="h-5 w-5" />
               </Link>
             </div>
@@ -69,7 +69,7 @@ export default async function Footer() {
               <li>
                 <Link
                   href="/drenering/hva-er-drenering"
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-brand-500"
                 >
                   Hva er drenering?
                 </Link>
@@ -77,7 +77,7 @@ export default async function Footer() {
               <li>
                 <Link
                   href="/drenering/typer-drenering"
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-brand-500"
                 >
                   Typer drenering
                 </Link>
@@ -85,7 +85,7 @@ export default async function Footer() {
               <li>
                 <Link
                   href="/drenering/drenering-rundt-hus"
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-brand-500"
                 >
                   Drenering rundt hus
                 </Link>
@@ -93,7 +93,7 @@ export default async function Footer() {
               <li>
                 <Link
                   href="/drenering/drenerings-renne"
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-brand-500"
                 >
                   Dreneringsrenne
                 </Link>
@@ -101,7 +101,7 @@ export default async function Footer() {
               <li>
                 <Link
                   href="/drenering/fordeler"
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-brand-500"
                 >
                   Fordeler med drenering
                 </Link>
@@ -109,7 +109,7 @@ export default async function Footer() {
               <li>
                 <Link
                   href="/drenering/klimaendringer"
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-brand-500"
                 >
                   Drenering og klimaendringer
                 </Link>
@@ -117,7 +117,7 @@ export default async function Footer() {
               <li>
                 <Link
                   href="/drenering/baerekraftig"
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-brand-500"
                 >
                   Bærekraftig drenering
                 </Link>
@@ -125,7 +125,7 @@ export default async function Footer() {
               <li>
                 <Link
                   href="/drenering/pris"
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-brand-500"
                 >
                   Drenering priser og kostnader
                 </Link>
@@ -142,7 +142,7 @@ export default async function Footer() {
               <li>
                 <Link
                   href="/tjenester/boligdrenering"
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-brand-500"
                 >
                   Boligdrenering
                 </Link>
@@ -150,7 +150,7 @@ export default async function Footer() {
               <li>
                 <Link
                   href="/tjenester/drensror-installasjon"
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-brand-500"
                 >
                   Drensrør-installasjon
                 </Link>
@@ -158,7 +158,7 @@ export default async function Footer() {
               <li>
                 <Link
                   href="/tjenester/industriell-drenering"
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-brand-500"
                 >
                   Industriell drenering
                 </Link>
@@ -166,7 +166,7 @@ export default async function Footer() {
               <li>
                 <Link
                   href="/tjenester/overvannshandtering"
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-brand-500"
                 >
                   Overvannshåndtering
                 </Link>
@@ -180,7 +180,7 @@ export default async function Footer() {
               <li>
                 <Link
                   href="/om-oss/visjon"
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-brand-500"
                 >
                   Vår visjon
                 </Link>
@@ -188,7 +188,7 @@ export default async function Footer() {
               <li>
                 <Link
                   href="/om-oss/team"
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-brand-500"
                 >
                   Vårt team
                 </Link>
@@ -196,7 +196,7 @@ export default async function Footer() {
               <li>
                 <Link
                   href="/om-oss/kontakt"
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-brand-500"
                 >
                   Kontakt oss
                 </Link>
@@ -204,7 +204,7 @@ export default async function Footer() {
               <li>
                 <Link
                   href="/blog"
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-brand-500"
                 >
                   Blogg & artikler
                 </Link>
@@ -221,7 +221,7 @@ export default async function Footer() {
               <li>
                 <Link
                   href="/bli-partner"
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-brand-500"
                 >
                   Bli Partner
                 </Link>
@@ -235,7 +235,7 @@ export default async function Footer() {
               <li>
                 <Link
                   href="/juridisk/personvern"
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-brand-500"
                 >
                   Personvern
                 </Link>
@@ -243,7 +243,7 @@ export default async function Footer() {
               <li>
                 <Link
                   href="/juridisk/brukervilkar"
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-brand-500"
                 >
                   Brukervilkår
                 </Link>

@@ -28,13 +28,13 @@ export default function ThankYouPage() {
           diskutere ditt prosjekt.
         </p>
 
-        <div className="bg-blue-50 p-6 rounded-lg mb-8">
+        <div className="bg-brand-50 p-6 rounded-lg mb-8">
           <h2 className="text-xl font-semibold mb-4 text-gray-800">
             Hva skjer nå?
           </h2>
           <ol className="space-y-3 text-left text-gray-700">
             <li className="flex items-start">
-              <span className="bg-blue-100 text-blue-600 font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+              <span className="bg-brand-100 text-brand-600 font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
                 1
               </span>
               <span>
@@ -43,7 +43,7 @@ export default function ThankYouPage() {
               </span>
             </li>
             <li className="flex items-start">
-              <span className="bg-blue-100 text-blue-600 font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+              <span className="bg-brand-100 text-brand-600 font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
                 2
               </span>
               <span>
@@ -52,7 +52,7 @@ export default function ThankYouPage() {
               </span>
             </li>
             <li className="flex items-start">
-              <span className="bg-blue-100 text-blue-600 font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+              <span className="bg-brand-100 text-brand-600 font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
                 3
               </span>
               <span>
@@ -66,7 +66,7 @@ export default function ThankYouPage() {
         <div className="grid md:grid-cols-2 gap-4 mb-8">
           <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
             <div className="flex items-center mb-2">
-              <Calendar className="h-5 w-5 text-blue-600 mr-2" />
+              <Calendar className="h-5 w-5 text-brand-600 mr-2" />
               <h3 className="font-semibold">Forventet responstid</h3>
             </div>
             <p className="text-gray-600">
@@ -76,7 +76,7 @@ export default function ThankYouPage() {
 
           <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
             <div className="flex items-center mb-2">
-              <Phone className="h-5 w-5 text-blue-600 mr-2" />
+              <Phone className="h-5 w-5 text-brand-600 mr-2" />
               <h3 className="font-semibold">Trenger du hjelp?</h3>
             </div>
             <p className="text-gray-600">
@@ -90,11 +90,14 @@ export default function ThankYouPage() {
           <Button
             asChild
             variant="outline"
-            className="border-blue-500 text-blue-500 hover:bg-blue-50"
+            className="border-brand-500 text-brand-500 hover:bg-brand-50"
           >
             <Link href="/">Gå til forsiden</Link>
           </Button>
-          <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white">
+          <Button
+            asChild
+            className="bg-brand-600 hover:bg-brand-700 text-white"
+          >
             <Link href="/blog">Les våre artikler om drenering</Link>
           </Button>
         </div>

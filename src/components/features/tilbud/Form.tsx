@@ -195,9 +195,9 @@ export default function FullQuoteForm() {
             <div
               className={`w-10 h-10 rounded-full flex items-center justify-center border-2 ${
                 step < currentStep
-                  ? "bg-blue-600 border-blue-600 text-white"
+                  ? "bg-brand-600 border-brand-600 text-white"
                   : step === currentStep
-                  ? "bg-white border-blue-600 text-blue-600"
+                  ? "bg-white border-brand-600 text-brand-600"
                   : "bg-gray-100 border-gray-300 text-gray-400"
               }`}
             >
@@ -219,7 +219,7 @@ export default function FullQuoteForm() {
             {step < 5 && (
               <div
                 className={`absolute top-5 w-full h-[2px] left-1/2 ${
-                  step < currentStep ? "bg-blue-600" : "bg-gray-300"
+                  step < currentStep ? "bg-brand-600" : "bg-gray-300"
                 }`}
                 style={{ width: "calc(100% - 2.5rem)" }}
               />
@@ -233,7 +233,7 @@ export default function FullQuoteForm() {
   return (
     <div className="w-full max-w-3xl mx-auto">
       <div className="text-center mb-8">
-        <div className="inline-flex items-center justify-center px-4 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-medium mb-4">
+        <div className="inline-flex items-center justify-center px-4 py-1 rounded-full bg-brand-100 text-brand-700 text-sm font-medium mb-4">
           Gratis Tjeneste
         </div>
         <h1 className="text-3xl md:text-4xl font-bold mb-4">
@@ -273,7 +273,7 @@ export default function FullQuoteForm() {
                       }
                       className={`flex-1 w-full md:w-auto text-center ${
                         formData.customerType === type
-                          ? "bg-blue-600 text-white"
+                          ? "bg-brand-600 text-white"
                           : ""
                       }`}
                       onClick={() =>
@@ -400,7 +400,7 @@ export default function FullQuoteForm() {
                     className={`flex items-start space-x-3 p-4 rounded-lg cursor-pointer transition-colors border
                     ${
                       formData.drainageType === type.value
-                        ? "bg-blue-50 border-blue-200 ring-2 ring-blue-500" // Selected state
+                        ? "bg-brand-50 border-brand-200 ring-2 ring-brand-500" // Selected state
                         : "bg-white border-gray-200 hover:bg-gray-50" // Default state
                     }`}
                   >
@@ -535,7 +535,7 @@ export default function FullQuoteForm() {
                     key={value}
                     className={`flex items-center space-x-3 p-4 rounded-lg cursor-pointer transition-colors border ${
                       formData.timeline === value
-                        ? "bg-blue-50 border-blue-200 ring-2 ring-blue-500"
+                        ? "bg-brand-50 border-brand-200 ring-2 ring-brand-500"
                         : "bg-white border-gray-200 hover:bg-gray-50"
                     }`}
                   >
@@ -640,20 +640,12 @@ export default function FullQuoteForm() {
             )}
 
             {currentStep < 5 ? (
-              <Button
-                type="button"
-                className="ml-auto bg-blue-600 hover:bg-blue-700 text-white"
-                onClick={nextStep}
-              >
+              <Button type="button" className="ml-auto" onClick={nextStep}>
                 Neste
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             ) : (
-              <Button
-                type="submit"
-                className="ml-auto bg-green-600 hover:bg-green-700 text-white"
-                disabled={isSubmitting}
-              >
+              <Button type="submit" className="ml-auto" disabled={isSubmitting}>
                 {isSubmitting ? (
                   <>
                     <Loader2 className="mr-2 h-5 w-5 animate-spin" />

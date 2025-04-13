@@ -230,7 +230,7 @@ export function QuoteForm({ onSubmit }: QuoteFormProps) {
   return (
     <div className="w-full max-w-3xl mx-auto">
       <div className="text-center mb-8">
-        <div className="inline-flex items-center justify-center px-4 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-medium mb-4">
+        <div className="inline-flex items-center justify-center px-4 py-1 rounded-full bg-brand-100 text-brand-700 text-sm font-medium mb-4">
           Gratis Tjeneste
         </div>
         <h1 className="text-3xl md:text-4xl font-bold mb-4">
@@ -250,9 +250,9 @@ export function QuoteForm({ onSubmit }: QuoteFormProps) {
               <div
                 className={`w-10 h-10 rounded-full flex items-center justify-center border-2 ${
                   index < currentStep
-                    ? "bg-blue-600 border-blue-600 text-white"
+                    ? "bg-brand-600 border-brand-600 text-white"
                     : index === currentStep
-                    ? "bg-white border-blue-600 text-blue-600"
+                    ? "bg-white border-brand-600 text-brand-600"
                     : "bg-gray-100 border-gray-300 text-gray-400"
                 }`}
               >
@@ -270,7 +270,7 @@ export function QuoteForm({ onSubmit }: QuoteFormProps) {
               {index < STEPS.length - 1 && (
                 <div
                   className={`absolute top-5 w-full h-[2px] left-1/2 ${
-                    index < currentStep ? "bg-blue-600" : "bg-gray-300"
+                    index < currentStep ? "bg-brand-600" : "bg-gray-300"
                   }`}
                   style={{ width: "calc(100% - 1rem)" }}
                 />
@@ -352,7 +352,7 @@ export function QuoteForm({ onSubmit }: QuoteFormProps) {
                   <div className="mt-1">
                     <label
                       htmlFor="file"
-                      className="flex justify-center w-full h-32 px-4 transition bg-white border-2 border-gray-300 border-dashed rounded-md appearance-none cursor-pointer hover:border-blue-500 focus:outline-none"
+                      className="flex justify-center w-full h-32 px-4 transition bg-white border-2 border-gray-300 border-dashed rounded-md appearance-none cursor-pointer hover:border-brand-500 focus:outline-none"
                     >
                       <span className="flex flex-col items-center justify-center space-y-2">
                         <Upload className="w-6 h-6 text-gray-400" />
@@ -640,7 +640,7 @@ export function QuoteForm({ onSubmit }: QuoteFormProps) {
                 <Card className="overflow-hidden">
                   <div className="bg-gray-50 p-4 border-b">
                     <div className="flex items-center">
-                      <FileText className="h-5 w-5 mr-2 text-blue-600" />
+                      <FileText className="h-5 w-5 mr-2 text-brand-600" />
                       <h3 className="font-semibold">Tjenestedetaljer</h3>
                     </div>
                   </div>
@@ -680,7 +680,7 @@ export function QuoteForm({ onSubmit }: QuoteFormProps) {
                     <Button
                       variant="link"
                       size="sm"
-                      className="px-0 h-auto text-blue-600"
+                      className="px-0 h-auto"
                       onClick={() => setCurrentStep(0)}
                     >
                       Rediger tjenestedetaljer
@@ -691,7 +691,7 @@ export function QuoteForm({ onSubmit }: QuoteFormProps) {
                 <Card className="overflow-hidden">
                   <div className="bg-gray-50 p-4 border-b">
                     <div className="flex items-center">
-                      <MapPin className="h-5 w-5 mr-2 text-blue-600" />
+                      <MapPin className="h-5 w-5 mr-2 text-brand-600" />
                       <h3 className="font-semibold">Plassering</h3>
                     </div>
                   </div>
@@ -713,7 +713,7 @@ export function QuoteForm({ onSubmit }: QuoteFormProps) {
                     <Button
                       variant="link"
                       size="sm"
-                      className="px-0 h-auto text-blue-600"
+                      className="px-0 h-auto"
                       onClick={() => setCurrentStep(1)}
                     >
                       Rediger plassering
@@ -724,7 +724,7 @@ export function QuoteForm({ onSubmit }: QuoteFormProps) {
                 <Card className="overflow-hidden">
                   <div className="bg-gray-50 p-4 border-b">
                     <div className="flex items-center">
-                      <Mail className="h-5 w-5 mr-2 text-blue-600" />
+                      <Mail className="h-5 w-5 mr-2 text-brand-600" />
                       <h3 className="font-semibold">Kontaktinformasjon</h3>
                     </div>
                   </div>
@@ -758,7 +758,7 @@ export function QuoteForm({ onSubmit }: QuoteFormProps) {
                     <Button
                       variant="link"
                       size="sm"
-                      className="px-0 h-auto text-blue-600"
+                      className="px-0 h-auto"
                       onClick={() => setCurrentStep(2)}
                     >
                       Rediger kontaktinfo
@@ -766,16 +766,16 @@ export function QuoteForm({ onSubmit }: QuoteFormProps) {
                   </div>
                 </Card>
 
-                <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                <div className="bg-brand-50 border-l-4 border-brand-500 p-4 rounded">
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <Clock className="h-5 w-5 text-blue-500" />
+                      <Clock className="h-5 w-5 text-brand-500" />
                     </div>
                     <div className="ml-3">
-                      <h3 className="text-sm font-medium text-blue-800">
+                      <h3 className="text-sm font-medium text-brand-800">
                         Hva skjer nå?
                       </h3>
-                      <div className="mt-2 text-sm text-blue-700">
+                      <div className="mt-2 text-sm text-brand-700">
                         <p>
                           Når du sender inn denne forespørselen, vil vi matche
                           deg med opptil 3 lokale dreneringsselskaper. De vil
@@ -808,16 +808,12 @@ export function QuoteForm({ onSubmit }: QuoteFormProps) {
               <Button
                 type="button"
                 onClick={nextStep}
-                className="bg-blue-600 hover:bg-blue-700 text-white flex items-center"
+                className="flex items-center"
               >
                 Neste <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             ) : (
-              <Button
-                type="submit"
-                disabled={isSubmitting}
-                className="bg-blue-600 hover:bg-blue-700 text-white"
-              >
+              <Button type="submit" disabled={isSubmitting}>
                 {isSubmitting ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />

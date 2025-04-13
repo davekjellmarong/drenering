@@ -12,7 +12,16 @@ export default function TyperDrenering() {
   return <UnderConstruction pageName="'Typer Drenering'" />;
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-20">
+      <div className="flex space-x-4">
+        <Button variant="default">Default</Button>
+        <Button variant="destructive">Destructive</Button>
+        <Button variant="outline">Outline</Button>
+        <Button variant="secondary">Secondary</Button>
+        <Button variant="ghost">Ghost</Button>
+        <Button variant="link">Link</Button>
+      </div>
+
       <h1 className="text-4xl text-brand-900 font-bold mb-6">
         Typer Drenering: Finn den Riktige Løsningen
       </h1>

@@ -13,11 +13,7 @@ export default function SubmitButton({
   loadingText = "Sender...",
 }: SubmitButtonProps) {
   return (
-    <Button
-      type="submit"
-      className="w-full bg-brand-500 hover:bg-brand-600 text-white"
-      disabled={isSubmitting}
-    >
+    <Button type="submit" className="w-full" disabled={isSubmitting}>
       {isSubmitting ? (
         <span className="flex items-center">
           <Loader2 className="animate-spin mr-2 h-5 w-5" />

@@ -72,9 +72,9 @@ export default function WizardForm() {
             <div
               className={`w-8 h-8 rounded-full flex items-center justify-center border-2 ${
                 step < currentStep
-                  ? "bg-blue-600 border-blue-600 text-white"
+                  ? "bg-brand-600 border-brand-600 text-white"
                   : step === currentStep
-                  ? "bg-white border-blue-600 text-blue-600"
+                  ? "bg-white border-brand-600 text-brand-600"
                   : "bg-gray-700 border-gray-600 text-gray-400"
               }`}
             >
@@ -83,7 +83,7 @@ export default function WizardForm() {
             {step < 5 && (
               <div
                 className={`absolute top-4 w-full h-[2px] left-1/2 ${
-                  step < currentStep ? "bg-blue-600" : "bg-gray-600"
+                  step < currentStep ? "bg-brand-600" : "bg-gray-600"
                 }`}
                 style={{ width: "calc(100% - 1rem)" }}
               />
@@ -116,7 +116,7 @@ export default function WizardForm() {
                       variant={customerType === type ? "default" : "ghost"}
                       className={`flex-1 w-full md:w-auto text-center ${
                         customerType === type
-                          ? "bg-blue-600 text-white"
+                          ? "bg-brand-600 text-white"
                           : "text-white hover:text-white"
                       }`}
                       onClick={() => setCustomerType(type)}
@@ -151,7 +151,7 @@ export default function WizardForm() {
                         key={value}
                         className={`flex items-center space-x-3 p-4 rounded-lg cursor-pointer transition-colors ${
                           serviceType === value
-                            ? "bg-blue-600 ring-2 ring-blue-500"
+                            ? "bg-brand-600 ring-2 ring-brand-500"
                             : "bg-white/10 hover:bg-white/20"
                         }`}
                       >
@@ -204,14 +204,14 @@ export default function WizardForm() {
                       className={`flex items-start space-x-3 p-4 rounded-lg cursor-pointer transition-colors border
             ${
               drainageType === type.value
-                ? "bg-blue-600 text-white border-blue-500" // Selected state
+                ? "bg-brand-600 text-white border-brand-500" // Selected state
                 : "bg-white/5 text-gray-300 border-gray-500 hover:bg-white/10" // Default state
             }`}
                     >
                       <RadioGroupItem
                         value={type.value}
                         id={type.value}
-                        className="mt-1 checked:bg-blue-500 checked:border-blue-500"
+                        className="mt-1 checked:bg-brand-500 checked:border-brand-500"
                       />
                       <div className="space-y-1">
                         <span className="font-medium block">{type.title}</span>
@@ -242,7 +242,7 @@ export default function WizardForm() {
                     value={formData.propertyType}
                     onValueChange={handleSelectChange("propertyType")}
                   >
-                    <SelectTrigger className="bg-gray-800 text-white border-gray-600 mt-2 focus:ring-blue-500 focus:border-blue-500">
+                    <SelectTrigger className="bg-gray-800 text-white border-gray-600 mt-2 focus:ring-brand-500 focus:border-brand-500">
                       <SelectValue placeholder="Velg type eiendom" />
                     </SelectTrigger>
                     <SelectContent className="bg-gray-800 text-white">
@@ -263,7 +263,7 @@ export default function WizardForm() {
                     id="propertySize"
                     name="propertySize"
                     type="number"
-                    className="bg-gray-800 text-white border-gray-600 mt-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="bg-gray-800 text-white border-gray-600 mt-2 focus:ring-brand-500 focus:border-brand-500"
                     value={formData.propertySize}
                     onChange={handleInputChange}
                   />
@@ -277,7 +277,7 @@ export default function WizardForm() {
                   <Textarea
                     id="problemDescription"
                     name="problemDescription"
-                    className="bg-gray-800 text-white border-gray-600 mt-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="bg-gray-800 text-white border-gray-600 mt-2 focus:ring-brand-500 focus:border-brand-500"
                     placeholder="Fortell oss om problemene du opplever..."
                     value={formData.problemDescription}
                     onChange={handleInputChange}
@@ -316,14 +316,14 @@ export default function WizardForm() {
                       key={value}
                       className={`flex items-center space-x-3 p-4 rounded-lg cursor-pointer transition-colors border ${
                         formData.timeline === value
-                          ? "bg-blue-600 border-blue-500 text-white shadow-md"
+                          ? "bg-brand-600 border-brand-500 text-white shadow-md"
                           : "bg-gray-800 border-gray-600 text-gray-300 hover:bg-gray-700"
                       }`}
                     >
                       <RadioGroupItem
                         value={value}
                         id={value}
-                        className="w-5 h-5 border-2 border-gray-400 checked:bg-white checked:ring-2 checked:ring-blue-500"
+                        className="w-5 h-5 border-2 border-gray-400 checked:bg-white checked:ring-2 checked:ring-brand-500"
                       />
                       <span>{label}</span>
                     </Label>
@@ -440,19 +440,12 @@ export default function WizardForm() {
               </Button>
             )}
             {currentStep < 5 ? (
-              <Button
-                type="button"
-                className="ml-auto bg-blue-600 hover:bg-blue-700 text-white"
-                onClick={nextStep}
-              >
+              <Button type="button" className="ml-auto" onClick={nextStep}>
                 Neste
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             ) : (
-              <Button
-                type="submit"
-                className="ml-auto bg-green-600 hover:bg-green-700 text-white"
-              >
+              <Button type="submit" className="ml-auto">
                 Få gratis tilbud
                 <CheckCircle className="ml-2 h-5 w-5" />
               </Button>

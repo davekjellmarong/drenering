@@ -14,18 +14,18 @@ const WizardContainer = ({
   console.log(title);
   console.log(backgroundImage);
   return (
-    <div className="relative w-full py-16 lg:py-24 bg-gradient-to-b from-blue-50 to-white">
+    <div className="relative w-full py-16 lg:py-24 bg-gradient-to-b from-brand-50 to-white">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Hero Text */}
           <div className="max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
-            <div className="inline-flex items-center justify-center px-4 py-1 rounded-full bg-blue-100 text-blue-800 text-sm font-medium mb-4">
+            <div className="inline-flex items-center justify-center px-4 py-1 rounded-full bg-brand-100 text-brand-800 text-sm font-medium mb-4">
               #1 Sammenligningstjeneste for Dreneringstilbud
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
               Raske, Pålitelige{" "}
-              <span className="text-blue-600">Dreneringsløsninger</span> ved
+              <span className="text-brand-600">Dreneringsløsninger</span> ved
               Fingertuppene
             </h1>
 
@@ -44,7 +44,7 @@ const WizardContainer = ({
                   className="flex items-center justify-center sm:justify-start"
                 >
                   <svg
-                    className="h-5 w-5 text-blue-600 mr-2 flex-shrink-0"
+                    className="h-5 w-5 text-brand-600 mr-2 flex-shrink-0"
                     viewBox="0 0 20 20"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"

@@ -97,10 +97,7 @@ export default function SimpleQuoteForm() {
           />
         </div>
 
-        <Button
-          type="submit"
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white"
-        >
+        <Button type="submit" className="w-full">
           Gå til neste steg <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
       </form>

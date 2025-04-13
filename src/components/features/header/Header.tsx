@@ -81,8 +81,8 @@ export function Header() {
               <Link
                 key={link.path}
                 href={link.path}
-                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-                  pathname === link.path ? "text-blue-600" : "text-gray-900"
+                className={`text-sm font-medium transition-colors hover:text-brand-600 ${
+                  pathname === link.path ? "text-brand-600" : "text-gray-900"
                 }`}
               >
                 {link.name}
@@ -92,10 +92,7 @@ export function Header() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button
-              asChild
-              className="bg-blue-600 hover:bg-blue-700 text-white"
-            >
+            <Button asChild>
               <Link href="/tilbud">Få Gratis Tilbud</Link>
             </Button>
           </div>
@@ -119,17 +116,14 @@ export function Header() {
               <Link
                 key={link.path}
                 href={link.path}
-                className={`text-base py-2 font-medium transition-colors hover:text-blue-600 ${
-                  pathname === link.path ? "text-blue-600" : "text-gray-900"
+                className={`text-base py-2 font-medium transition-colors hover:text-brand-600 ${
+                  pathname === link.path ? "text-brand-600" : "text-gray-900"
                 }`}
               >
                 {link.name}
               </Link>
             ))}
-            <Button
-              asChild
-              className="mt-2 bg-blue-600 hover:bg-blue-700 text-white"
-            >
+            <Button asChild className="mt-2">
               <Link href="/tilbud">Få Gratis Tilbud</Link>
             </Button>
           </nav>
