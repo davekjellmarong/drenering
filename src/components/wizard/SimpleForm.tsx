@@ -16,12 +16,17 @@ import {
 } from "@/src/components/ui/select";
 import { ArrowRight } from "lucide-react";
 
-export default function SimpleQuoteForm() {
+interface SimpleQuoteFormProps {
+  city?: string;
+}
+
+export default function SimpleQuoteForm({ city }: SimpleQuoteFormProps) {
   const router = useRouter();
   const [formData, setFormData] = useState({
     serviceType: "",
     address: "",
     description: "",
+    city: city || "",
   });
 
   const handleChange = (field: string, value: string) => {
