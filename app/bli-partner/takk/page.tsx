@@ -5,6 +5,7 @@ import { Button } from "@/src/components/ui/button";
 export const metadata = {
   title: "Takk for din registrering - DinDrenering",
   description: "Din registrering som partner hos DinDrenering er mottatt",
+  robots: { index: false, follow: false },
 };
 
 export default function TakkPage() {

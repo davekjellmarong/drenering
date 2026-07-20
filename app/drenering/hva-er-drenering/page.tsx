@@ -6,9 +6,41 @@ export const metadata = {
     "Lær hva drenering er, hvorfor det er viktig, og hvordan det fungerer for å beskytte hus og eiendom mot vannskader.",
 };
 
+const faqs = [
+  {
+    question: "Hvor ofte må drenering byttes?",
+    answer:
+      "Drenering rundt hus har en levetid på 30-50 år, men kan vare kortere i områder med høy grunnvannstand eller dårlig utført installasjon.",
+  },
+  {
+    question: "Er drenering nødvendig for alle hus?",
+    answer:
+      "Ikke alle hus trenger omfattende drenering, men hvis du bor i et område med mye regn eller høy grunnvannstand, er det en viktig investering.",
+  },
+  {
+    question: "Kan jeg gjøre drenering selv?",
+    answer:
+      "Det er mulig å gjøre drenering selv, men feilinstallasjon kan føre til store problemer. Profesjonell utførelse anbefales for langvarige resultater.",
+  },
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: { "@type": "Answer", text: faq.answer },
+  })),
+};
+
 export default function HvaErDrenering() {
   return (
     <div className="container mx-auto px-4 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <h1 className="text-4xl text-brand-900 font-bold mb-6">
         Hva er drenering? En komplett guide til drenering
       </h1>

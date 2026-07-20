@@ -2,4 +2,5 @@
 module.exports = {
   siteUrl: "https://dindrenering.no",
   generateRobotsTxt: true,
+  exclude: ["/cities", "/kontrollpanel"],
 };

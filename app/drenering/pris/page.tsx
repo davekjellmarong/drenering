@@ -6,9 +6,41 @@ export const metadata = {
     "Finn ut hvor mye drenering koster for eneboliger, borettslag og næringsbygg. Se priser, faktorer som påvirker kostnaden og hvordan du kan spare penger.",
 };
 
+const faqs = [
+  {
+    question: "Er det billigere å gjøre drenering selv?",
+    answer:
+      "Ja, men kun hvis du har riktig utstyr. Feilaktig drenering kan føre til større skader på huset ditt.",
+  },
+  {
+    question: "Dekker forsikringen drenering?",
+    answer:
+      "Nei, de fleste forsikringer dekker ikke drenering med mindre det er en akutt skade som følge av en uforutsett hendelse.",
+  },
+  {
+    question: "Hvor ofte må drenering byttes?",
+    answer:
+      "De fleste dreneringssystemer har en levetid på 30-50 år, men dårlig grunnforhold kan kreve tidligere utskifting.",
+  },
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: { "@type": "Answer", text: faq.answer },
+  })),
+};
+
 export default function DreneringPris() {
   return (
     <div className="container mx-auto px-4 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <h1 className="text-4xl text-brand-900 font-bold mb-6">
         Drenering Pris: Hva koster det å drenere rundt huset?
       </h1>

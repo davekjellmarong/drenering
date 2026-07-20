@@ -4,6 +4,10 @@ import { Plus, Phone, Mail, Clock } from "lucide-react";
 import Image from "next/image";
 import { TabsTrigger } from "@radix-ui/react-tabs";
 
+export const metadata = {
+  robots: { index: false, follow: false },
+};
+
 export default function Kontrollpanel() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12 pt-20">

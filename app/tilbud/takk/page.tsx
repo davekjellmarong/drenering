@@ -6,6 +6,7 @@ export const metadata = {
   title: "Takk for din forespørsel - DinDrenering",
   description:
     "Din forespørsel om tilbud er mottatt. Vi vil kontakte deg snart.",
+  robots: { index: false, follow: false },
 };
 
 export default function ThankYouPage() {

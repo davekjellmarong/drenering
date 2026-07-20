@@ -7,9 +7,46 @@ export const metadata = {
     "Vanninntrenging i kjeller eller grunnmur? Lær hva som forårsaker vanngjennomtrengning, hvordan du oppdager det tidlig, og hvordan drenering løser problemet.",
 };
 
+const faqs = [
+  {
+    question: "Er vanninntrenging og vanngjennomtrengning det samme?",
+    answer:
+      "Ja, dette er to vanlige begreper for samme problem: vann som trenger inn gjennom grunnmur eller kjellervegger fra utsiden.",
+  },
+  {
+    question: "Kan jeg stoppe vanninntrenging uten å grave opp grunnmuren?",
+    answer:
+      "Midlertidige tiltak som membraner innvendig kan redusere problemet, men de fjerner ikke årsaken. For en varig løsning må vanntrykket utenfra reduseres, som krever utvendig drenering.",
+  },
+  {
+    question: "Hvor lang tid tar det før vanninntrenging skader huset?",
+    answer:
+      "Det varierer, men kontinuerlig fukt kan gi mugg og råteskader i løpet av måneder, og over flere år kan det svekke selve konstruksjonen.",
+  },
+  {
+    question: "Hvordan finner jeg ut om huset mitt har vanninntrenging?",
+    answer:
+      "Se etter fuktflekker, lukt av mugg, og vannansamlinger rundt huset etter regn. En fagperson kan gjøre en grundig vurdering av grunnmur og drenering.",
+  },
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: { "@type": "Answer", text: faq.answer },
+  })),
+};
+
 export default function Vanninntrenging() {
   return (
     <div className="container mx-auto px-4 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <h1 className="text-4xl text-brand-900 font-bold mb-6">
         Vanninntrenging: Hva er det, og hvordan stopper du det?
       </h1>

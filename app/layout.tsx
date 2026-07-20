@@ -27,13 +27,30 @@ export const metadata: Metadata = {
     "drenering, dreneringsfirma, drensrør, boligdrenering, industriell drenering",
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "DinDrenering",
+  url: "https://dindrenering.no",
+  logo: "https://dindrenering.no/logo.png",
+  description:
+    "Sammenligningstjeneste for drenering. Få tilbud fra kvalifiserte dreneringsfirmaer i Norge.",
+  areaServed: "NO",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="no">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
