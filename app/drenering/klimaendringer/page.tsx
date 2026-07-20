@@ -1,7 +1,5 @@
 import Link from "next/link";
 import { Button } from "@/src/components/ui/button";
-import UnderConstruction from "@/src/components/features/under-development/UnderDevelopment";
-
 export const metadata = {
   title: "Drenering og Klimaendringer | Tilpass Eiendommen din",
   description:
@@ -9,8 +7,6 @@ export const metadata = {
 };
 
 export default async function DreneringOgKlimaendringer() {
-  return <UnderConstruction pageName="'Drenering og Klimaendringer'" />;
-
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-6 text-brand-900">

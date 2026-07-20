@@ -1,7 +1,5 @@
 import Link from "next/link";
 import { Button } from "@/src/components/ui/button";
-import UnderConstruction from "@/src/components/features/under-development/UnderDevelopment";
-
 export const metadata = {
   title: "Drenering Pris | Hva koster drenering? Komplett prisguide",
   description:
@@ -9,8 +7,6 @@ export const metadata = {
 };
 
 export default function DreneringPris() {
-  return <UnderConstruction pageName="'Drenering Pris'" />;
-
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl text-brand-900 font-bold mb-6">

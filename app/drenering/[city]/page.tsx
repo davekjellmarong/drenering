@@ -1,6 +1,13 @@
+import { CityIssuesSection } from "@/src/components/features/city/CommonIssues";
+import { CityFAQSection } from "@/src/components/features/city/FAQ";
+import { CityInfoSection } from "@/src/components/features/city/Info";
+import CtaBanner from "@/src/components/sections/CtaBanner";
+import { HeroText } from "@/src/components/features/hero/HeroText";
+import SimpleQuoteForm from "@/src/components/wizard/SimpleForm";
 import { CityMethods } from "@/src/queryFactory/City";
 import { Metadata } from "next";
 import React from "react";
+import HeroImage from "@/src/components/features/hero/HeroImage";
 
 export async function generateStaticParams() {
   const cities = await CityMethods.getAll();
@@ -27,8 +34,6 @@ const CityPage = async ({ params }: { params: Promise<{ city: string }> }) => {
   const { city } = await params;
   const cityData = await CityMethods.getByName(city);
 
-  // return <UnderConstruction pageName={`Drenering i ${city}`} />;
-
   if (!cityData) {
     return (
       <div className="text-center text-brand-600">
@@ -39,55 +44,28 @@ const CityPage = async ({ params }: { params: Promise<{ city: string }> }) => {
 
   return (
     <>
-      {/* Hero Section with Wizard */}
-      {/* <WizardContainer
-        title={`Få gode tilbud på drenering i ${city}`}
-        description={`Sammenlign flere tilbud og velg den beste løsningen for drenering i ${city}.`}
-        backgroundImage="/manSign.jpg"
-      /> */}
-
-      {/* Main Content */}
-      <article className="container mx-auto px-4 py-20">
-        {/* City Pricing Info */}
-        <section className="mb-6 bg-brand-100 p-6 rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold text-brand-800">
-            Hva koster drenering i {city}?
-          </h2>
-          <p className="text-brand-700 mt-2">
-            <strong>Gjennomsnittlig pris per meter:</strong>{" "}
-            {cityData[0].average_price_meter} NOK
-          </p>
-          <p className="text-brand-700 mt-1">
-            <strong>Typisk prisintervall:</strong> {cityData[0].price_range}
-          </p>
-        </section>
-
-        {/* Placeholder for companies */}
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-brand-800 mb-4">
-            Finn dreneringsfirmaer i {city}
-          </h2>
-          <p className="text-brand-600">
-            Vi jobber med å samle en liste over firmaer som tilbyr drenering i{" "}
-            {city}. Kom tilbake senere for mer informasjon!
-          </p>
-        </section>
-
-        {/* Call-to-Action (CTA) */}
-        <section className="text-center bg-brand-50 p-6 rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold text-brand-900">
-            Trenger du drenering i {city}?
-          </h2>
-          <p className="text-brand-700 mt-2">
-            Få prisoverslag og sammenlign dreneringsfirmaer i ditt område.
-          </p>
-          <a
-            href="/tilbud"
-            className="mt-4 inline-block bg-brand-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-600 transition"
-          >
-            Få gratis tilbud
-          </a>
-        </section>
+      <section className="relative overflow-hidden">
+        <HeroImage
+          src="https://images.unsplash.com/photo-1527856263669-12c3a0af2aa6?auto=format&fit=crop&q=80"
+          alt="Bakgrunnsbilde for hero"
+        />
+        <div className="relative z-10 container mx-auto py-28 md:py-36 px-4">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <HeroText
+              badge="citypage"
+              description={`Få hjelp med drenering fra lokale eksperter i ${city}. Sammenlign tilbud og finn den beste løsningen for ditt dreneringsproblem.`}
+            >
+              <span className="text-brand-300">Drenering</span> i {city}
+            </HeroText>
+            <SimpleQuoteForm city={city} />
+          </div>
+        </div>
+      </section>
+      <article>
+        <CityInfoSection cityName={city} />
+        <CityIssuesSection cityName={city} />
+        <CityFAQSection cityName={city} />
+        <CtaBanner />
       </article>
     </>
   );

@@ -1,7 +1,5 @@
 import Link from "next/link";
 import { Button } from "@/src/components/ui/button";
-import UnderConstruction from "@/src/components/features/under-development/UnderDevelopment";
-
 export const metadata = {
   title: "Hva er drenering? | En komplett guide til drenering",
   description:
@@ -9,8 +7,6 @@ export const metadata = {
 };
 
 export default function HvaErDrenering() {
-  return <UnderConstruction pageName="'Hva er Drenering?'" />;
-
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl text-brand-900 font-bold mb-6">
@@ -83,6 +79,14 @@ export default function HvaErDrenering() {
         <li>Myk eller ustabil grunn rundt huset</li>
         <li>Frostsprengninger i betong eller asfalt på vinteren</li>
       </ul>
+
+      <p className="mb-6 text-brand-700">
+        Les mer om dette i vår guide om{" "}
+        <Link href="/drenering/vanninntrenging" className="text-brand-500 underline">
+          vanninntrenging
+        </Link>
+        , hvor vi går gjennom årsaker og løsninger i detalj.
+      </p>
 
       <h2 className="text-2xl font-semibold mb-4">
         Hvor mye koster drenering?

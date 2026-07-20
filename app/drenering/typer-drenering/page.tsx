@@ -1,7 +1,5 @@
 import Link from "next/link";
 import { Button } from "@/src/components/ui/button";
-import UnderConstruction from "@/src/components/features/under-development/UnderDevelopment";
-
 export const metadata = {
   title: "Typer Drenering | Oversikt Over Dreneringsmetoder",
   description:
@@ -9,8 +7,6 @@ export const metadata = {
 };
 
 export default function TyperDrenering() {
-  return <UnderConstruction pageName="'Typer Drenering'" />;
-
   return (
     <div className="container mx-auto px-4 py-20">
       <div className="flex space-x-4">
