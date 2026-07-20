@@ -7,7 +7,8 @@ export const metadata = {
     "Les de nyeste artiklene om drenering, vedlikehold og bærekraftige løsninger. Finn eksperttips og råd for ditt dreneringsprosjekt.",
 };
 const BlogPage = async () => {
-  const articles = await ArticleMethods.getAll();
+  const articles = await ArticleMethods.getAll().catch(() => []);
+  const articleList = Array.isArray(articles) ? articles : [];
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -15,7 +16,7 @@ const BlogPage = async () => {
         DinDrenering Blog
       </h1>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {articles.map((article) => (
+        {articleList.map((article) => (
           <ArticleCard key={article.id} post={article} />
         ))}
       </div>

@@ -8,7 +8,11 @@ import { Metadata } from "next";
 
 // Generate static paths for all articles
 export async function generateStaticParams() {
-  const articles: Article[] = await ArticleMethods.getAll();
+  const articles: Article[] = await ArticleMethods.getAll().catch(() => []);
+
+  if (!Array.isArray(articles)) {
+    return [];
+  }
 
   return articles.map((article) => ({
     slug: article.slug,

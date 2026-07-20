@@ -9,7 +9,8 @@ import CtaBanner from "@/src/components/sections/CtaBanner";
 import PopularCities from "@/src/components/sections/PopularCities";
 
 export default async function HomePage() {
-  const cities = await CityMethods.getAll();
+  const citiesResult = await CityMethods.getAll().catch(() => []);
+  const cities = Array.isArray(citiesResult) ? citiesResult : [];
 
   return (
     <div className="min-h-screen">

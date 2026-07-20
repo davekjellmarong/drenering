@@ -10,7 +10,11 @@ import React from "react";
 import HeroImage from "@/src/components/features/hero/HeroImage";
 
 export async function generateStaticParams() {
-  const cities = await CityMethods.getAll();
+  const cities = await CityMethods.getAll().catch(() => []);
+
+  if (!Array.isArray(cities)) {
+    return [];
+  }
 
   return cities.map((city) => ({
     city: city.name,
