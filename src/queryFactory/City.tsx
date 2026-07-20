@@ -1,21 +1,16 @@
-import {
-  getPublicData,
-  getPublicDataFetch,
-  getRouteHandler,
-} from "../utils/Request";
 import { City } from "../utils/types";
+import { STATIC_CITIES } from "../utils/Constants";
 
+// There is no live CMS backing city data right now, so these read from a
+// static list. If a CMS comes back online, swap the bodies below to fetch
+// from it with a fallback to STATIC_CITIES rather than removing the fallback.
 export const CityMethods = {
-  getRouteHandlerCities: async (): Promise<City[]> => {
-    return getRouteHandler("/cities");
-  },
   getAll: async (): Promise<City[]> => {
-    return getPublicDataFetch("/Cities?populate=*");
-  },
-  getById: async (id: string | number): Promise<City> => {
-    return getPublicData(`/Cities/${id}`);
+    return STATIC_CITIES;
   },
   getByName: async (name: string): Promise<City[]> => {
-    return getPublicDataFetch(`/Cities?filters[name][$eq]=${name}`);
+    return STATIC_CITIES.filter(
+      (city) => city.name.toLowerCase() === name.toLowerCase()
+    );
   },
 };

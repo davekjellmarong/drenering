@@ -25,9 +25,9 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const article = await ArticleMethods.getBySlug(slug);
+  const article = await ArticleMethods.getBySlug(slug).catch(() => []);
 
-  if (!article) return { title: "Artikkel ikke funnet" };
+  if (!article || article.length === 0) return { title: "Artikkel ikke funnet" };
 
   return {
     title: `${article[0].title} | DreneringsBloggen`,
@@ -50,8 +50,8 @@ export default async function Page({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const article = await ArticleMethods.getBySlug(slug);
-  if (!article) return notFound(); // Handle 404 if article not found
+  const article = await ArticleMethods.getBySlug(slug).catch(() => []);
+  if (!article || article.length === 0) return notFound();
   return (
     <article className="container mx-auto px-4 py-8">
       {/* Featured Image */}

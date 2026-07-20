@@ -28,12 +28,14 @@ export async function generateMetadata() {
 }
 
 export default async function DreneringRundtHus() {
-  // Fetch the HubSpot content for this specific page
+  // Fetch the HubSpot content for this specific page. Falls back to
+  // reasonable defaults below if HubSpot is unavailable or the post is gone.
   const postId = "224941380852"; // This should be the correct ID for the drenering-rundt-hus content
-  const post = await HubSpotMethods.getPostById(
-    postId,
-    String(process.env.HUBSPOT_TOKEN)
-  );
+  const post =
+    (await HubSpotMethods.getPostById(
+      postId,
+      String(process.env.HUBSPOT_TOKEN)
+    ).catch(() => null)) || {};
 
   // Format the date if available
   const publishDate = post.publishDate ? new Date(post.publishDate) : null;
@@ -119,12 +121,14 @@ export default async function DreneringRundtHus() {
             </div>
 
             {/* Article content from HubSpot */}
-            <div className="px-8 py-6">
-              <div
-                className="prose prose-lg max-w-none prose-blue prose-img:rounded-lg prose-headings:text-gray-900"
-                dangerouslySetInnerHTML={{ __html: postContent }}
-              />
-            </div>
+            {postContent && (
+              <div className="px-8 py-6">
+                <div
+                  className="prose prose-lg max-w-none prose-blue prose-img:rounded-lg prose-headings:text-gray-900"
+                  dangerouslySetInnerHTML={{ __html: postContent }}
+                />
+              </div>
+            )}
           </article>
 
           {/* CTA section */}

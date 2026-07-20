@@ -1,10 +1,8 @@
 export const dynamic = "force-static";
 
-import { getPublicDataFetch } from "@/src/utils/Request";
 import { NextResponse } from "next/server";
+import { STATIC_CITIES } from "@/src/utils/Constants";
 
 export async function GET() {
-  const cities = await getPublicDataFetch("/Cities?populate=*");
-
-  return NextResponse.json(cities);
+  return NextResponse.json(STATIC_CITIES);
 }

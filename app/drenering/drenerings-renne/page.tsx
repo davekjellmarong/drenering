@@ -21,15 +21,16 @@ export const metadata = {
 };
 
 const DreneringRundtHus = async () => {
-  // Fetch the HubSpot content for this specific page
+  // Fetch the HubSpot content for this specific page. Falls back to the
+  // static content below if HubSpot is unavailable or the post is gone.
   const postId = "224941380852"; // This should be the correct ID for the drenering-rundt-hus content
   const post = await HubSpotMethods.getPostById(
     postId,
     String(process.env.HUBSPOT_TOKEN)
-  );
+  ).catch(() => null);
 
   // Format the date if available
-  const publishDate = post.publishDate ? new Date(post.publishDate) : null;
+  const publishDate = post?.publishDate ? new Date(post.publishDate) : null;
   const formattedDate = publishDate
     ? new Intl.DateTimeFormat("no-NO", {
         year: "numeric",
@@ -39,7 +40,7 @@ const DreneringRundtHus = async () => {
     : "";
 
   // Use the HTML content as is to preserve all tags including <br>
-  const postContent = post.postBody || "";
+  const postContent = post?.postBody || "";
 
   return (
     <div className="bg-gradient-to-b from-brand-50 to-white">
@@ -57,24 +58,30 @@ const DreneringRundtHus = async () => {
           </div>
 
           {/* Featured Image */}
-          <div className="mb-12 rounded-lg overflow-hidden shadow-lg">
-            <img
-              src={post.featuredImage}
-              alt="Drenering rundt hus illustrasjon"
-              className="w-full h-auto object-cover"
-            />
-          </div>
+          {post?.featuredImage && (
+            <div className="mb-12 rounded-lg overflow-hidden shadow-lg">
+              <img
+                src={post.featuredImage}
+                alt="Drenering rundt hus illustrasjon"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          )}
 
           {/* Author and Date */}
-          <div className="flex items-center justify-between mb-8 text-sm text-gray-600">
-            <div className="flex items-center">
-              <span className="font-medium">Forfatter: {post.authorName}</span>
+          {post && (
+            <div className="flex items-center justify-between mb-8 text-sm text-gray-600">
+              <div className="flex items-center">
+                <span className="font-medium">
+                  Forfatter: {post.authorName}
+                </span>
+              </div>
+              <div className="flex items-center">
+                <Calendar className="mr-2 h-4 w-4" />
+                <span>Publisert: {formattedDate}</span>
+              </div>
             </div>
-            <div className="flex items-center">
-              <Calendar className="mr-2 h-4 w-4" />
-              <span>Publisert: {formattedDate}</span>
-            </div>
-          </div>
+          )}
 
           <Separator className="mb-8" />
 
@@ -144,10 +151,12 @@ const DreneringRundtHus = async () => {
               </p>
             </div>
 
-            <div
-              className="prose prose-lg max-w-none prose-blue prose-img:rounded-lg prose-headings:text-gray-900"
-              dangerouslySetInnerHTML={{ __html: postContent }}
-            />
+            {postContent && (
+              <div
+                className="prose prose-lg max-w-none prose-blue prose-img:rounded-lg prose-headings:text-gray-900"
+                dangerouslySetInnerHTML={{ __html: postContent }}
+              />
+            )}
 
             <h3 className="heading-3 text-blue-800 mt-8 mb-4">
               Vanlige tegn på dreneringsproblemer:

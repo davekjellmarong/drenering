@@ -38,7 +38,7 @@ const CityPage = async ({ params }: { params: Promise<{ city: string }> }) => {
   const { city } = await params;
   const cityData = await CityMethods.getByName(city);
 
-  if (!cityData) {
+  if (!cityData || cityData.length === 0) {
     return (
       <div className="text-center text-brand-600">
         Fant ikke data for {city}.
