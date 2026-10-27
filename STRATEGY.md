@@ -244,8 +244,10 @@ Never use paid links, link networks or link exchanges at scale.
 ## 11. Owner tasks (not doable from code)
 
 Must do:
-1. **Google Search Console:** verify the domain (DNS TXT record) and submit
-   `https://www.dindrenering.no/sitemap.xml`.
+1. ~~Google Search Console~~ DONE 2026-10-27. It's a Domain property (verified
+   since 2025-04). Until 2026-10-27 the www sitemap listed apex URLs, so Google
+   discovered 0 pages from it. Re-submitted `sitemap.xml` and `sitemap-0.xml`
+   (46 pages discovered the same day).
 2. **Test the quote form** on `/tilbud` and confirm the request reaches HubSpot.
    If it doesn't, Claude switches to Netlify Forms (free) with email notification.
 3. **Team page:** are the 3 people on `/om-oss/team` real? If not, Claude
