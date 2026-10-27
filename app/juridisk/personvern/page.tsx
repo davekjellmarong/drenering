@@ -1,6 +1,7 @@
 import UnderConstruction from "@/src/components/features/under-development/UnderDevelopment";
 
 export const metadata = {
+  alternates: { canonical: "/juridisk/personvern" },
   title: "Personvern | Hvordan vi håndterer dine data",
   description:
     "Les om hvordan vi samler inn, bruker og beskytter dine personlige data i samsvar med GDPR.",

@@ -2,6 +2,7 @@ import { Button } from "@/src/components/ui/button";
 import Link from "next/link";
 
 export const metadata = {
+  alternates: { canonical: "/tjenester/drensror-installasjon" },
   title: "Drensrør Installasjon | Effektiv Drenering for Eiendommen din",
   description:
     "Finn ut hvordan drensrør installasjon kan forbedre dreneringen av eiendommen din. Se løsninger og få uforpliktende tilbud.",

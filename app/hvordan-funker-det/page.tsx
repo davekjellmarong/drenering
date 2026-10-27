@@ -13,6 +13,7 @@ import FaqHowItWorks from "@/src/components/sections/HowItWorksPage/FAQ";
 import SimpleCta from "@/src/components/sections/CTA/Simple";
 
 export const metadata = {
+  alternates: { canonical: "/hvordan-funker-det" },
   title: "Hvordan Det Fungerer - DinDrenering",
   description:
     "Lær hvordan DinDrenering gjør det enkelt å finne pålitelige dreneringstjenester i ditt område",

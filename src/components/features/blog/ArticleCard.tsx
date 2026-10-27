@@ -4,17 +4,19 @@ import { Article } from "@/src/utils/types";
 
 const ArticleCard = ({ post }: { post: Article }) => {
   return (
-    <div className="bg-white shadow-md rounded-lg overflow-hidden">
+    <div className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col">
       {/* Featured Image */}
-      <Image
-        src={post.featuredImage?.url || "/placeholder.svg"}
-        alt={post.title}
-        width={600}
-        height={400}
-        className="w-full h-48 object-cover"
-      />
+      {post.image && (
+        <Image
+          src={post.image}
+          alt={post.imageAlt || post.title}
+          width={600}
+          height={400}
+          className="w-full h-48 object-cover"
+        />
+      )}
 
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-1">
         {/* Article Title */}
         <h2 className="text-xl font-semibold mb-2 text-brand-800">
           <Link href={`/blog/${post.slug}`} className="hover:text-brand-600">
@@ -24,49 +26,11 @@ const ArticleCard = ({ post }: { post: Article }) => {
 
         {/* Article Meta Data */}
         <p className="text-brand-600 text-sm mb-4">
-          {post.publishedAt
-            ? new Date(post.publishedAt).toLocaleDateString("no-NO")
-            : "Ukjent dato"}{" "}
-          • {post.readingTime || "?"} min lestid
+          {new Date(post.date).toLocaleDateString("nb-NO")}
+          {post.readingTime && ` • ${post.readingTime} min lesetid`}
         </p>
 
-        {/* Subtitle */}
-        {post.subtitle && (
-          <p className="text-brand-700 mb-4">{post.subtitle}</p>
-        )}
-
-        {/* Author Info */}
-        {post.author && (
-          <div className="flex items-center mb-4">
-            <Image
-              src={post.author.avatar?.url || "/placeholder.svg"}
-              alt={post.author.name}
-              width={40}
-              height={40}
-              className="rounded-full mr-3"
-            />
-            <div>
-              <p className="text-sm font-semibold text-brand-800">
-                {post.author.name}
-              </p>
-              {post.author.role && (
-                <p className="text-xs text-brand-600">{post.author.role}</p>
-              )}
-            </div>
-          </div>
-        )}
-
-        {/* Tags */}
-        <div className="flex flex-wrap gap-2 mb-4">
-          {post.tags?.map((tag) => (
-            <span
-              key={tag.id}
-              className="bg-brand-100 text-brand-800 text-xs px-2 py-1 rounded"
-            >
-              {tag.name}
-            </span>
-          ))}
-        </div>
+        <p className="text-brand-700 mb-4 flex-1">{post.description}</p>
 
         {/* Read More Link */}
         <Link

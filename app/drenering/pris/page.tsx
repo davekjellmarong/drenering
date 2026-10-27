@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/src/components/ui/button";
 export const metadata = {
+  alternates: { canonical: "/drenering/pris" },
   title: "Drenering Pris | Hva koster drenering? Komplett prisguide",
   description:
     "Finn ut hvor mye drenering koster for eneboliger, borettslag og næringsbygg. Se priser, faktorer som påvirker kostnaden og hvordan du kan spare penger.",

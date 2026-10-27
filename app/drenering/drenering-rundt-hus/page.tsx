@@ -13,14 +13,16 @@ export async function generateMetadata() {
     );
 
     return {
-      title: post.htmlTitle || "Drenering Rundt Hus | DreneringsExperten",
+      alternates: { canonical: "/drenering/drenering-rundt-hus" },
+      title: post.htmlTitle || "Drenering rundt hus | Slik gjøres det og hva det koster",
       description:
         post.metaDescription ||
         "Lær om drenering rundt hus og hvordan det beskytter boligen din",
     };
   } catch {
     return {
-      title: "Drenering Rundt Hus | DreneringsExperten",
+      alternates: { canonical: "/drenering/drenering-rundt-hus" },
+      title: "Drenering rundt hus | Slik gjøres det og hva det koster",
       description:
         "Lær om drenering rundt hus og hvordan det beskytter boligen din",
     };

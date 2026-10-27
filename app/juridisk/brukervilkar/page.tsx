@@ -1,6 +1,7 @@
 import UnderConstruction from "@/src/components/features/under-development/UnderDevelopment";
 
 export const metadata = {
+  alternates: { canonical: "/juridisk/brukervilkar" },
   title: "Brukervilkår | Regler for bruk av våre tjenester",
   description:
     "Les våre brukervilkår for å forstå rettigheter og plikter ved bruk av våre tjenester.",

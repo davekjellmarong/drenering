@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/src/components/ui/button";
 export const metadata = {
+  alternates: { canonical: "/drenering/typer-drenering" },
   title: "Typer Drenering | Oversikt Over Dreneringsmetoder",
   description:
     "Lær om ulike typer dreneringssystemer, inkludert overflate-, underjordisk-, og fransk drenering. Finn ut hvilken dreneringsløsning som passer best for ditt behov.",

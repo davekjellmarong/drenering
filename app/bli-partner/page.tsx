@@ -10,6 +10,7 @@ import { PartnerSignupForm } from "@/src/components/features/bli-partner/form";
 import { PartnerBenefits } from "@/src/components/sections/Pages/BliPartner/Benefits";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/bli-partner" },
   title: "Bli Partner - DinDrenering",
   description:
     "Få flere kunder og vekst for din dreneringsbedrift ved å bli en del av vårt nettverk",

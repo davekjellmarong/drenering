@@ -1,22 +1,17 @@
-import { Article, Tag } from "@/src/utils/types";
 import { ArticleMethods } from "@/src/queryFactory/Article";
 import Image from "next/image";
-// import Link from "next/link";
+import Link from "next/link";
 import { notFound } from "next/navigation";
-import ContentRenderer from "@/src/components/features/blog/Content";
+import MarkdownRenderer from "@/src/components/features/blog/Markdown";
+import CtaBanner from "@/src/components/sections/CtaBanner";
 import { Metadata } from "next";
+
+export const dynamicParams = false;
 
 // Generate static paths for all articles
 export async function generateStaticParams() {
-  const articles: Article[] = await ArticleMethods.getAll().catch(() => []);
-
-  if (!Array.isArray(articles)) {
-    return [];
-  }
-
-  return articles.map((article) => ({
-    slug: article.slug,
-  }));
+  const articles = await ArticleMethods.getAll();
+  return articles.map((article) => ({ slug: article.slug }));
 }
 
 export async function generateMetadata({
@@ -25,153 +20,121 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const article = await ArticleMethods.getBySlug(slug).catch(() => []);
-
-  if (!article || article.length === 0) return { title: "Artikkel ikke funnet" };
+  const article = await ArticleMethods.getBySlug(slug);
+  if (!article) return { title: "Artikkel ikke funnet" };
 
   return {
-    title: `${article[0].title} | DreneringsBloggen`,
-    description: article[0].subtitle || "Les mer om drenering og fuktsikring.",
+    title: `${article.title} | DinDrenering`,
+    description: article.description,
+    alternates: { canonical: `/blog/${slug}` },
     openGraph: {
-      title: article[0].title,
-      description:
-        article[0].subtitle || "Les mer om drenering og fuktsikring.",
-      images: article[0].featuredImage ? [article[0].featuredImage.url] : [],
+      type: "article",
+      title: article.title,
+      description: article.description,
+      url: `/blog/${slug}`,
+      publishedTime: article.date,
+      modifiedTime: article.updated,
+      images: article.image ? [article.image] : undefined,
     },
   };
 }
 
-// export const revalidate = 20;
+const formatDate = (date: string) =>
+  new Date(date).toLocaleDateString("nb-NO", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
 
-// Article Page Component
 export default async function Page({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const article = await ArticleMethods.getBySlug(slug).catch(() => []);
-  if (!article || article.length === 0) return notFound();
+  const article = await ArticleMethods.getBySlug(slug);
+  if (!article) return notFound();
+
+  const related = (await ArticleMethods.getAll())
+    .filter((other) => other.slug !== slug)
+    .slice(0, 3);
+
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.description,
+    datePublished: article.date,
+    dateModified: article.updated,
+    image: article.image ? [article.image] : undefined,
+    mainEntityOfPage: `https://dindrenering.no/blog/${slug}`,
+    author: { "@type": "Organization", name: "DinDrenering" },
+    publisher: {
+      "@type": "Organization",
+      name: "DinDrenering",
+      logo: { "@type": "ImageObject", url: "https://dindrenering.no/logo.png" },
+    },
+  };
+
   return (
-    <article className="container mx-auto px-4 py-8">
-      {/* Featured Image */}
-      <Image
-        src={article[0].featuredImage?.url || "/placeholder.svg"}
-        alt={article[0].title}
-        width={1200}
-        height={600}
-        className="w-full h-64 object-cover mb-8"
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      <article className="container mx-auto px-4 py-8 max-w-3xl">
+        <nav className="text-sm text-brand-600 mb-6">
+          <Link href="/blog" className="hover:text-brand-800">
+            Blogg
+          </Link>{" "}
+          / {article.title}
+        </nav>
 
-      {/* Title & Subtitle */}
-      <h1 className="text-4xl font-bold mb-4 text-brand-900">
-        {article[0].title}
-      </h1>
-      {article[0].subtitle && (
-        <p className="text-xl text-brand-700 mb-6">{article[0].subtitle}</p>
-      )}
+        <h1 className="text-4xl font-bold mb-4 text-brand-900">
+          {article.title}
+        </h1>
+        <p className="text-xl text-brand-700 mb-4">{article.description}</p>
+        <p className="text-brand-600 mb-8 text-sm">
+          Publisert {formatDate(article.date)}
+          {article.updated !== article.date &&
+            ` • Oppdatert ${formatDate(article.updated)}`}
+          {article.readingTime && ` • ${article.readingTime} min lesetid`}
+        </p>
 
-      {/* Author Info */}
-      {article[0].author && (
-        <div className="flex items-center mb-6">
+        {article.image && (
           <Image
-            src={article[0].author.avatar?.url || "/placeholder.svg"}
-            alt={article[0].author.name}
-            width={60}
-            height={60}
-            className="rounded-full mr-4"
+            src={article.image}
+            alt={article.imageAlt || article.title}
+            width={1200}
+            height={600}
+            className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
+            priority
           />
-          <div>
-            <p className="font-semibold text-brand-800">
-              {article[0].author.name}
-            </p>
-            {article[0].author.role && (
-              <p className="text-sm text-brand-600">{article[0].author.role}</p>
-            )}
-          </div>
-        </div>
-      )}
+        )}
 
-      {/* Meta Information */}
-      <p className="text-brand-600 mb-6">
-        Publisert:{" "}
-        {article[0].publishedAt
-          ? new Date(article[0].publishedAt).toLocaleDateString("no-NO")
-          : "Ukjent dato"}{" "}
-        •{" "}
-        {article[0].readingTime
-          ? `${article[0].readingTime} min lestid`
-          : "Ukjent tid"}
-      </p>
+        <MarkdownRenderer content={article.content} />
 
-      {/* Tags */}
-      {article[0].tags && article[0].tags.length > 0 && (
-        <div className="flex flex-wrap gap-2 mb-8">
-          {article[0].tags.map((tag: Tag) => (
-            <span
-              key={tag.id}
-              className="bg-brand-100 text-brand-800 text-sm px-3 py-1 rounded"
-            >
-              {tag.name}
-            </span>
-          ))}
-        </div>
-      )}
-
-      {/* Article Content */}
-
-      <ContentRenderer content={article[0].content} />
-      {/* Related Articles */}
-      {article[0].articles && article[0].articles.length > 0 && (
-        <div className="mt-12">
-          <h2 className="text-2xl font-bold mb-6 text-brand-900">
-            Relaterte artikler
-          </h2>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {/* {article[0].articles.map((relatedPost: Article) => (
-              <div
-                key={relatedPost.id}
-                className="bg-white shadow-md rounded-lg overflow-hidden"
-              >
-                <Image
-                  src={relatedPost.featuredImage?.url || "/placeholder.svg"}
-                  alt={relatedPost.title}
-                  width={400}
-                  height={200}
-                  className="w-full h-40 object-cover"
-                />
-                <div className="p-4">
-                  <h3 className="text-lg font-semibold mb-2 text-brand-800">
-                    <Link
-                      href={`/blog/${relatedPost.slug}`}
-                      className="hover:text-brand-600"
-                    >
-                      {relatedPost.title}
-                    </Link>
-                  </h3>
-                  <p className="text-sm text-brand-600 mb-2">
-                    {relatedPost.publishedAt
-                      ? new Date(relatedPost.publishedAt).toLocaleDateString(
-                          "no-NO"
-                        )
-                      : "Ukjent dato"}{" "}
-                    •{" "}
-                    {relatedPost.readingTime
-                      ? `${relatedPost.readingTime} min lestid`
-                      : "Ukjent tid"}
-                  </p>
+        {related.length > 0 && (
+          <aside className="mt-12 border-t pt-8">
+            <h2 className="text-2xl font-bold mb-6 text-brand-900">
+              Relaterte artikler
+            </h2>
+            <ul className="space-y-3">
+              {related.map((other) => (
+                <li key={other.slug}>
                   <Link
-                    href={`/blog/${relatedPost.slug}`}
-                    className="text-brand-500 hover:text-brand-600 font-semibold text-sm"
+                    href={`/blog/${other.slug}`}
+                    className="text-brand-600 hover:text-brand-800 font-semibold"
                   >
-                    Les mer
+                    {other.title}
                   </Link>
-                </div>
-              </div>
-            ))} */}
-          </div>
-        </div>
-      )}
-    </article>
+                </li>
+              ))}
+            </ul>
+          </aside>
+        )}
+      </article>
+      <CtaBanner />
+    </>
   );
 }

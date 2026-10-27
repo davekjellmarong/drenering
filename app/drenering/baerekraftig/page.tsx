@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/src/components/ui/button";
 export const metadata = {
+  alternates: { canonical: "/drenering/baerekraftig" },
   title: "Bærekraftig Drenering | Miljøvennlige Løsninger",
   description:
     "Utforsk miljøvennlige dreneringsløsninger og hvordan bærekraftige metoder kan bidra til å redusere klimaavtrykket ditt.",

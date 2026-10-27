@@ -2,6 +2,7 @@ import { Button } from "@/src/components/ui/button";
 import Link from "next/link";
 
 export const metadata = {
+  alternates: { canonical: "/tjenester/industriell-drenering" },
   title: "Industriell Drenering | Store Løsninger for Bedrifter",
   description:
     "Oppdag effektive dreneringsløsninger for industri og næringsbygg. Sikre eiendommen din med riktig dreneringssystem.",

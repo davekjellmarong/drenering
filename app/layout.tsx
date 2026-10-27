@@ -20,11 +20,18 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Drenering | Finn Beste Dreneringsfirma",
+  metadataBase: new URL("https://dindrenering.no"),
+  // Pages without their own canonical (home) fall back to the root
+  alternates: { canonical: "/" },
+  title: "Drenering | Sammenlign tilbud fra dreneringsfirma i Norge",
   description:
-    "Finn den beste dreneringsløsningen for ditt behov. Sammenlign priser og tilbydere.",
-  keywords:
-    "drenering, dreneringsfirma, drensrør, boligdrenering, industriell drenering",
+    "Få opptil 3 gratis tilbud på drenering fra lokale firma. Se priser, les guider om drenering rundt hus og fuktsikring, og finn riktig dreneringsfirma.",
+  openGraph: {
+    type: "website",
+    locale: "nb_NO",
+    siteName: "DinDrenering",
+    images: ["/logo.png"],
+  },
 };
 
 const organizationJsonLd = {

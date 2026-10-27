@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/src/components/ui/button";
 export const metadata = {
+  alternates: { canonical: "/drenering/klimaendringer" },
   title: "Drenering og Klimaendringer | Tilpass Eiendommen din",
   description:
     "Forstå hvordan klimaendringer påvirker behovet for drenering og hvordan du kan tilpasse eiendommen din for å unngå fuktskader.",

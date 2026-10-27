@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/src/components/ui/button";
 export const metadata = {
+  alternates: { canonical: "/drenering/hva-er-drenering" },
   title: "Hva er drenering? | En komplett guide til drenering",
   description:
     "Lær hva drenering er, hvorfor det er viktig, og hvordan det fungerer for å beskytte hus og eiendom mot vannskader.",

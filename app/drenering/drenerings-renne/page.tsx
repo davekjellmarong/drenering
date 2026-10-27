@@ -14,6 +14,7 @@ import { Separator } from "@radix-ui/react-select";
 import { Card, CardContent } from "@/src/components/ui/card";
 
 export const metadata = {
+  alternates: { canonical: "/drenering/drenerings-renne" },
   title:
     "Dreneringsrenne | Effektiv Vannhåndtering for Oppkjørsler og Uteområder",
   description:

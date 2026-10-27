@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "@/src/components/ui/button";
 
 export const metadata = {
+  alternates: { canonical: "/drenering/vanninntrenging" },
   title: "Vanninntrenging i kjeller og grunnmur | Årsaker og løsning",
   description:
     "Vanninntrenging i kjeller eller grunnmur? Lær hva som forårsaker vanngjennomtrengning, hvordan du oppdager det tidlig, og hvordan drenering løser problemet.",

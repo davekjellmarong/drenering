@@ -6,45 +6,40 @@ import { HeroText } from "@/src/components/features/hero/HeroText";
 import SimpleQuoteForm from "@/src/components/wizard/SimpleForm";
 import { CityMethods } from "@/src/queryFactory/City";
 import { Metadata } from "next";
+import { notFound } from "next/navigation";
 import React from "react";
 import HeroImage from "@/src/components/features/hero/HeroImage";
 
+// Only the slugs below exist; old name-based URLs are 301'd in middleware.ts
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
-  const cities = await CityMethods.getAll().catch(() => []);
-
-  if (!Array.isArray(cities)) {
-    return [];
-  }
-
-  return cities.map((city) => ({
-    city: city.name,
-  }));
+  const cities = await CityMethods.getAll();
+  return cities.map((city) => ({ city: city.slug }));
 }
+
+const resolveCity = async (param: string) => {
+  const city = await CityMethods.getBySlugOrName(decodeURIComponent(param));
+  if (!city) notFound();
+  return city;
+};
 
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ city: string }>;
 }): Promise<Metadata> {
-  const { city } = await params;
+  const { name, slug } = await resolveCity((await params).city);
 
   return {
-    title: `Drenering i ${city} | Finn Beste Dreneringsfirma`,
-    description: `Se prisinformasjon og detaljer om drenering i ${city}.`,
+    title: `Drenering i ${name} | Pris og tilbud fra lokale firma`,
+    description: `Trenger du drenering i ${name}? Se hva det koster, vanlige fuktproblemer i området, og få uforpliktende tilbud fra dreneringsfirma i ${name}.`,
+    alternates: { canonical: `/drenering/${slug}` },
   };
 }
 
 const CityPage = async ({ params }: { params: Promise<{ city: string }> }) => {
-  const { city } = await params;
-  const cityData = await CityMethods.getByName(city);
-
-  if (!cityData || cityData.length === 0) {
-    return (
-      <div className="text-center text-brand-600">
-        Fant ikke data for {city}.
-      </div>
-    );
-  }
+  const { name: city } = await resolveCity((await params).city);
 
   return (
     <>

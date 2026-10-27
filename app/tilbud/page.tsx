@@ -1,5 +1,12 @@
 import { QuoteForm } from "@/src/components/features/tilbud/NewSmallForm";
 
+export const metadata = {
+  alternates: { canonical: "/tilbud" },
+  title: "Få gratis tilbud på drenering | Sammenlign dreneringsfirma",
+  description:
+    "Fyll ut ett skjema og motta opptil 3 uforpliktende tilbud fra dreneringsfirma i ditt område. Gratis og uten forpliktelser.",
+};
+
 export default function TilbudPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-brand-50 to-white py-4 px-2 sm:px-4 pt-20">

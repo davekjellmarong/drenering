@@ -2,6 +2,7 @@ import { Button } from "@/src/components/ui/button";
 import Link from "next/link";
 
 export const metadata = {
+  alternates: { canonical: "/tjenester/overvannshandtering" },
   title: "Overvannshåndtering | Håndtering av Store Vannmengder",
   description:
     "Lær hvordan du håndterer overvann effektivt for å unngå flomskader. Finn de beste metodene for overvannshåndtering.",

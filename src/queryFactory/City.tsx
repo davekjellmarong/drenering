@@ -8,9 +8,12 @@ export const CityMethods = {
   getAll: async (): Promise<City[]> => {
     return STATIC_CITIES;
   },
-  getByName: async (name: string): Promise<City[]> => {
-    return STATIC_CITIES.filter(
-      (city) => city.name.toLowerCase() === name.toLowerCase()
+  // Matches the slug ("tromso") and also the display name ("Tromsø"), which
+  // older URLs used, so callers can redirect those to the slug URL.
+  getBySlugOrName: async (value: string): Promise<City | undefined> => {
+    const needle = value.toLowerCase();
+    return STATIC_CITIES.find(
+      (city) => city.slug === needle || city.name.toLowerCase() === needle
     );
   },
 };

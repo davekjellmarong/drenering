@@ -1,6 +1,7 @@
 import UnderConstruction from "@/src/components/features/under-development/UnderDevelopment";
 
 export const metadata = {
+  alternates: { canonical: "/om-oss/team" },
   title: "Vårt Team | Dreneringsekspertene bak tjenesten",
   description:
     "Bli kjent med teamet vårt. Møt ekspertene som hjelper deg med dreneringsløsninger.",

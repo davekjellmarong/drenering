@@ -1,6 +1,7 @@
 import UnderConstruction from "@/src/components/features/under-development/UnderDevelopment";
 
 export const metadata = {
+  alternates: { canonical: "/om-oss/visjon" },
   title: "Vår Visjon | Bærekraftige dreneringsløsninger",
   description:
     "Vår visjon er å tilby de beste og mest bærekraftige dreneringsløsningene i Norge.",

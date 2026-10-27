@@ -262,7 +262,7 @@ export default async function Footer() {
             {cities.map((city) => (
               <Link
                 key={city.id}
-                href={`/drenering/${city.name}`}
+                href={`/drenering/${city.slug}`}
                 className="bg-gray-100 text-gray-700 hover:bg-gray-200 px-3 py-1 rounded-full text-sm"
               >
                 Drenering i {city.name}

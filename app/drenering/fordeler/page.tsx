@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/src/components/ui/button";
 export const metadata = {
+  alternates: { canonical: "/drenering/fordeler" },
   title: "Fordeler med Drenering | Beskytt Hjemmet ditt",
   description:
     "Oppdag fordelene med god drenering og hvordan det kan beskytte boligen din mot fukt, råte og strukturelle skader.",

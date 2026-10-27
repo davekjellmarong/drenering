@@ -2,22 +2,23 @@ import ArticleCard from "@/src/components/features/blog/ArticleCard";
 import { ArticleMethods } from "@/src/queryFactory/Article";
 
 export const metadata = {
-  title: "DreneringsBlogg | Nyheter, Tips og Råd om Drenering",
+  title: "Dreneringsblogg | Tips og råd om drenering og fuktsikring",
   description:
-    "Les de nyeste artiklene om drenering, vedlikehold og bærekraftige løsninger. Finn eksperttips og råd for ditt dreneringsprosjekt.",
+    "Artikler om drenering, fuktsikring av grunnmur, priser og hvordan du velger riktig dreneringsfirma. Praktiske råd for huseiere i Norge.",
+  alternates: { canonical: "/blog" },
 };
+
 const BlogPage = async () => {
-  const articles = await ArticleMethods.getAll().catch(() => []);
-  const articleList = Array.isArray(articles) ? articles : [];
+  const articles = await ArticleMethods.getAll();
 
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-8 text-brand-900">
-        DinDrenering Blog
+        Dreneringsbloggen
       </h1>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {articleList.map((article) => (
-          <ArticleCard key={article.id} post={article} />
+        {articles.map((article) => (
+          <ArticleCard key={article.slug} post={article} />
         ))}
       </div>
     </div>

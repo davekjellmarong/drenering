@@ -1,6 +1,7 @@
 import UnderConstruction from "@/src/components/features/under-development/UnderDevelopment";
 
 export const metadata = {
+  alternates: { canonical: "/om-oss/kontakt" },
   title: "Kontakt oss | Få hjelp med drenering",
   description:
     "Ta kontakt med oss for spørsmål om dreneringstjenester, priser, og løsninger. Vi er her for å hjelpe deg!",

@@ -26,6 +26,7 @@ export const KOMMUNER = [
 export const STATIC_CITIES = KOMMUNER.map((kommune, index) => ({
   id: index + 1,
   name: kommune.name,
+  slug: kommune.id,
   average_price_meter: 3500,
   price_range: "150 000 - 300 000 kr",
   region: "",

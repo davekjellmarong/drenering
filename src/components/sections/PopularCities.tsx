@@ -17,7 +17,7 @@ export default function PopularCities({ cities }: PopularCitiesProps) {
           {cities.map((city) => (
             <Link
               key={city.id}
-              href={`/drenering/${city.name}`}
+              href={`/drenering/${city.slug}`}
               className="bg-white text-text px-4 py-2 rounded-full text-sm hover:bg-brand-50 hover:text-brand-700 border border-border transition-colors duration-200"
             >
               {city.name}
