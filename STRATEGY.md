@@ -94,8 +94,12 @@ Status: ✔ exists and is good, ◐ exists but needs work, ○ planned.
 
 | Cluster | Primary keyword (and close variants) | URL | Status |
 |---|---|---|---|
-| Head | drenering | /drenering (hub) | ○ |
-| Basics | hva er drenering | /drenering/hva-er-drenering | ◐ fact-audit |
+| Head + basics | drenering, hva er drenering, drenering definisjon | /drenering/hva-er-drenering (Google already ranks this for "drenering"; `/drenering` is a navigation hub only) | ◐ fact-audit |
+| Basics | typer drenering | /drenering/typer-drenering | ◐ fact-audit |
+| Materials | drenerende masser, drensmasser, pukk drenering | /blog/drenerende-masser | ○ |
+| Price tool | drenering kalkulator | on /drenering/pris or own page | ○ sourced inputs only |
+| Overvann | overvannshåndtering, overvann tomt, drenering av overvann, overvannsanlegg | /tjenester/overvannshandtering | ◐ thin |
+| Overvann | overflatedrenering, dreneringsrenne | /drenering/drenerings-renne | ◐ HubSpot |
 | Price | drenering pris, hva koster drenering, drenering pris per meter | /drenering/pris | ◐ unsourced tiers |
 | Price | drenering og isolering pris / etterisolering grunnmur | /blog/drenering-og-etterisolering-av-grunnmur | ○ |
 | Process | drenering rundt hus, hvordan drenere hus | /drenering/drenering-rundt-hus | ◐ HubSpot |
@@ -116,9 +120,9 @@ Status: ✔ exists and is good, ◐ exists but needs work, ○ planned.
 | Housing | forsikring vann i kjeller, eierskifteforsikring drenering | /blog/dekker-forsikringen-drenering | ○ |
 | Hiring | dreneringsfirma, velge dreneringsfirma, kontrakt drenering | /blog/hvordan-velge-riktig-dreneringsfirma | ◐ rewrite |
 | Hiring | søknadsplikt drenering | /blog/soknadsplikt-drenering | ○ (dibk.no only) |
-| Outdoor | takrenner nedløp overvann | /blog/takrenner-og-overvann | ○ |
+| Outdoor | takrenner nedløp, takvann drenering | /blog/takrenner-og-overvann | ○ |
 | Outdoor | drenering hage plen | /blog/drenering-av-hage-og-plen | ○ |
-| Services | boligdrenering / drensrør installasjon / overvannshåndtering / industriell drenering | /tjenester/* | ◐ thin |
+| Services | boligdrenering / drensrør installasjon / industriell drenering | /tjenester/* | ◐ thin |
 | Local | drenering <by> | /drenering/<city> | ◐ templated |
 
 Add rows when you add pages. If GSC shows two URLs ranking for the same query,
@@ -274,3 +278,40 @@ Then:
    - Ads don't help Google directly, but they create leads (proof for
      contractors) and brand searches.
 8. **About 1 hour a week of community answers and outreach** (section 8).
+
+## 12. Search Console baseline (export 2026-10-27, last 3 months)
+
+The raw files are in `content/data/gsc/2026-10/`. Compare future exports against
+this baseline.
+
+- **Totals:** 18 clicks and 3 744 impressions over 3 months, average position
+  about 45. The trend is flat. Norway accounts for 3 394 of the impressions.
+  Mobile ranks far better than desktop (position 17 vs 48).
+- **Demand exists:** "drenering" alone had 922 impressions, with us around
+  position 58. Google ranks hva-er-drenering (1 031 impressions) and
+  typer-drenering (834) for it.
+- **The price cluster is the biggest commercial group:** about 400 impressions
+  across 20+ variants, at positions 40–50. /drenering/pris has 495 impressions
+  at position 42.
+- **City pages are closest to page 1:**
+
+  | City | Position | Impressions |
+  |---|---|---|
+  | Sandnes | 12.6 | 91 |
+  | Tromsø | 16.8 | 35 |
+  | Kristiansand | 17.7 | 103 |
+  | Stavanger | 18.9 | 34 |
+  | Trondheim | 23.6 | 100 |
+  | Tønsberg ("drenering tønsberg") | 21.7 | — |
+
+  Oslo has the most demand (238 impressions for "drenering oslo") but sits at
+  position 49. So local pages are the fastest route to clicks, and unique city
+  data is the lever. (The GSC URLs are the old capitalised ones, which now 301
+  to the slugs; expect a short consolidation period.)
+- **Overvann is a bigger group than expected:** about 300 impressions.
+  "overflatedrenering" already sits at position 12.
+- **Noise:** some impressions are for unrelated Fredrikstad queries (fjellsplitting,
+  brønnboring, asbest) and other off-topic terms. Ignore them, and don't write
+  content for them.
+- **Missing from the data:** Bærum and Asker don't appear because there are no
+  pages for them.
