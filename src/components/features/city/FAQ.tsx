@@ -6,7 +6,7 @@ export function CityFAQSection({ cityName }: CityFAQSectionProps) {
   const faqs = [
     {
       question: `Hvor mye koster drenering i ${cityName}?`,
-      answer: `Prisen varierer med grunnforhold og tomtestørrelse, men for en typisk enebolig i ${cityName} ligger drenering vanligvis mellom 150 000 og 300 000 kr. Se vår prisguide for detaljer.`,
+      answer: `Det finnes ingen fast pris for ${cityName}. Prisen avhenger av hvor mange meter grunnmur som skal graves fram, hvor dypt det er, grunnforholdene (leire, fjell, fyllmasse) og hvor lett det er å komme til med maskiner. Se prisguiden vår for hva som påvirker prisen, og hent inn tilbud fra lokale firma for å få et reelt tall for ditt hus.`,
     },
     {
       question: `Hvordan finner jeg et pålitelig dreneringsfirma i ${cityName}?`,
