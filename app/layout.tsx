@@ -20,7 +20,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dindrenering.no"),
+  metadataBase: new URL("https://www.dindrenering.no"),
   // Pages without their own canonical (home) fall back to the root
   alternates: { canonical: "/" },
   title: "Drenering | Sammenlign tilbud fra dreneringsfirma i Norge",
@@ -38,8 +38,8 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "DinDrenering",
-  url: "https://dindrenering.no",
-  logo: "https://dindrenering.no/logo.png",
+  url: "https://www.dindrenering.no",
+  logo: "https://www.dindrenering.no/logo.png",
   description:
     "Sammenligningstjeneste for drenering. Få tilbud fra kvalifiserte dreneringsfirmaer i Norge.",
   areaServed: "NO",

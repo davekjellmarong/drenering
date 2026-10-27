@@ -67,12 +67,12 @@ export default async function Page({
     datePublished: article.date,
     dateModified: article.updated,
     image: article.image ? [article.image] : undefined,
-    mainEntityOfPage: `https://dindrenering.no/blog/${slug}`,
+    mainEntityOfPage: `https://www.dindrenering.no/blog/${slug}`,
     author: { "@type": "Organization", name: "DinDrenering" },
     publisher: {
       "@type": "Organization",
       name: "DinDrenering",
-      logo: { "@type": "ImageObject", url: "https://dindrenering.no/logo.png" },
+      logo: { "@type": "ImageObject", url: "https://www.dindrenering.no/logo.png" },
     },
   };
 

@@ -4,7 +4,7 @@ Allow: /
 Disallow: /kontrollpanel
 
 # Host
-Host: https://dindrenering.no
+Host: https://www.dindrenering.no
 
 # Sitemaps
-Sitemap: https://dindrenering.no/sitemap.xml
+Sitemap: https://www.dindrenering.no/sitemap.xml

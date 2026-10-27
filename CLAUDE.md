@@ -12,6 +12,10 @@ pages. If traffic picks up, the owner will contact drenering contractors and
 charge them per lead, so the content also has to be trustworthy enough for a
 contractor to want to be listed here.
 
+**Read `STRATEGY.md` before planning any work.** It holds the priorities,
+keyword map, city-page approach and owner tasks. `content/PLAN.md` is the
+ordered backlog.
+
 ## Where content lives
 
 - Blog articles: `content/blog/<slug>.md`. The slug is the file name and becomes
@@ -85,3 +89,5 @@ whole site its credibility.
   the live deploy.
 - Old city URLs (`/drenering/Oslo`) 301 to slugs in `middleware.ts`. Every
   indexable page sets `alternates.canonical`.
+- The canonical host is `https://www.dindrenering.no` (Netlify 301s the apex to
+  www). Hardcoded absolute URLs must use www.
