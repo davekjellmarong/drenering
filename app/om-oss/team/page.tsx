@@ -1,5 +1,6 @@
 import { Button } from "@/src/components/ui/button";
 import Link from "next/link";
+import { OWNER } from "@/src/utils/Constants";
 
 export const metadata = {
   alternates: { canonical: "/om-oss/team" },
@@ -17,8 +18,10 @@ export default function TeamPage() {
 
       <div className="space-y-6 text-brand-700 text-lg">
         <p>
-          DinDrenering er en liten, uavhengig tjeneste som drives av én person.
-          Vi er ikke et dreneringsfirma og utfører ikke gravearbeid selv. Målet
+          DinDrenering er en liten, uavhengig tjeneste som drives av{" "}
+          {OWNER.name} gjennom enkeltpersonforetaket {OWNER.business} (org.nr.{" "}
+          {OWNER.orgNr}). Vi er ikke et dreneringsfirma og utfører ikke
+          gravearbeid selv. Målet
           er å gjøre det enklere for huseiere å forstå hva en dreneringsjobb
           innebærer, og å komme i kontakt med firma som kan gjøre den.
         </p>
@@ -49,7 +52,11 @@ export default function TeamPage() {
           påvirker dem, ikke som faste priser for en bestemt by.
         </p>
         <p>
-          Finner du noe som er feil eller utdatert, vil vi gjerne vite det.
+          Finner du noe som er feil eller utdatert, vil vi gjerne vite det:{" "}
+          <a href={`mailto:${OWNER.email}`} className="text-brand-600 underline">
+            {OWNER.email}
+          </a>
+          .
         </p>
       </div>
 

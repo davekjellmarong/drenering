@@ -252,21 +252,24 @@ Must do:
    since 2025-04). Until 2026-10-27 the www sitemap listed apex URLs, so Google
    discovered 0 pages from it. Re-submitted `sitemap.xml` and `sitemap-0.xml`
    (46 pages discovered the same day).
-2. **Test the quote form** on `/tilbud` and confirm the request reaches HubSpot.
-   If it doesn't, Claude switches to Netlify Forms (free) with email notification.
-3. ~~Team page~~ DONE 2026-10-27. The owner runs the site alone; the page is
-   now an honest "Hvem står bak". **Still needed:** a contact email and who the
-   data controller is (name or company + org number) for the privacy policy,
-   terms and contact pages. All three are placeholders today, which is a legal
-   problem while the quote form collects personal data.
+2. ~~Quote form~~ The HubSpot token was invalid, so every lead was lost. Moved to
+   Netlify Forms on 2026-10-27; see item 4.
+3. ~~Team page, privacy policy, terms, contact~~ DONE 2026-10-27. The owner's name,
+   business and email are on the site (`OWNER` constant).
+4. **Netlify Forms (owner, 2 minutes, required or leads are lost):**
+   - Netlify → Site configuration → Forms → enable form detection, then redeploy.
+   - Netlify → Site configuration → Notifications → Emails and webhooks → add an
+     email notification for form submissions.
+   - Send a test request on `/tilbud` and confirm the email arrives.
+   - Delete leads older than 12 months (the privacy policy promises this).
 
 Then:
 
-4. **Bing Webmaster Tools:** import from GSC (2 minutes). Bing feeds ChatGPT
+5. **Bing Webmaster Tools:** import from GSC (2 minutes). Bing feeds ChatGPT
    search and Copilot.
-5. **Monthly GSC export** into `content/data/gsc/` (or ask Claude to set up the
+6. **Monthly GSC export** into `content/data/gsc/` (or ask Claude to set up the
    GSC API with a service account).
-6. **Founding partners, now, not in two months:**
+7. **Founding partners, now, not in two months:**
    - Recruit 3–5 drenering contractors in the top cities. Offer free leads for
      a period in return for:
      - (a) handling the leads well,
@@ -274,12 +277,12 @@ Then:
      - (c) a fact-check of one or two articles ("Faglig gjennomgått av …",
        a strong trust signal).
    - Contractors buy leads, not rankings, so this unlocks both revenue and content.
-7. **Facebook ads**, only after items 2 and 6 so leads have somewhere to go.
+8. **Facebook ads**, only after items 4 and 7 so leads have somewhere to go.
    - Use a small budget, target homeowners in the partner cities, and run them
      seasonally (section 9).
    - Ads don't help Google directly, but they create leads (proof for
      contractors) and brand searches.
-8. **About 1 hour a week of community answers and outreach** (section 8).
+9. **About 1 hour a week of community answers and outreach** (section 8).
 
 ## 12. Search Console baseline (export 2026-10-27, last 3 months)
 

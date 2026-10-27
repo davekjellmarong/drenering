@@ -52,7 +52,7 @@ const CityPage = async ({ params }: { params: Promise<{ city: string }> }) => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <HeroText
               badge="citypage"
-              description={`Få hjelp med drenering fra lokale eksperter i ${city}. Sammenlign tilbud og finn den beste løsningen for ditt dreneringsproblem.`}
+              description={`Få tilbud på drenering fra firma som jobber i ${city}. Sammenlign tilbud og finn den beste løsningen for ditt dreneringsproblem.`}
             >
               <span className="text-brand-300">Drenering</span> i {city}
             </HeroText>

@@ -10,13 +10,13 @@ const benefits = [
   {
     title: "Utvidelse av kundegrunnlag",
     description:
-      "Få tilgang til tusenvis av potensielle kunder som aktivt søker etter dreneringstjenester",
+      "Få henvendelser fra huseiere i ditt område som leter etter noen til å gjøre dreneringsjobben",
     icon: Users,
   },
   {
     title: "Økt kredibilitet",
     description:
-      "Bli verifisert som en pålitelig leverandør og bygg tillit hos potensielle kunder",
+      "Bli presentert for kunder som allerede har bestemt seg for å få gjort jobben",
     icon: Shield,
   },
   {
@@ -28,7 +28,7 @@ const benefits = [
   {
     title: "Enkel prosess",
     description:
-      "Fyll ut skjemaet, og vi kontakter deg innen 48 timer for å diskutere partnerskap",
+      "Fyll ut skjemaet, så tar vi kontakt for å avtale hvordan samarbeidet kan se ut",
     icon: CheckCircle,
   },
 ];

@@ -14,8 +14,8 @@ export default function Benefits({ benefits }: { benefits: Benefit[] }) {
           Fordelene med DinDrenering
         </h2>
         <p className="text-lg text-text-subtle max-w-3xl mx-auto">
-          Vi er dedikert til å gjøre prosessen med å finne pålitelige
-          dreneringstjenester så enkel og stressfri som mulig.
+          Målet er å gjøre det enklere å finne noen til å gjøre
+          dreneringsjobben, og å forstå tilbudene du får.
         </p>
       </div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">

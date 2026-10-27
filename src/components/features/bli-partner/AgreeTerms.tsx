@@ -17,11 +17,11 @@ export function PartnerTermsAgreement({
       />
       <Label htmlFor="terms" className="text-sm">
         Jeg godtar{" "}
-        <a href="/terms" className="text-primary hover:underline">
+        <a href="/juridisk/brukervilkar" className="text-primary hover:underline">
           vilkårene
         </a>{" "}
         og{" "}
-        <a href="/privacy" className="text-primary hover:underline">
+        <a href="/juridisk/personvern" className="text-primary hover:underline">
           personvernerklæringen
         </a>
       </Label>

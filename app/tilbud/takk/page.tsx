@@ -24,9 +24,8 @@ export default function ThankYouPage() {
         </h1>
 
         <p className="text-lg text-gray-700 mb-8">
-          Vi har mottatt din forespørsel om tilbud på dreneringstjenester. En av
-          våre samarbeidspartnere vil kontakte deg innen kort tid for å
-          diskutere ditt prosjekt.
+          Vi har mottatt forespørselen din. Vi sender den videre til
+          dreneringsfirma i ditt område, som tar kontakt med deg direkte.
         </p>
 
         <div className="bg-brand-50 p-6 rounded-lg mb-8">

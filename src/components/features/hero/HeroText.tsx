@@ -11,7 +11,7 @@ export function HeroText({ badge, description, children }: HeroTextProps) {
     <div className="max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
       {badge && (
         <div className="inline-flex items-center justify-center px-4 py-1 rounded-full bg-brand-100 text-brand-800 text-sm font-medium mb-4">
-          #1 Sammenligningstjeneste for Dreneringstilbud
+          Gratis tjeneste for huseiere
         </div>
       )}
 

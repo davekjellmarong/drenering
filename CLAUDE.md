@@ -69,6 +69,17 @@ whole site its credibility.
   Institute, SSB, TEK17 at dibk.no, Finance Norway, the municipality). If you can't
   verify it, write around it.
 - Hedge honestly ("typisk", "ofte", "avhenger av") instead of being falsely precise.
+- Never make claims about the service itself that aren't true today: no
+  "#1", no savings figures, no ratings or stars, no example companies, no network
+  size ("tusenvis", "stort nettverk"), no "verifisert/lisensiert", no response-time
+  promises ("innen 24 timer"), no 24/7. The site is run by one person and is only
+  just signing up contractors. On 2026-10-27 the owner found an invented
+  "spart 8500 kr i gjennomsnitt" badge and a whole set of claims like these had to
+  be removed.
+- Owner and contact details live in `OWNER` in `src/utils/Constants.ts`; reuse
+  it instead of hardcoding them.
+- Forms post to Netlify Forms via `src/utils/netlifyForms.ts`; any new form or
+  field must also be added to `public/__forms.html`.
 
 ## Images
 

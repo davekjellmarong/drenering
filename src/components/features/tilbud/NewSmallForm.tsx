@@ -2,7 +2,7 @@
 
 import type React from "react";
 import { useState } from "react";
-import { addContactToHubspot } from "@/src/server_actions/Hubspot";
+import { submitNetlifyForm } from "@/src/utils/netlifyForms";
 import { useMutation } from "@tanstack/react-query";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
@@ -46,9 +46,10 @@ export function QuoteForm() {
   ];
 
   const { mutate, isPending } = useMutation({
-    mutationFn: addContactToHubspot,
+    mutationFn: (data: QuoteFormData) =>
+      submitNetlifyForm("tilbud", { ...data }),
     onSuccess: () => {
-      toast.success("Allt godt!");
+      toast.success("Forespørselen er sendt!");
       router.push("/tilbud/takk");
     },
     onError: (error) => {

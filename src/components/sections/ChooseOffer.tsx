@@ -85,45 +85,29 @@ export default function ChooseOffer() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-medium text-text">Sammenlign tilbud</h3>
+                  <h3 className="font-medium text-text">Dette bør tilbudet inneholde</h3>
                   <p className="text-sm text-text-subtle">
-                    Se priser og tjenester side om side
+                    Da blir tilbudene mulige å sammenligne
                   </p>
                 </div>
               </div>
 
               <div className="mt-6 relative">
-                <div className="bg-white rounded-lg shadow-md p-4 mb-4 border-l-4 border-brand-500">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="font-medium">DreneringsProff AS</span>
-                    <span className="text-yellow-500">★★★★★</span>
-                  </div>
-                  <p className="text-sm text-text-subtle mb-2">
-                    Komplett dreneringsløsning
-                  </p>
-                  <p className="font-bold text-lg">12,500 kr</p>
-                </div>
-
-                <div className="bg-white rounded-lg shadow-md p-4 mb-4 border-l-4 border-success-500">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="font-medium">Drenering & Graving</span>
-                    <span className="text-yellow-500">★★★★☆</span>
-                  </div>
-                  <p className="text-sm text-text-subtle mb-2">
-                    Drensrørreparasjon
-                  </p>
-                  <p className="font-bold text-lg">9,800 kr</p>
-                </div>
-
-                <div className="bg-white rounded-lg shadow-md p-4 border-l-4 border-border-strong">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="font-medium">Vanntek Solutions</span>
-                    <span className="text-yellow-500">★★★★☆</span>
-                  </div>
-                  <p className="text-sm text-text-subtle mb-2">Drensrensing</p>
-                  <p className="font-bold text-lg">8,200 kr</p>
-                </div>
-
+                <ul className="bg-white rounded-lg shadow-md p-5 space-y-3 text-sm text-text-subtle">
+                  {[
+                    "Hvor mange meter grunnmur som graves fram, og hvor dypt",
+                    "Hvilke materialer som brukes: drensrør, pukk, fiberduk, grunnmursplate",
+                    "Om isolering av grunnmuren er med",
+                    "Bortkjøring av masser og tilbakefylling",
+                    "Hva som skjer hvis de støter på fjell",
+                    "Oppstart, ferdigdato og betalingsplan",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start">
+                      <span className="text-brand-500 mr-2">✓</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
                 <div className="absolute -bottom-4 -right-4 w-full h-full rounded-lg border-2 border-border -z-10"></div>
               </div>
             </div>

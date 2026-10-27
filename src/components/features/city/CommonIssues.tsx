@@ -30,8 +30,12 @@ export function CityIssuesSection({ cityName }: CityIssuesSectionProps) {
     <section className="bg-brand-50 py-12">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-brand-900">
-          Vanlige dreneringsproblemer i {cityName}
+          Vanlige tegn på dreneringsproblemer
         </h2>
+        <p className="mb-6 text-brand-700">
+          Ser du noen av disse tegnene på huset ditt i {cityName}, kan det være
+          lurt å få et dreneringsfirma til å se på grunnmuren.
+        </p>
         <div className="grid gap-6 md:grid-cols-2">
           {ISSUES.map((issue) => (
             <div

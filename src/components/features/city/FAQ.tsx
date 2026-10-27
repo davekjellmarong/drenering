@@ -15,7 +15,7 @@ export function CityFAQSection({ cityName }: CityFAQSectionProps) {
     {
       question: `Hvor lang tid tar en dreneringsjobb i ${cityName}?`,
       answer:
-        "De fleste dreneringsjobber for eneboliger tar 1-3 uker, avhengig av grunnforhold, tomtestørrelse og vær.",
+        "Det avhenger av hvor mange meter som skal graves, grunnforholdene og været. Be firmaet om en tidsplan med oppstart og ferdigdato i tilbudet.",
     },
   ];
 

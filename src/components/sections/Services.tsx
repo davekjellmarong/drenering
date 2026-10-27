@@ -4,9 +4,9 @@ import { ArrowRight } from "lucide-react";
 export default function Services() {
   const services = [
     {
-      title: "Drensrensing",
+      title: "Boligdrenering",
       description:
-        "Profesjonell rengjøring for å fjerne tilstoppinger og gjenopprette riktig flyt.",
+        "Ny drenering rundt grunnmuren på enebolig, rekkehus eller hytte.",
       href: "/tjenester/boligdrenering",
       icon: (
         <svg
@@ -26,9 +26,9 @@ export default function Services() {
       ),
     },
     {
-      title: "Drensrørreparasjon",
+      title: "Drensrør",
       description:
-        "Rask og effektiv reparasjon av ødelagte eller skadede drensrør.",
+        "Legging, utskifting og spyling av drensrør.",
       href: "/tjenester/drensror-installasjon",
       icon: (
         <svg
@@ -54,9 +54,9 @@ export default function Services() {
       ),
     },
     {
-      title: "Dreneringsinspeksjon",
+      title: "Industriell drenering",
       description:
-        "Kamerainspeksjoner for å identifisere skjulte problemer i dreneringssystemet ditt.",
+        "Drenering for næringsbygg, landbruk og større tomter.",
       href: "/tjenester/industriell-drenering",
       icon: (
         <svg
@@ -82,8 +82,8 @@ export default function Services() {
       ),
     },
     {
-      title: "Nødtjenester",
-      description: "24/7 nøddreneringstjenester for akutte situasjoner.",
+      title: "Overvannshåndtering",
+      description: "Bortleding av regnvann og overflatevann fra tak og tomt.",
       href: "/tjenester/overvannshandtering",
       icon: (
         <svg
@@ -108,12 +108,11 @@ export default function Services() {
     <section className="py-20 bg-brand-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="badge mx-auto mb-4 text-center">
-          Profesjonelle Tjenester
+          Tjenester
         </div>
-        <h2 className="section-title">Dreneringstjenester Vi Tilbyr</h2>
+        <h2 className="section-title">Hva kan du få tilbud på?</h2>
         <p className="section-subtitle">
-          Fra nødreparasjoner til rutinemessig vedlikehold, vårt nettverk av
-          fagfolk håndterer alle dine dreneringsbehov.
+          Vi formidler forespørsler til firma som gjør denne typen arbeid.
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">

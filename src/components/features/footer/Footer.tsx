@@ -42,8 +42,8 @@ export default async function Footer() {
               </span> */}
             </Link>
             <p className="mt-4 text-gray-600">
-              Kobler huseiere med pålitelige dreneringsselskaper for raske,
-              rimelige løsninger.
+              Gratis tjeneste som setter huseiere i kontakt med
+              dreneringsfirma, og guider om drenering.
             </p>
             <div className="flex space-x-4 mt-4">
               <Link href="#" className="text-gray-400 hover:text-brand-500">

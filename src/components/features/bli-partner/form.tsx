@@ -4,7 +4,7 @@ import type React from "react";
 import { toast } from "sonner";
 import { useState } from "react";
 import { useMutation } from "@tanstack/react-query";
-import { addCompanyToHubspot } from "@/src/server_actions/Hubspot";
+import { submitNetlifyForm } from "@/src/utils/netlifyForms";
 import { useRouter } from "next/navigation";
 import { SuccessMessage } from "./SuccessMessage";
 import { PartnerAddressFields } from "./AddressFields";
@@ -50,7 +50,19 @@ export function PartnerSignupForm() {
   };
 
   const { mutate, isPending } = useMutation({
-    mutationFn: addCompanyToHubspot,
+    // Address fields are filled from the company search, so read them from
+    // the submitted form; the rest is kept in state.
+    mutationFn: (submitted: FormData) =>
+      submitNetlifyForm("partner", {
+        companyName: formData.companyName,
+        contactName: formData.contactName,
+        email: formData.email,
+        phone: formData.phone,
+        website: formData.website,
+        address: String(submitted.get("address") ?? formData.address),
+        postalCode: String(submitted.get("postalCode") ?? formData.postalCode),
+        city: String(submitted.get("city") ?? formData.city),
+      }),
     onSuccess: () => {
       toast.success("Søknaden er registrert!");
       router.push("/bli-partner/takk");

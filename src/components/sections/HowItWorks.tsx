@@ -8,9 +8,8 @@ export default function HowItWorks() {
         <div className="badge mx-auto mb-4 text-center">Enkel Prosess</div>
         <h2 className="section-title">Hvordan Funker Det</h2>
         <p className="section-subtitle">
-          Vi har gjort det raskt og enkelt å finne pålitelige
-          dreneringstjenester. Få tilbud fra betrodde fagfolk på bare noen få
-          trinn.
+          Én forespørsel i stedet for å ringe rundt selv. Vi videreformidler den
+          til firma i ditt område.
         </p>
 
         <div className="grid md:grid-cols-3 gap-8 mt-12">
@@ -31,7 +30,7 @@ export default function HowItWorks() {
             {
               number: "02",
               title: "Få Flere Tilbud",
-              text: "Motta opptil 3 konkurransedyktige tilbud fra lokale fagfolk.",
+              text: "Motta opptil 3 tilbud fra firma i ditt område.",
               icon: (
                 <path
                   strokeLinecap="round"

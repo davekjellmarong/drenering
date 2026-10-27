@@ -10,8 +10,8 @@ export default function CtaBanner() {
           Klar til å løse dine dreneringsproblemer?
         </h2>
         <p className="text-lg text-brand-100 mb-8 max-w-3xl mx-auto">
-          Kom i gang i dag og motta tilbud fra ledende dreneringsfagfolk i ditt
-          område.
+          Send én forespørsel, så setter vi deg i kontakt med dreneringsfirma i
+          ditt område.
         </p>
         <Button
           asChild

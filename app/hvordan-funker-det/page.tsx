@@ -16,7 +16,7 @@ export const metadata = {
   alternates: { canonical: "/hvordan-funker-det" },
   title: "Hvordan Det Fungerer - DinDrenering",
   description:
-    "Lær hvordan DinDrenering gjør det enkelt å finne pålitelige dreneringstjenester i ditt område",
+    "Slik fungerer DinDrenering: én gratis forespørsel som vi videreformidler til dreneringsfirma i ditt område.",
 };
 
 export default function HowItWorks() {
@@ -26,38 +26,34 @@ export default function HowItWorks() {
       number: "01",
       title: "Send Inn Din Forespørsel",
       description:
-        "Fortell oss om ditt dreneringsproblem og hvilken tjeneste du trenger. Fyll ut vårt enkle skjema med detaljer om prosjektet ditt, inkludert type problem, beliggenhet, og når du trenger hjelp. Det tar bare 2-3 minutter.",
+        "Fortell oss om ditt dreneringsproblem og hvilken tjeneste du trenger. Fyll ut skjemaet med kontaktinfo, adresse og litt om boligen.",
       icon: <Droplets className="h-12 w-12 text-brand-600" />,
       details: [
         "Beskriv problemet ditt i detalj",
         "Angi din plassering for lokal service",
-        "Velg når du trenger tjenesten",
-        "Last opp bilder (valgfritt)",
       ],
     },
     {
       number: "02",
       title: "Få Flere Tilbud",
       description:
-        "Innen 24-48 timer vil du motta opptil 3 konkurransedyktige tilbud fra verifiserte lokale dreneringsfagfolk. Hvert tilbud inkluderer pristilbud, tidslinje og tjenestebeskrivelse.",
+        "Vi sender forespørselen videre til dreneringsfirma som jobber i ditt område, og de tar kontakt med deg direkte for å avtale befaring eller gi et tilbud.",
       icon: <DollarSign className="h-12 w-12 text-brand-600" />,
       details: [
-        "Motta tilbud fra opptil 3 fagfolk",
-        "Se detaljerte pristilbud og tidslinjer",
-        "Sjekk fagfolkenes vurderinger og anmeldelser",
-        "Still spørsmål direkte til leverandører",
+        "Firmaene kontakter deg direkte",
+        "Be om befaring før du får en fast pris",
+        "Still spørsmål direkte til firmaene",
       ],
     },
     {
       number: "03",
       title: "Sammenlign & Velg",
       description:
-        "Vurder tilbudene basert på pris, tidslinje, kvalifikasjoner og kundeanmeldelser. Velg det firmaet som best oppfyller dine behov og budsjett, og kom i gang med prosjektet ditt.",
+        "Sammenlign tilbudene på pris, hva som er inkludert og når jobben kan gjøres. Du velger selv om du vil takke ja til noen av dem.",
       icon: <Check className="h-12 w-12 text-brand-600" />,
       details: [
         "Sammenlign priser og tidsestimater",
-        "Les tidligere kunders anmeldelser",
-        "Vurder fagfolkenes erfaring og spesialiteter",
+        "Sjekk at tilbudene inneholder det samme",
         "Velg det beste tilbudet for dine behov",
       ],
     },
@@ -68,13 +64,13 @@ export default function HowItWorks() {
     {
       title: "Tidssparende",
       description:
-        "Spar timer på å ringe rundt og få tilbud. Med én forespørsel får du flere tilbud.",
+        "Én forespørsel i stedet for å ringe rundt til flere firma selv.",
       icon: <Clock className="h-8 w-8 text-brand-600" />,
     },
     {
-      title: "Kvalitetssikret",
+      title: "Ærlig om hvordan det fungerer",
       description:
-        "Alle fagfolk i vårt nettverk er verifisert, lisensiert og gjennomgått for kvalitet.",
+        "Firmaene kan betale for henvendelsene de får gjennom oss. Det er slik tjenesten er gratis for deg.",
       icon: <Shield className="h-8 w-8 text-brand-600" />,
     },
     {
@@ -84,9 +80,9 @@ export default function HowItWorks() {
       icon: <DollarSign className="h-8 w-8 text-brand-600" />,
     },
     {
-      title: "Bredt Nettverk",
+      title: "Lokale firma",
       description:
-        "Tilgang til et stort nettverk av spesialister innen alle typer dreneringstjenester.",
+        "Forespørselen går til firma som jobber der du bor.",
       icon: <Users className="h-8 w-8 text-brand-600" />,
     },
   ];
@@ -101,12 +97,12 @@ export default function HowItWorks() {
     {
       question: "Hvor raskt vil jeg motta tilbud?",
       answer:
-        "I de fleste tilfeller vil du begynne å motta tilbud innen 24-48 timer etter at du har sendt inn forespørselen din.",
+        "Det varierer med sesong og hvor du bor. Firmaene tar kontakt direkte med deg.",
     },
     {
       question: "Hvordan velger dere fagfolk til nettverket deres?",
       answer:
-        "Vi gjennomfører en grundig verifiseringsprosess som inkluderer lisenskontroll, forsikringsbevis, bakgrunnssjekk og gjennomgang av tidligere arbeid og kundevurderinger.",
+        "Vi sjekker at firmaet er registrert i Brønnøysundregistrene og faktisk jobber med drenering. Vi anbefaler likevel at du selv ber om referanser og en skriftlig avtale før arbeidet starter.",
     },
     {
       question: "Hva hvis jeg ikke er fornøyd med tilbudene?",
@@ -116,7 +112,7 @@ export default function HowItWorks() {
     {
       question: "Kan jeg be om tilbud for akutte dreneringsproblemer?",
       answer:
-        "Ja, men for akutte nødssituasjoner anbefaler vi at du angir dette tydelig i forespørselen din, slik at vi kan prioritere å finne tilgjengelige fagfolk så raskt som mulig.",
+        "Du kan sende en forespørsel, men vi er ikke en akuttjeneste. Står det vann i kjelleren nå, kontakt forsikringsselskapet ditt og eventuelt en skadeservice med en gang.",
     },
   ];
 

@@ -34,3 +34,11 @@ export const STATIC_CITIES = KOMMUNER.map((kommune, index) => ({
   updatedAt: "",
   createdAt: "",
 }));
+
+// Who runs the site. Used on the about, contact and legal pages.
+export const OWNER = {
+  name: "Dave Kjell Marong",
+  business: "Marong Utvikling",
+  orgNr: "926 647 504",
+  email: "kmarong@hotmail.com",
+};

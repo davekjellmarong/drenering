@@ -18,8 +18,8 @@ export default function TilbudPage() {
           Få Gratis Tilbud fra Lokale Dreneringsselskaper
         </h1>
         <p className="text-text-subtle max-w-2xl mx-auto">
-          Fyll ut skjemaet nedenfor for å motta opptil 3 konkurransedyktige
-          tilbud fra pålitelige dreneringsfagfolk i ditt område.
+          Fyll ut skjemaet nedenfor, så sender vi forespørselen til opptil 3
+          dreneringsfirma i ditt område. Gratis og uforpliktende.
         </p>
       </div>
       <QuoteForm />

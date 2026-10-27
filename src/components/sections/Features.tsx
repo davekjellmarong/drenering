@@ -23,8 +23,7 @@ export default function Features() {
             </div>
             <h3 className="text-xl font-semibold mb-4">Spar tid</h3>
             <p className="text-text-subtle">
-              Ikke kast bort tid på å kontakte flere firmaer. La ekspertene
-              kontakte deg med deres beste tilbud.
+              Én forespørsel i stedet for å ringe rundt til flere firma selv.
             </p>
           </div>
 
@@ -34,8 +33,8 @@ export default function Features() {
             </div>
             <h3 className="text-xl font-semibold mb-4">Spar penger</h3>
             <p className="text-text-subtle">
-              Få flere leverandører til å konkurrere om oppdraget ditt. Dette
-              sikrer deg best mulig pris.
+              Med flere tilbud å sammenligne er det lettere å se hva som er en
+              rimelig pris for jobben.
             </p>
           </div>
 
@@ -43,10 +42,10 @@ export default function Features() {
             <div className="w-16 h-16 mb-6 bg-brand-100 rounded-full flex items-center justify-center">
               <Home className="h-8 w-8 text-brand-600" />
             </div>
-            <h3 className="text-xl font-semibold mb-4">Øk boligverdien</h3>
+            <h3 className="text-xl font-semibold mb-4">Beskytt boligen</h3>
             <p className="text-text-subtle">
-              God drenering beskytter boligen din mot fuktskader og øker
-              eiendommens verdi.
+              God drenering holder vann borte fra grunnmuren og reduserer
+              risikoen for fuktskader i kjelleren.
             </p>
           </div>
         </div>

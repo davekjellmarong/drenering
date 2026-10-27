@@ -1,33 +1,53 @@
-import UnderConstruction from "@/src/components/features/under-development/UnderDevelopment";
+import Link from "next/link";
+import { OWNER } from "@/src/utils/Constants";
 
 export const metadata = {
   alternates: { canonical: "/om-oss/kontakt" },
-  title: "Kontakt oss | Få hjelp med drenering",
+  title: "Kontakt DinDrenering",
   description:
-    "Ta kontakt med oss for spørsmål om dreneringstjenester, priser, og løsninger. Vi er her for å hjelpe deg!",
+    "Spørsmål om tjenesten, feil i en guide eller ønske om å bli partner? Send oss en e-post.",
 };
 
 export default function KontaktPage() {
-  return <UnderConstruction pageName="'Kontakt oss'" />;
-
   return (
-    <div className="container mx-auto px-4 py-16 text-center">
+    <div className="container mx-auto px-4 py-16 max-w-3xl text-brand-700 text-lg space-y-6">
       <h1 className="text-4xl font-bold text-brand-900">Kontakt oss</h1>
-      <p className="text-lg text-brand-700 mt-4">
-        Vi svarer på dine spørsmål om dreneringstjenester.
+      <p>
+        DinDrenering drives av én person, så den raskeste veien er e-post:{" "}
+        <a
+          href={`mailto:${OWNER.email}`}
+          className="text-brand-600 underline"
+        >
+          {OWNER.email}
+        </a>
+        .
       </p>
-
-      <div className="mt-8">
-        <p className="text-brand-700">
-          📞 Telefon: <strong>+47 123 456 789</strong>
-        </p>
-        <p className="text-brand-700">
-          📧 E-post: <strong>kontakt@DinDrenering.no</strong>
-        </p>
-        <p className="text-brand-700">
-          📍 Adresse: <strong>Oslo, Norge</strong>
-        </p>
-      </div>
+      <ul className="list-disc pl-6 space-y-2">
+        <li>
+          <strong>Vil du ha tilbud på drenering?</strong> Bruk{" "}
+          <Link href="/tilbud" className="text-brand-600 underline">
+            tilbudsskjemaet
+          </Link>
+          , så går forespørselen direkte videre til firma i ditt område.
+        </li>
+        <li>
+          <strong>Driver du et dreneringsfirma?</strong> Se{" "}
+          <Link href="/bli-partner" className="text-brand-600 underline">
+            bli partner
+          </Link>
+          .
+        </li>
+        <li>
+          <strong>Fant du en feil i en av guidene?</strong> Send en e-post. Vi
+          retter det.
+        </li>
+      </ul>
+      <p className="text-base">
+        {OWNER.business} · org.nr. {OWNER.orgNr} ·{" "}
+        <Link href="/om-oss/team" className="underline">
+          Hvem står bak
+        </Link>
+      </p>
     </div>
   );
 }
