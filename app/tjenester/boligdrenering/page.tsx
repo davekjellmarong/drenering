@@ -14,8 +14,8 @@ export default function BoligdreneringPage() {
       <h1 className="text-4xl font-bold mb-6 text-brand-900">Boligdrenering</h1>
       <p className="mb-4 text-brand-700">
         Effektiv boligdrenering er avgjørende for å beskytte hjemmet ditt mot
-        fuktskader og opprettholde et sunt innemiljø. Våre eksperter tilbyr
-        skreddersydde løsninger for alle typer boliger.
+        fuktskader og opprettholde et sunt innemiljø. Gjennom oss kan du
+        få tilbud fra dreneringsfirma som jobber i ditt område.
       </p>
       <h2 className="text-2xl font-semibold mb-4 text-brand-800">
         Våre boligdreneringstjenester inkluderer:

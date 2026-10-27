@@ -63,12 +63,14 @@ large group.
 - [ ] Tech: IndexNow ping on deploy; monthly PageSpeed Insights check of home, pris, a city page and a blog post.
 
 ### BLOCKED (waiting on owner)
-- [ ] `/om-oss/team`: owner must confirm whether the 3 listed people are real. If not, remove them and replace with an honest "who runs this".
-- [ ] Editorial policy page "Slik lager vi innholdet" with the owner's name/company. Needs the owner's identity details.
+- [ ] Privacy policy `/juridisk/personvern` and terms `/juridisk/brukervilkar` (both are "under construction" while the quote form collects names and phone numbers, which is a legal requirement under GDPR). Needs from the owner: who the data controller is (person or company + org number), a contact email, and confirmation of where data goes (HubSpot, PostHog, the contractors who receive leads). Never publish placeholder legal text.
+- [ ] Contact page `/om-oss/kontakt` (under construction). Needs a contact email from the owner.
+- [ ] Optional: the owner's name on `/om-oss/team` (a real name is a stronger trust signal; only with the owner's OK).
 - [ ] "Faglig gjennomgått av …" badges on articles, once a partner contractor reviews them.
 - [ ] Price index from partner quote data (STRATEGY.md section 6).
 
 ## Done
 - 2026-10-27: Phase 1 technical fixes. Blog moved to Markdown, city URL slugs + 301s, canonicals, sitemap cleanup, removed invented per-city price from city FAQ.
+- 2026-10-27: The owner runs the site alone. `/om-oss/team` (was a placeholder with 3 invented names in dead code) rewritten as an honest "Hvem står bak" page (one person, not a contractor, lead model, how content is made); `/om-oss/visjon` placeholder 301s to it; removed "Våre eksperter" claims; fixed the broken `/quote` link on drenerings-renne.
 - 2026-10-27: Optimisation run on GSC export `content/data/gsc/2026-10/` (last 3 months: 18 clicks, 3 744 impressions, average position ~45). Backlog reordered: price pillar first, striking-distance city pages, overvann cluster, head term via hva-er-drenering. Added drenerende masser + kalkulator items.
 - 2026-10-27: Wrote STRATEGY.md; canonical host switched to www (Netlify serves www; apex 301s).

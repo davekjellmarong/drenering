@@ -192,12 +192,11 @@ const DreneringRundtHus = async () => {
               Trenger du hjelp med dreneringen rundt huset ditt?
             </h3>
             <p className="body-lg mb-6">
-              Våre eksperter kan hjelpe deg med å finne den beste løsningen for
-              ditt hjem. Få tilbud fra opptil 3 kvalifiserte avløpsselskaper i
-              ditt område.
+              Få tilbud fra opptil 3 firma i ditt område som kan vurdere
+              hvilken løsning som passer for ditt hjem.
             </p>
             <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
-              <Link href="/quote">Få Gratis Tilbud</Link>
+              <Link href="/tilbud">Få Gratis Tilbud</Link>
             </Button>
           </div>
 

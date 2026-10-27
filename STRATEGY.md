@@ -254,9 +254,11 @@ Must do:
    (46 pages discovered the same day).
 2. **Test the quote form** on `/tilbud` and confirm the request reaches HubSpot.
    If it doesn't, Claude switches to Netlify Forms (free) with email notification.
-3. **Team page:** are the 3 people on `/om-oss/team` real? If not, Claude
-   removes them; fake people destroy trust. Then provide a real "who runs this"
-   line (a name or the company, plus the org number if one exists).
+3. ~~Team page~~ DONE 2026-10-27. The owner runs the site alone; the page is
+   now an honest "Hvem står bak". **Still needed:** a contact email and who the
+   data controller is (name or company + org number) for the privacy policy,
+   terms and contact pages. All three are placeholders today, which is a legal
+   problem while the quote form collects personal data.
 
 Then:
 

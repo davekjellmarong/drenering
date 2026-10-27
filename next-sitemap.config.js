@@ -9,6 +9,7 @@ module.exports = {
     "/bli-partner/takk",
     "/icon.png",
     "/apple-icon.png",
+    "/om-oss/visjon",
   ],
   robotsTxtOptions: {
     policies: [{ userAgent: "*", allow: "/", disallow: ["/kontrollpanel"] }],

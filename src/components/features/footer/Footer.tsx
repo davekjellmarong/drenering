@@ -180,18 +180,10 @@ export default async function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/om-oss/visjon"
-                  className="text-gray-600 hover:text-brand-500"
-                >
-                  Vår visjon
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/om-oss/team"
                   className="text-gray-600 hover:text-brand-500"
                 >
-                  Vårt team
+                  Hvem står bak
                 </Link>
               </li>
               <li>
