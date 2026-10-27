@@ -256,12 +256,10 @@ Must do:
    Netlify Forms on 2026-10-27; see item 4.
 3. ~~Team page, privacy policy, terms, contact~~ DONE 2026-10-27. The owner's name,
    business and email are on the site (`OWNER` constant).
-4. **Netlify Forms (owner, 2 minutes, required or leads are lost):**
-   - Netlify → Site configuration → Forms → enable form detection, then redeploy.
-   - Netlify → Site configuration → Notifications → Emails and webhooks → add an
-     email notification for form submissions.
-   - Send a test request on `/tilbud` and confirm the email arrives.
-   - Delete leads older than 12 months (the privacy policy promises this).
+4. ~~Netlify Forms~~ DONE 2026-10-27. Detection and email notifications are on,
+   and a test submission arrived by email. Note: forms were only registered after
+   "Clear cache and deploy site"; repeat that if a new form or field doesn't show
+   up. Delete leads older than 12 months (the privacy policy promises this).
 
 Then:
 
