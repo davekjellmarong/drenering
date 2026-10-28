@@ -126,9 +126,9 @@ export default function HvaErDrenering() {
       </h2>
       <p className="mb-6 text-brand-700">
         Kostnaden for drenering avhenger av flere faktorer, inkludert tomtens
-        størrelse, type grunnforhold og valg av dreneringsløsning. Generelt
-        ligger prisen på drenering rundt eneboliger mellom{" "}
-        <strong>150 000 og 300 000 kr</strong>. Du kan lese mer om priser på vår{" "}
+        størrelse, type grunnforhold og valg av dreneringsløsning. Fordi
+        prisen avhenger av så mye, finnes det ingen riktig fastpris. Les hva som
+        styrer prisen, og hva et tilbud bør inneholde, på vår{" "}
         <Link href="/drenering/pris" className="text-brand-500 underline">
           prisside
         </Link>

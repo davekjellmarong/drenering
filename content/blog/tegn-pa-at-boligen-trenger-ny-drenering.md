@@ -22,7 +22,9 @@ Dreneringssystemet rundt boligen din beskytter grunnmuren mot fukt og vannskader
 - 🔹 **Sjekk dreneringsrørene** – Hvis du har en inspeksjonsbrønn, kan du kontrollere om rørene er tette.
 - 🔹 **Vurder alternativer til full utskifting** – I noen tilfeller kan vedlikehold eller forbedringer være tilstrekkelig.
 
-## Konklusjon
+## Hva koster det?
+
+Hvis du ender opp med å trenge ny drenering, forklarer vi hva som styrer prisen og hvordan du regner ut meter grunnmur i [drenering pris: hva koster det](/drenering/pris).
 
 Å oppdage dreneringsproblemer tidlig kan spare deg for store utgifter og skader på boligen. Hvis du merker noen av disse tegnene, bør du ta grep så snart som mulig for å unngå fuktskader og muggsopp.
 

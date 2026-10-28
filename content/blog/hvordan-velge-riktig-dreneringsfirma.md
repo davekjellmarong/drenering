@@ -28,7 +28,9 @@ Drenering er en viktig investering som beskytter boligen din mot fuktskader og �
 - 🔹 **Spør om garanti** – Pålitelig drenering bør komme med en garanti på arbeid og materialer.
 - 🔹 **Sjekk firmaets økonomi** – Bruk Brønnøysundregistrene for å sikre at firmaet er økonomisk stabilt.
 
-## Konklusjon
+## Sammenlign tilbudene likt
+
+Hva som påvirker prisen, og hva et tilbud bør spesifisere, står i vår guide til [drenering pris](/drenering/pris). Bruk den som sjekkliste når du leser tilbudene side om side.
 
 Å velge riktig dreneringsfirma kan spare deg for store utgifter og fremtidige problemer. Ved å gjøre grundig research og innhente tilbud fra flere aktører, kan du finne en trygg og pålitelig entreprenør som gir deg den beste løsningen.
 

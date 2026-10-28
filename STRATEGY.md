@@ -100,7 +100,7 @@ Status: ✔ exists and is good, ◐ exists but needs work, ○ planned.
 | Price tool | drenering kalkulator | on /drenering/pris or own page | ○ sourced inputs only |
 | Overvann | overvannshåndtering, overvann tomt, drenering av overvann, overvannsanlegg | /tjenester/overvannshandtering | ◐ thin |
 | Overvann | overflatedrenering, dreneringsrenne | /drenering/drenerings-renne | ◐ HubSpot |
-| Price | drenering pris, hva koster drenering, drenering pris per meter | /drenering/pris | ◐ unsourced tiers |
+| Price | drenering pris, hva koster drenering, drenering pris per meter | /drenering/pris | ◐ rebuilt 2026-10-28, no figures; needs sourced anecdotal ranges |
 | Price | drenering og isolering pris / etterisolering grunnmur | /blog/drenering-og-etterisolering-av-grunnmur | ○ |
 | Process | drenering rundt hus, hvordan drenere hus | /drenering/drenering-rundt-hus | ◐ HubSpot |
 | Process | grunnmursplate, knotteplast | /blog/grunnmursplate-knotteplast | ○ |
