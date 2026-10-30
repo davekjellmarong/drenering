@@ -28,17 +28,22 @@ const FORMS: Record<
   tilbud: {
     subject: "Ny tilbudsforespørsel",
     fields: {
-      firstname: "Fornavn",
-      lastname: "Etternavn",
-      email: "E-post",
-      phone: "Telefon",
+      jobtype: "Jobb",
+      timing: "Når",
+      description: "Beskrivelse",
       address: "Adresse",
       zip: "Postnummer",
       city: "Sted",
-      propertytype: "Boligtype",
-      propertysize: "Boligstørrelse",
+      housetype: "Boligtype",
+      buildyear: "Byggeår",
+      basement: "Kjeller",
+      firstname: "Fornavn",
+      lastname: "Etternavn",
+      phone: "Telefon",
+      email: "E-post",
+      consent: "Samtykke til videresending",
     },
-    required: ["firstname", "lastname", "email", "phone", "address", "zip"],
+    required: ["jobtype", "zip", "address", "firstname", "lastname", "phone", "email", "consent"],
   },
   partner: {
     subject: "Ny partnersøknad",
@@ -79,7 +84,7 @@ export const onRequestPost = async ({ request, env, params }: Context) => {
 
   const values: Record<string, string> = {};
   for (const name of Object.keys(form.fields)) {
-    values[name] = String(data[name] ?? "").trim().slice(0, 500);
+    values[name] = String(data[name] ?? "").trim().slice(0, 1000);
   }
 
   const missing = form.required.filter((name) => !values[name]);
@@ -101,7 +106,7 @@ export const onRequestPost = async ({ request, env, params }: Context) => {
       from: env.LEAD_EMAIL_FROM || "DinDrenering <onboarding@resend.dev>",
       to: [env.LEAD_EMAIL_TO],
       reply_to: values.email,
-      subject: `${form.subject}: ${values.city || values.companyName || ""}`.trim(),
+      subject: `${form.subject}: ${[values.jobtype, values.zip, values.city || values.companyName].filter(Boolean).join(" · ")}`,
       text: `${text}\n\nSendt fra dindrenering.no ${new Date().toISOString()}`,
     }),
   });

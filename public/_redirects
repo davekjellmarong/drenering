@@ -5,6 +5,14 @@
 # The vision page was only ever a placeholder; its content is on the team page.
 /om-oss/visjon /om-oss/team 301
 
+# Thin pages merged into stronger ones (2026-10-30).
+/drenering/fordeler /drenering/hva-er-drenering 301
+/drenering/baerekraftig /tjenester/overvannshandtering 301
+/drenering/klimaendringer /tjenester/overvannshandtering 301
+
+# Removed mock dashboard.
+/kontrollpanel / 301
+
 # Old city URLs used the display name (/drenering/Oslo, /drenering/Tromsø).
 # They now live at lowercase ASCII slugs (/drenering/oslo, /drenering/tromso).
 /drenering/Oslo /drenering/oslo 301

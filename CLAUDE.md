@@ -21,21 +21,45 @@ ordered backlog.
 
 ## Where content lives
 
-- Blog articles: `content/blog/<slug>.md`. The slug is the file name and becomes
-  `/blog/<slug>`. Frontmatter:
-  ```yaml
-  title: "..."          # H1 and <title>
-  description: "..."    # meta description, ~150 characters
-  date: "YYYY-MM-DD"
-  updated: "YYYY-MM-DD" # bump when content changes meaningfully
-  readingTime: 6        # minutes
-  image: "/blog/<slug>.svg"   # optional
-  imageAlt: "..."
-  ```
-- Article images: `public/blog/<slug>.svg`.
-- Guide and service pages: `app/drenering/*`, `app/tjenester/*` (hand-written TSX).
-- City pages: `app/drenering/[city]` plus `src/components/features/city/*`; the
-  cities are listed in `src/utils/Constants.ts` (`KOMMUNER`, where `id` is the URL slug).
+All written content is Markdown with frontmatter, read at build time by
+`src/queryFactory/Article.tsx` and rendered by one shared layout
+(`src/components/site/ArticleLayout.tsx`):
+
+| Folder | URL | What |
+|---|---|---|
+| `content/guides/<slug>.md` | `/drenering/<slug>` | Pillar guides (also in the header "Guider" menu, sorted by `order`) |
+| `content/tjenester/<slug>.md` | `/tjenester/<slug>` | Service pages |
+| `content/blog/<slug>.md` | `/blog/<slug>` | Articles (spokes) |
+
+Frontmatter:
+```yaml
+title: "..."          # H1
+metaTitle: "..."      # optional <title> (≤60 chars, keyword first)
+navTitle: "..."       # short name for menus and cards
+description: "..."    # meta description, ~150 characters
+summary: "..."        # 1–3 sentence direct answer shown in the "Kort svar" box
+date: "YYYY-MM-DD"
+updated: "YYYY-MM-DD" # bump when content changes meaningfully
+readingTime: 6
+order: 3              # guides/services only: menu order
+image: "/illustrations/<name>.svg"
+imageAlt: "..."
+faq:                  # rendered as an accordion + FAQPage JSON-LD
+  - q: "..."
+    a: "..."
+sources:              # rendered as a "Kilder" list; every specific number needs one
+  - name: "..."
+    url: "https://..."
+```
+
+- In the body, use `##` for sections (they become the table of contents) and
+  don't repeat the H1, the FAQ or a closing CTA; the layout adds those.
+- City pages: `/drenering/<city>` from `KOMMUNER` in `src/utils/Constants.ts`,
+  rendered by `src/components/city/CityPage.tsx`. Guides and cities share the
+  `/drenering/[slug]` route, so a guide slug must never equal a city slug.
+- Illustrations: `public/illustrations/<name>.svg`, reused across pages where they fit.
+- Homepage, hubs (`/drenering`, `/tjenester`, `/om-oss`), the quote flow
+  (`src/components/quote/`) and legal pages are TSX.
 
 ## Writing
 

@@ -1,105 +1,59 @@
-import { Button } from "@/src/components/ui/button";
-import { CheckCircle, Calendar, Phone } from "lucide-react";
 import Link from "next/link";
+import { CheckCircle } from "lucide-react";
 
 export const metadata = {
-  title: "Takk for din forespørsel - DinDrenering",
-  description:
-    "Din forespørsel om tilbud er mottatt. Vi vil kontakte deg snart.",
+  title: "Takk for forespørselen | DinDrenering",
+  description: "Forespørselen din er mottatt.",
   robots: { index: false, follow: false },
 };
 
+const NEXT_STEPS = [
+  "Vi går gjennom forespørselen og sender den til opptil 3 dreneringsfirma som jobber i ditt område.",
+  "Firmaene kontakter deg direkte, ofte for å avtale en befaring før de gir en fast pris.",
+  "Du sammenligner tilbudene og velger selv om du vil takke ja til noen av dem.",
+];
+
 export default function ThankYouPage() {
   return (
-    <div className="container mx-auto px-4 py-20">
-      <div className="max-w-2xl mx-auto text-center">
-        <div className="flex justify-center mb-6">
-          <div className="bg-green-100 p-4 rounded-full">
-            <CheckCircle className="h-16 w-16 text-green-600" />
-          </div>
-        </div>
-
-        <h1 className="text-3xl font-bold mb-4 text-gray-900">
-          Takk for din forespørsel!
-        </h1>
-
-        <p className="text-lg text-gray-700 mb-8">
-          Vi har mottatt forespørselen din. Vi sender den videre til
-          dreneringsfirma i ditt område, som tar kontakt med deg direkte.
+    <div className="bg-sand-50 px-4 py-16">
+      <div className="mx-auto max-w-2xl text-center">
+        <CheckCircle className="mx-auto h-14 w-14 text-brand-600" />
+        <h1 className="mt-4 text-3xl font-bold text-ink-900">Takk, forespørselen er sendt!</h1>
+        <p className="mt-3 text-lg text-text-subtle">
+          Du får ingen forpliktelser av dette, og det koster deg ingenting.
         </p>
+      </div>
 
-        <div className="bg-brand-50 p-6 rounded-lg mb-8">
-          <h2 className="text-xl font-semibold mb-4 text-gray-800">
-            Hva skjer nå?
-          </h2>
-          <ol className="space-y-3 text-left text-gray-700">
-            <li className="flex items-start">
-              <span className="bg-brand-100 text-brand-600 font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
-                1
+      <div className="mx-auto mt-10 max-w-2xl rounded-2xl border border-border bg-white p-6 sm:p-8">
+        <h2 className="text-lg font-semibold text-ink-900">Hva skjer nå?</h2>
+        <ol className="mt-4 space-y-4">
+          {NEXT_STEPS.map((text, index) => (
+            <li key={text} className="flex gap-3 text-text-subtle">
+              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand-100 text-sm font-semibold text-brand-700">
+                {index + 1}
               </span>
-              <span>
-                Vi behandler din forespørsel og matcher deg med opptil 3
-                kvalifiserte dreneringsfirmaer i ditt område
-              </span>
+              {text}
             </li>
-            <li className="flex items-start">
-              <span className="bg-brand-100 text-brand-600 font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
-                2
-              </span>
-              <span>
-                Dreneringsfirmaene vil kontakte deg direkte for å diskutere ditt
-                prosjekt
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="bg-brand-100 text-brand-600 font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
-                3
-              </span>
-              <span>
-                Du mottar tilbud fra hver leverandør og kan velge det som passer
-                best for dine behov
-              </span>
-            </li>
-          </ol>
-        </div>
+          ))}
+        </ol>
+      </div>
 
-        <div className="grid md:grid-cols-2 gap-4 mb-8">
-          <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
-            <div className="flex items-center mb-2">
-              <Calendar className="h-5 w-5 text-brand-600 mr-2" />
-              <h3 className="font-semibold">Forventet responstid</h3>
-            </div>
-            <p className="text-gray-600">
-              Du kan forvente å bli kontaktet innen 1-2 virkedager.
-            </p>
-          </div>
-
-          <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
-            <div className="flex items-center mb-2">
-              <Phone className="h-5 w-5 text-brand-600 mr-2" />
-              <h3 className="font-semibold">Trenger du hjelp?</h3>
-            </div>
-            <p className="text-gray-600">
-              Kontakt oss på <span className="font-medium">22 12 34 56</span>{" "}
-              hvis du har spørsmål.
-            </p>
-          </div>
-        </div>
-
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <Button
-            asChild
-            variant="outline"
-            className="border-brand-500 text-brand-500 hover:bg-brand-50"
+      <div className="mx-auto mt-8 max-w-2xl rounded-2xl bg-ink-900 p-6 text-white sm:p-8">
+        <h2 className="text-lg font-semibold">Mens du venter</h2>
+        <p className="mt-2 text-slate-300">
+          Se hva et godt tilbud bør inneholde, så er det lettere å sammenligne
+          når tilbudene kommer.
+        </p>
+        <div className="mt-4 flex flex-wrap gap-3">
+          <Link href="/drenering/pris" className="rounded-lg bg-white px-4 py-2 font-semibold text-ink-900">
+            Prisguide og sjekkliste
+          </Link>
+          <Link
+            href="/drenering/drenering-rundt-hus"
+            className="rounded-lg border border-slate-500 px-4 py-2 font-semibold text-white"
           >
-            <Link href="/">Gå til forsiden</Link>
-          </Button>
-          <Button
-            asChild
-            className="bg-brand-600 hover:bg-brand-700 text-white"
-          >
-            <Link href="/blog">Les våre artikler om drenering</Link>
-          </Button>
+            Slik gjøres jobben
+          </Link>
         </div>
       </div>
     </div>

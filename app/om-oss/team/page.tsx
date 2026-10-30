@@ -12,11 +12,11 @@ export const metadata = {
 export default function TeamPage() {
   return (
     <div className="container mx-auto px-4 py-16 max-w-3xl">
-      <h1 className="text-4xl font-bold mb-6 text-brand-900">
+      <h1 className="text-4xl font-bold mb-6 text-ink-900">
         Hvem står bak DinDrenering?
       </h1>
 
-      <div className="space-y-6 text-brand-700 text-lg">
+      <div className="space-y-6 text-slate-700 text-lg">
         <p>
           DinDrenering er en liten, uavhengig tjeneste som drives av{" "}
           {OWNER.name} gjennom enkeltpersonforetaket {OWNER.business} (org.nr.{" "}
@@ -26,7 +26,7 @@ export default function TeamPage() {
           innebærer, og å komme i kontakt med firma som kan gjøre den.
         </p>
 
-        <h2 className="text-2xl font-semibold text-brand-800 pt-4">
+        <h2 className="text-2xl font-semibold text-ink-900 pt-4">
           Slik fungerer tjenesten
         </h2>
         <p>
@@ -40,7 +40,7 @@ export default function TeamPage() {
           gjennom oss, og det er slik tjenesten finansieres.
         </p>
 
-        <h2 className="text-2xl font-semibold text-brand-800 pt-4">
+        <h2 className="text-2xl font-semibold text-ink-900 pt-4">
           Slik lager vi innholdet
         </h2>
         <p>
@@ -48,8 +48,9 @@ export default function TeamPage() {
           tall og regler skal ha en kilde vi lenker til, for eksempel SINTEF
           Byggforsk, Direktoratet for byggkvalitet, NVE eller SSB. Der noe
           varierer fra hus til hus, sier vi det, i stedet for å gi et tall som
-          ser presist ut. Priser oppgir vi som spenn med forklaring på hva som
-          påvirker dem, ikke som faste priser for en bestemt by.
+          ser presist ut. Vi oppgir ikke
+          faste priser vi ikke kan dokumentere, men forklarer hva som påvirker
+          prisen og hva et tilbud bør inneholde.
         </p>
         <p>
           Finner du noe som er feil eller utdatert, vil vi gjerne vite det:{" "}

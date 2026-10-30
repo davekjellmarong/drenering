@@ -12,7 +12,7 @@ const UPDATED = "30. oktober 2026";
 
 export default function PersonvernPage() {
   return (
-    <article className="container mx-auto px-4 py-16 max-w-3xl prose prose-lg text-brand-700 prose-headings:text-brand-900 prose-a:text-brand-600">
+    <article className="container mx-auto px-4 py-16 max-w-3xl prose prose-lg text-slate-700 prose-headings:text-ink-900 prose-h1:text-3xl prose-h1:break-words sm:prose-h1:text-4xl prose-a:text-brand-600">
       <h1>Personvernerklæring</h1>
       <p className="text-sm">Sist oppdatert {UPDATED}</p>
 

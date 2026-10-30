@@ -1,28 +1,29 @@
-import { QuoteForm } from "@/src/components/features/tilbud/NewSmallForm";
+import { Suspense } from "react";
+import { QuoteWizard } from "@/src/components/quote/QuoteWizard";
 
 export const metadata = {
   alternates: { canonical: "/tilbud" },
-  title: "Få gratis tilbud på drenering | Sammenlign dreneringsfirma",
+  title: "Få gratis tilbud på drenering | DinDrenering",
   description:
-    "Fyll ut ett skjema og motta opptil 3 uforpliktende tilbud fra dreneringsfirma i ditt område. Gratis og uten forpliktelser.",
+    "Beskriv dreneringsjobben én gang, så sender vi forespørselen til opptil 3 dreneringsfirma i ditt område. Gratis og uforpliktende.",
 };
 
 export default function TilbudPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-brand-50 to-white py-4 px-2 sm:px-4 pt-20">
-      <div className="text-center mb-8">
-        <div className="inline-flex items-center justify-center px-4 py-1 rounded-full bg-brand-100 text-brand-700 text-sm font-medium mb-4">
-          Gratis Tjeneste
-        </div>
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 text-text">
-          Få Gratis Tilbud fra Lokale Dreneringsselskaper
+    <div className="bg-sand-50 px-4 pb-16 pt-10 sm:pt-14">
+      <div className="mx-auto mb-8 max-w-2xl text-center">
+        <h1 className="text-3xl font-bold tracking-tight text-ink-900 md:text-4xl">
+          Få tilbud på drenering
         </h1>
-        <p className="text-text-subtle max-w-2xl mx-auto">
-          Fyll ut skjemaet nedenfor, så sender vi forespørselen til opptil 3
+        <p className="mt-3 text-text-subtle">
+          Beskriv jobben én gang, så sender vi forespørselen til opptil 3
           dreneringsfirma i ditt område. Gratis og uforpliktende.
         </p>
       </div>
-      <QuoteForm />
+      {/* useSearchParams needs a Suspense boundary in a static export */}
+      <Suspense>
+        <QuoteWizard />
+      </Suspense>
     </div>
   );
 }

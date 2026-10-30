@@ -7,27 +7,27 @@ import {
   CardTitle,
 } from "@/src/components/ui/card";
 import { PartnerSignupForm } from "@/src/components/features/bli-partner/form";
-import { PartnerBenefits } from "@/src/components/sections/Pages/BliPartner/Benefits";
+import { PartnerBenefits } from "@/src/components/features/bli-partner/Benefits";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/bli-partner" },
-  title: "Bli Partner - DinDrenering",
+  title: "For dreneringsfirma: få henvendelser fra huseiere | DinDrenering",
   description:
     "Få flere kunder og vekst for din dreneringsbedrift ved å bli en del av vårt nettverk",
 };
 
 export default function PartnerSignupPage() {
   return (
-    <div className="py-16 lg:py-24">
+    <div className="bg-sand-50 py-12 lg:py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">
-              Bli en DinDrenering Partner
+            <h1 className="text-3xl font-bold tracking-tight text-ink-900 md:text-4xl mb-4">
+              For dreneringsfirma
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Få flere kunder og vekst for din dreneringsbedrift ved å bli en
-              del av vårt nettverk
+            <p className="text-xl text-slate-700 max-w-2xl mx-auto">
+              Få henvendelser fra huseiere i ditt område som vil ha drenering
+              gjort. Registrer firmaet, så tar vi kontakt.
             </p>
           </div>
 

@@ -71,22 +71,22 @@ head terms.
 
 ```
 /                         home: pillars, cities, CTA
-/drenering                HUB (404 today, must exist): everything about drenering, links all guides + all cities
+/drenering                HUB: everything about drenering, links all guides + all cities (#byer)
   /drenering/hva-er-drenering       pillar: basics
   /drenering/pris                   pillar: price ("drenering pris", "pris per meter", "hva koster")
-  /drenering/drenering-rundt-hus    pillar: how it's done (HubSpot-dependent today, must move into repo)
+  /drenering/drenering-rundt-hus    pillar: how it's done
   /drenering/vanninntrenging        pillar: water/damp in basement
   /drenering/typer-drenering, /drenerings-renne, /fordeler, /baerekraftig, /klimaendringer
   /drenering/<city>                 local pages
 /blog/<slug>              spokes (Markdown in content/blog), each linked from a pillar
-/tjenester                HUB (404 today) + 4 service pages
-/om-oss                   HUB (404 today): who we are, how it works, editorial policy
+/tjenester                HUB + 4 service pages (content/tjenester)
+/om-oss                   HUB: who we are, how it works, contact
 /tilbud                   the conversion page
 ```
 
-The `/drenering/<x>` path is caught by the city route, so new guide content
-goes under `/blog/<slug>` unless you add it as a static route. Don't change
-existing URLs; if you must, add a 301.
+`/drenering/<slug>` serves both guides (`content/guides`) and cities, so a new
+pillar guide can live there; supporting articles go under `/blog/<slug>`. Don't
+change existing URLs; if you must, add a 301 in `public/_redirects`.
 
 ## 4. Keyword map (one URL per primary keyword)
 
@@ -99,10 +99,10 @@ Status: ✔ exists and is good, ◐ exists but needs work, ○ planned.
 | Materials | drenerende masser, drensmasser, pukk drenering | /blog/drenerende-masser | ○ |
 | Price tool | drenering kalkulator | on /drenering/pris or own page | ○ sourced inputs only |
 | Overvann | overvannshåndtering, overvann tomt, drenering av overvann, overvannsanlegg | /tjenester/overvannshandtering | ◐ thin |
-| Overvann | overflatedrenering, dreneringsrenne | /drenering/drenerings-renne | ◐ HubSpot |
+| Overvann | overflatedrenering, dreneringsrenne | /drenering/drenerings-renne | ◐ basic, needs sources |
 | Price | drenering pris, hva koster drenering, drenering pris per meter | /drenering/pris | ◐ rebuilt 2026-10-28, no figures; needs sourced anecdotal ranges |
 | Price | drenering og isolering pris / etterisolering grunnmur | /blog/drenering-og-etterisolering-av-grunnmur | ○ |
-| Process | drenering rundt hus, hvordan drenere hus | /drenering/drenering-rundt-hus | ◐ HubSpot |
+| Process | drenering rundt hus, hvordan drenere hus | /drenering/drenering-rundt-hus | ◐ basic, needs sources |
 | Process | grunnmursplate, knotteplast | /blog/grunnmursplate-knotteplast | ○ |
 | Process | drenering uten graving | /blog/drenering-uten-graving | ◐ fact-check |
 | Process | drenering egeninnsats | /blog/drenering-egeninnsats | ○ |
@@ -186,16 +186,11 @@ sourced data**, never invented "local insight":
   credits ran out from deploys plus about 140k bot requests a month; on Cloudflare,
   static requests are free and unlimited.
 
+Also done in the 2026-10-30 redesign: hub pages, all guides and services as
+Markdown with one shared layout, Organization + WebSite JSON-LD, breadcrumbs
+(BreadcrumbList), `faq:` frontmatter (FAQPage JSON-LD), and a custom 404.
+
 **To do** (in PLAN.md):
-- Hub pages for `/drenering`, `/tjenester` and `/om-oss`, which are 404 today.
-- Move the HubSpot-dependent pages (`drenering-rundt-hus`, `drenerings-renne`)
-  into the repo; the HubSpot token returns 401.
-- Replace the `LocalBusiness` JSON-LD with `Organization` + `WebSite`
-  (`LocalBusiness` without an address is invalid).
-- `BreadcrumbList` on guides, blog posts and cities.
-- `faq:` frontmatter in Markdown articles that renders a FAQ section plus
-  FAQPage JSON-LD.
-- Custom 404 page linking to the hubs.
 - PNG Open Graph images via `next/og`. Facebook and LinkedIn don't render SVG
   og:images, and this matters for the Facebook ads.
 - An IndexNow ping after deploy (free; Bing and the AI search tools built on Bing).
@@ -245,7 +240,7 @@ Never use paid links, link networks or link exchanges at scale.
   4. log the before and after.
 - **Refresh runs:** PLAN.md mixes in refresh and fact-audit runs. Old pages
   with unsourced claims hurt trust more than missing pages do.
-- **Leads:** if a run notices the form or HubSpot failing, put it at the top of
+- **Leads:** if a run notices the quote form failing, put it at the top of
   PLAN.md and say so in the final summary.
 
 ## 11. Owner tasks (not doable from code)

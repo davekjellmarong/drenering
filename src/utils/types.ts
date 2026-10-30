@@ -1,16 +1,22 @@
 // Global ID type
 type ID = number | string;
 
-// Blog article, parsed from a Markdown file in content/blog
+// A blog post, guide or service page, parsed from a Markdown file in content/
 export interface Article {
   slug: string;
-  title: string;
-  description: string;
+  title: string; // H1
+  metaTitle?: string; // <title>, if different from the H1
+  navTitle?: string; // short name for menus and cards
+  description: string; // meta description
+  summary?: string; // short answer shown at the top of the page
   date: string; // YYYY-MM-DD
   updated: string; // YYYY-MM-DD
   readingTime?: number;
   image?: string;
   imageAlt?: string;
+  order?: number; // menu order for guides and services
+  faq?: { q: string; a: string }[];
+  sources?: { name: string; url: string }[];
   content: string; // Markdown body
 }
 

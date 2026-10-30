@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img">
+  <rect width="1200" height="600" fill="#e3edf5"/>
+  <!-- grey cloud and heavy rain -->
+  <g fill="#94a3b8">
+    <ellipse cx="300" cy="90" rx="90" ry="40"/><ellipse cx="370" cy="70" rx="70" ry="45"/><ellipse cx="440" cy="95" rx="60" ry="32"/>
+  </g>
+  <g stroke="#2479c2" stroke-width="5" stroke-linecap="round">
+    <line x1="270" y1="150" x2="258" y2="180"/><line x1="320" y1="150" x2="308" y2="180"/>
+    <line x1="370" y1="150" x2="358" y2="180"/><line x1="420" y1="150" x2="408" y2="180"/>
+    <line x1="470" y1="150" x2="458" y2="180"/><line x1="295" y1="200" x2="283" y2="230"/>
+    <line x1="395" y1="200" x2="383" y2="230"/><line x1="445" y1="205" x2="433" y2="235"/>
+  </g>
+  <!-- ground sloping toward the house (wrong fall) -->
+  <path d="M0 260 L520 330 L1200 330 L1200 600 L0 600 Z" fill="#c9a27e"/>
+  <path d="M0 260 L520 330" stroke="#7fae6b" stroke-width="14"/>
+  <path d="M520 330 H1200" stroke="#7fae6b" stroke-width="14"/>
+  <!-- surface water running toward the wall -->
+  <g stroke="#2479c2" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M120 285 q30 -8 60 0 q30 8 60 0"/>
+    <path d="M300 305 q30 -8 60 0 q30 8 60 0"/>
+  </g>
+  <!-- house -->
+  <rect x="540" y="190" width="420" height="140" fill="#ffffff"/>
+  <polygon points="520,195 750,80 980,195" fill="#102a43"/>
+  <rect x="600" y="220" width="70" height="60" rx="4" fill="#add3ef"/>
+  <rect x="830" y="220" width="70" height="60" rx="4" fill="#add3ef"/>
+  <!-- basement with water inside -->
+  <rect x="540" y="330" width="420" height="200" fill="#f5f1ea"/>
+  <rect x="540" y="330" width="20" height="210" fill="#94a3b8"/>
+  <rect x="940" y="330" width="20" height="210" fill="#94a3b8"/>
+  <rect x="540" y="530" width="420" height="16" fill="#7b8794"/>
+  <rect x="560" y="492" width="380" height="38" fill="#7db8e4" opacity="0.8"/>
+  <!-- drops pushing through the wall -->
+  <g fill="#2479c2">
+    <path d="M590 395 q-10 16 0 24 q10 -8 0 -24z"/><path d="M600 445 q-10 16 0 24 q10 -8 0 -24z"/>
+  </g>
+  <!-- salt bloom on wall -->
+  <g fill="#ffffff"><circle cx="575" cy="470" r="5"/><circle cx="585" cy="480" r="4"/><circle cx="572" cy="486" r="3"/></g>
+  <!-- rubber duck floating, for a smile -->
+  <g transform="translate(760 470)">
+    <ellipse cx="30" cy="22" rx="30" ry="15" fill="#e8c6a7"/>
+    <circle cx="50" cy="5" r="12" fill="#e8c6a7"/>
+    <path d="M60 5 l12 3 l-12 4z" fill="#c2703d"/>
+    <circle cx="53" cy="2" r="2.5" fill="#102a43"/>
+  </g>
+</svg>

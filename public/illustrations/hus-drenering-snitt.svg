@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img">
+  <!-- sky -->
+  <rect width="1200" height="600" fill="#eef6fc"/>
+  <!-- cloud with rain -->
+  <g fill="#ffffff">
+    <ellipse cx="930" cy="95" rx="70" ry="34"/>
+    <ellipse cx="985" cy="80" rx="55" ry="38"/>
+    <ellipse cx="1035" cy="100" rx="48" ry="28"/>
+  </g>
+  <g stroke="#4a98d6" stroke-width="5" stroke-linecap="round">
+    <line x1="915" y1="150" x2="905" y2="175"/>
+    <line x1="960" y1="150" x2="950" y2="175"/>
+    <line x1="1005" y1="150" x2="995" y2="175"/>
+    <line x1="1050" y1="145" x2="1040" y2="170"/>
+    <line x1="935" y1="195" x2="925" y2="220"/>
+    <line x1="1025" y1="195" x2="1015" y2="220"/>
+  </g>
+  <!-- soil -->
+  <rect y="300" width="1200" height="300" fill="#c9a27e"/>
+  <rect y="300" width="1200" height="22" fill="#7fae6b"/>
+  <g fill="#b58a63">
+    <circle cx="80" cy="380" r="7"/><circle cx="160" cy="470" r="5"/><circle cx="240" cy="540" r="8"/>
+    <circle cx="820" cy="400" r="6"/><circle cx="930" cy="500" r="9"/><circle cx="1080" cy="430" r="6"/>
+    <circle cx="1140" cy="560" r="7"/><circle cx="700" cy="560" r="5"/>
+  </g>
+  <!-- house above ground -->
+  <rect x="300" y="150" width="380" height="150" fill="#ffffff"/>
+  <polygon points="280,155 490,40 700,155" fill="#102a43"/>
+  <rect x="350" y="190" width="70" height="60" rx="4" fill="#add3ef"/>
+  <rect x="560" y="190" width="70" height="60" rx="4" fill="#add3ef"/>
+  <rect x="460" y="200" width="60" height="100" rx="4" fill="#c2703d"/>
+  <circle cx="508" cy="252" r="4" fill="#fbf4ee"/>
+  <!-- basement (cut) -->
+  <rect x="300" y="300" width="380" height="190" fill="#f5f1ea"/>
+  <rect x="300" y="300" width="22" height="200" fill="#94a3b8"/>
+  <rect x="658" y="300" width="22" height="200" fill="#94a3b8"/>
+  <rect x="300" y="488" width="380" height="18" fill="#94a3b8"/>
+  <rect x="285" y="500" width="410" height="16" fill="#7b8794"/>
+  <!-- dimple board (knotteplast) on outside of right wall -->
+  <path d="M684 310 v190" stroke="#102a43" stroke-width="6" stroke-dasharray="6 6"/>
+  <!-- drainage gravel bed + pipe at the foot of the wall -->
+  <path d="M690 440 h120 v80 h-120 z" fill="#ebe4d8"/>
+  <g fill="#b6a58f">
+    <circle cx="705" cy="455" r="6"/><circle cx="725" cy="470" r="7"/><circle cx="790" cy="455" r="6"/>
+    <circle cx="800" cy="505" r="7"/><circle cx="705" cy="505" r="6"/><circle cx="772" cy="500" r="5"/>
+    <circle cx="740" cy="445" r="5"/><circle cx="785" cy="478" r="5"/>
+  </g>
+  <path d="M690 440 h120 v80 h-120 z" fill="none" stroke="#2479c2" stroke-width="3" stroke-dasharray="10 6"/>
+  <circle cx="750" cy="485" r="22" fill="#1a62a6"/>
+  <circle cx="750" cy="485" r="11" fill="#7db8e4"/>
+  <g fill="#eef6fc"><circle cx="736" cy="476" r="2.5"/><circle cx="764" cy="476" r="2.5"/><circle cx="750" cy="500" r="2.5"/></g>
+  <!-- water drops travelling through soil toward the pipe -->
+  <g fill="#2479c2">
+    <path d="M900 360 q-10 16 0 24 q10 -8 0 -24z"/>
+    <path d="M860 420 q-10 16 0 24 q10 -8 0 -24z"/>
+    <path d="M950 440 q-10 16 0 24 q10 -8 0 -24z"/>
+  </g>
+  <path d="M890 400 C 860 430, 830 450, 800 470" fill="none" stroke="#2479c2" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 12"/>
+  <!-- outlet arrow -->
+  <path d="M780 560 H 1080" stroke="#1a62a6" stroke-width="10" stroke-linecap="round"/>
+  <path d="M1060 540 L1095 560 L1060 580 z" fill="#1a62a6"/>
+  <!-- left side: soil slope away from house -->
+  <path d="M0 300 L300 300" stroke="#5f8f4e" stroke-width="4"/>
+</svg>

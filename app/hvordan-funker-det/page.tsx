@@ -1,132 +1,103 @@
-import {
-  Check,
-  Clock,
-  DollarSign,
-  Droplets,
-  Shield,
-  Users,
-} from "lucide-react";
-import HowItWorksHero from "@/src/components/sections/Hero/HowItWorks";
-import HowItWorksSteps from "@/src/components/sections/Steps/HowItWorks";
-import Benefits from "@/src/components/sections/HowItWorksPage/Benefits";
-import FaqHowItWorks from "@/src/components/sections/HowItWorksPage/FAQ";
-import SimpleCta from "@/src/components/sections/CTA/Simple";
+import Link from "next/link";
+import { Breadcrumbs } from "@/src/components/site/Breadcrumbs";
+import { CtaBox } from "@/src/components/site/CtaBox";
+import { Faq } from "@/src/components/site/Faq";
 
 export const metadata = {
   alternates: { canonical: "/hvordan-funker-det" },
-  title: "Hvordan Det Fungerer - DinDrenering",
+  title: "Slik fungerer DinDrenering",
   description:
-    "Slik fungerer DinDrenering: én gratis forespørsel som vi videreformidler til dreneringsfirma i ditt område.",
+    "Slik fungerer DinDrenering: én gratis forespørsel som vi sender til opptil 3 dreneringsfirma i ditt område. Og hvordan tjenesten finansieres.",
 };
 
-export default function HowItWorks() {
-  // Process steps with more detailed information
-  const steps = [
-    {
-      number: "01",
-      title: "Send Inn Din Forespørsel",
-      description:
-        "Fortell oss om ditt dreneringsproblem og hvilken tjeneste du trenger. Fyll ut skjemaet med kontaktinfo, adresse og litt om boligen.",
-      icon: <Droplets className="h-12 w-12 text-brand-600" />,
-      details: [
-        "Beskriv problemet ditt i detalj",
-        "Angi din plassering for lokal service",
-      ],
-    },
-    {
-      number: "02",
-      title: "Få Flere Tilbud",
-      description:
-        "Vi sender forespørselen videre til dreneringsfirma som jobber i ditt område, og de tar kontakt med deg direkte for å avtale befaring eller gi et tilbud.",
-      icon: <DollarSign className="h-12 w-12 text-brand-600" />,
-      details: [
-        "Firmaene kontakter deg direkte",
-        "Be om befaring før du får en fast pris",
-        "Still spørsmål direkte til firmaene",
-      ],
-    },
-    {
-      number: "03",
-      title: "Sammenlign & Velg",
-      description:
-        "Sammenlign tilbudene på pris, hva som er inkludert og når jobben kan gjøres. Du velger selv om du vil takke ja til noen av dem.",
-      icon: <Check className="h-12 w-12 text-brand-600" />,
-      details: [
-        "Sammenlign priser og tidsestimater",
-        "Sjekk at tilbudene inneholder det samme",
-        "Velg det beste tilbudet for dine behov",
-      ],
-    },
-  ];
+const STEPS = [
+  {
+    title: "Du beskriver jobben",
+    text: "Fortell hva du trenger hjelp med, hvor boligen ligger og litt om huset. Jo mer firmaene vet, jo bedre kan de svare. Det tar et par minutter.",
+  },
+  {
+    title: "Vi sender forespørselen videre",
+    text: "Forespørselen går til opptil 3 dreneringsfirma som jobber i området ditt. Vi deler bare det du har fylt inn i skjemaet.",
+  },
+  {
+    title: "Firmaene kontakter deg",
+    text: "Firmaene tar kontakt direkte, ofte for å avtale en befaring. En fast pris uten at noen har sett huset, bør du være skeptisk til.",
+  },
+  {
+    title: "Du sammenligner og velger",
+    text: "Sammenlign tilbudene på pris, hva som er inkludert og når jobben kan gjøres. Du bestemmer selv om du vil takke ja.",
+  },
+];
 
-  // Benefits of using our service
-  const benefits = [
-    {
-      title: "Tidssparende",
-      description:
-        "Én forespørsel i stedet for å ringe rundt til flere firma selv.",
-      icon: <Clock className="h-8 w-8 text-brand-600" />,
-    },
-    {
-      title: "Ærlig om hvordan det fungerer",
-      description:
-        "Firmaene kan betale for henvendelsene de får gjennom oss. Det er slik tjenesten er gratis for deg.",
-      icon: <Shield className="h-8 w-8 text-brand-600" />,
-    },
-    {
-      title: "Helt Gratis",
-      description:
-        "Vår tjeneste er helt gratis å bruke for kunder. Du betaler kun for arbeidet som utføres.",
-      icon: <DollarSign className="h-8 w-8 text-brand-600" />,
-    },
-    {
-      title: "Lokale firma",
-      description:
-        "Forespørselen går til firma som jobber der du bor.",
-      icon: <Users className="h-8 w-8 text-brand-600" />,
-    },
-  ];
+const FAQ = [
+  {
+    q: "Hva koster det?",
+    a: "Ingenting for deg. Firmaene kan betale for henvendelsene de får gjennom oss, og det er slik tjenesten er finansiert.",
+  },
+  {
+    q: "Blir jeg nedringt?",
+    a: "Forespørselen går til opptil 3 firma, ikke til alle. Vi selger ikke kontaktinformasjonen din videre til andre formål.",
+  },
+  {
+    q: "Hva om ingen firma tar kontakt?",
+    a: "Vi kan ikke garantere at alle forespørsler får svar, særlig i travle perioder eller i områder med få firma. Send oss gjerne en e-post hvis du ikke har hørt noe.",
+  },
+  {
+    q: "Er dere et dreneringsfirma?",
+    a: "Nei. Vi utfører ikke arbeid og gir ikke pristilbud selv. Avtalen inngår du direkte med firmaet du velger.",
+  },
+];
 
-  // FAQ items
-  const faqs = [
-    {
-      question: "Koster det noe å bruke tjenesten?",
-      answer:
-        "Nei, DinDrenering er helt gratis å bruke for kunder. Du betaler kun for arbeidet som utføres av fagfolkene du velger.",
-    },
-    {
-      question: "Hvor raskt vil jeg motta tilbud?",
-      answer:
-        "Det varierer med sesong og hvor du bor. Firmaene tar kontakt direkte med deg.",
-    },
-    {
-      question: "Hvordan velger dere fagfolk til nettverket deres?",
-      answer:
-        "Vi sjekker at firmaet er registrert i Brønnøysundregistrene og faktisk jobber med drenering. Vi anbefaler likevel at du selv ber om referanser og en skriftlig avtale før arbeidet starter.",
-    },
-    {
-      question: "Hva hvis jeg ikke er fornøyd med tilbudene?",
-      answer:
-        "Det er ingen forpliktelser å akseptere noen av tilbudene. Du står fritt til å avslå alle og søke tjenester andre steder hvis du ønsker det.",
-    },
-    {
-      question: "Kan jeg be om tilbud for akutte dreneringsproblemer?",
-      answer:
-        "Du kan sende en forespørsel, men vi er ikke en akuttjeneste. Står det vann i kjelleren nå, kontakt forsikringsselskapet ditt og eventuelt en skadeservice med en gang.",
-    },
-  ];
-
-  // return <UnderConstruction pageName="'Hvordan Fungerer Det?'" />;
-
+export default function HowItWorksPage() {
   return (
-    <div className="bg-gradient-to-b from-brand-50 to-white py-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <HowItWorksHero />
-        <HowItWorksSteps steps={steps} />
-        <Benefits benefits={benefits} />
-        <FaqHowItWorks faqs={faqs} />
-        <SimpleCta />
-      </div>
-    </div>
+    <>
+      <section className="border-b border-border bg-sand-50">
+        <div className="container mx-auto max-w-4xl px-4 py-10">
+          <Breadcrumbs items={[{ name: "Slik fungerer det", href: "/hvordan-funker-det" }]} />
+          <h1 className="mt-4 text-4xl font-bold tracking-tight text-ink-900 md:text-5xl">
+            Slik fungerer DinDrenering
+          </h1>
+          <p className="mt-4 text-lg text-slate-700">
+            Én forespørsel i stedet for å ringe rundt selv. Her er hva som skjer
+            fra du fyller ut skjemaet til du har tilbud å sammenligne.
+          </p>
+        </div>
+      </section>
+
+      <section className="container mx-auto max-w-4xl px-4 py-12">
+        <ol className="space-y-4">
+          {STEPS.map((step, index) => (
+            <li key={step.title} className="flex gap-5 rounded-2xl border border-border p-6">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-ink-900 text-lg font-semibold text-white">
+                {index + 1}
+              </span>
+              <div>
+                <p className="text-lg font-semibold text-ink-900">{step.title}</p>
+                <p className="mt-1 text-slate-700">{step.text}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+
+        <div className="mt-12 rounded-2xl bg-brand-50 p-6 sm:p-8">
+          <h2 className="text-2xl font-semibold text-ink-900">Hvordan tjenesten finansieres</h2>
+          <p className="mt-3 text-slate-700">
+            DinDrenering er gratis for huseiere. Firmaene som får forespørsler
+            gjennom oss, kan betale for dem. Vi får altså ikke betalt for å anbefale
+            et bestemt firma, og du velger selv hvem du vil bruke. Les mer om{" "}
+            <Link href="/om-oss/team" className="text-brand-700 underline">
+              hvem som står bak
+            </Link>
+            .
+          </p>
+        </div>
+
+        <Faq items={FAQ} />
+
+        <div className="mt-12">
+          <CtaBox title="Klar til å beskrive jobben?" />
+        </div>
+      </section>
+    </>
   );
 }

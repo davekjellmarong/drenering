@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img">
+  <rect width="1200" height="600" fill="#eef6fc"/>
+  <!-- garage -->
+  <rect x="640" y="120" width="440" height="300" fill="#ffffff"/>
+  <polygon points="620,130 860,40 1100,130" fill="#102a43"/>
+  <rect x="700" y="200" width="320" height="220" fill="#d6e9f7"/>
+  <g stroke="#add3ef" stroke-width="6"><line x1="700" y1="255" x2="1020" y2="255"/><line x1="700" y1="310" x2="1020" y2="310"/><line x1="700" y1="365" x2="1020" y2="365"/></g>
+  <!-- driveway sloping down to the garage -->
+  <path d="M0 470 L640 420 L1200 420 L1200 600 L0 600 Z" fill="#cbd5e1"/>
+  <path d="M0 470 L640 420" stroke="#94a3b8" stroke-width="6"/>
+  <!-- channel drain across the driveway in front of the garage -->
+  <rect x="610" y="425" width="560" height="26" rx="4" fill="#334e68"/>
+  <g stroke="#94a3b8" stroke-width="4">
+    <line x1="630" y1="430" x2="630" y2="446"/><line x1="660" y1="430" x2="660" y2="446"/><line x1="690" y1="430" x2="690" y2="446"/>
+    <line x1="720" y1="430" x2="720" y2="446"/><line x1="750" y1="430" x2="750" y2="446"/><line x1="780" y1="430" x2="780" y2="446"/>
+    <line x1="810" y1="430" x2="810" y2="446"/><line x1="840" y1="430" x2="840" y2="446"/><line x1="870" y1="430" x2="870" y2="446"/>
+    <line x1="900" y1="430" x2="900" y2="446"/><line x1="930" y1="430" x2="930" y2="446"/><line x1="960" y1="430" x2="960" y2="446"/>
+    <line x1="990" y1="430" x2="990" y2="446"/><line x1="1020" y1="430" x2="1020" y2="446"/><line x1="1050" y1="430" x2="1050" y2="446"/>
+    <line x1="1080" y1="430" x2="1080" y2="446"/><line x1="1110" y1="430" x2="1110" y2="446"/><line x1="1140" y1="430" x2="1140" y2="446"/>
+  </g>
+  <!-- water streams running down the driveway into the drain -->
+  <g stroke="#2479c2" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M80 480 q60 -10 120 -8 q60 2 120 -10"/>
+    <path d="M260 500 q60 -10 120 -12 q60 -2 120 -18 q40 -10 90 -18"/>
+    <path d="M120 530 q90 -14 180 -20 q90 -6 180 -30 q50 -12 110 -28"/>
+  </g>
+  <!-- pipe from drain to outlet -->
+  <path d="M1150 451 V560 H1200" stroke="#1a62a6" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <!-- small happy car -->
+  <g transform="translate(150 360)">
+    <rect x="0" y="40" width="220" height="60" rx="18" fill="#c2703d"/>
+    <path d="M40 40 L70 5 H150 L185 40 Z" fill="#c2703d"/>
+    <path d="M60 38 L80 14 H140 L165 38 Z" fill="#d6e9f7"/>
+    <circle cx="55" cy="102" r="22" fill="#102a43"/><circle cx="170" cy="102" r="22" fill="#102a43"/>
+    <circle cx="55" cy="102" r="8" fill="#cbd5e1"/><circle cx="170" cy="102" r="8" fill="#cbd5e1"/>
+    <circle cx="210" cy="62" r="8" fill="#fbf4ee"/>
+  </g>
+</svg>

@@ -10,10 +10,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-geist-sans)", "system-ui", "sans-serif"],
+      },
       colors: {
         foreground: "var(--foreground)",
         text: {
-          DEFAULT: "#1e293b",
+          DEFAULT: "#102a43",
           subtle: "#475569",
           muted: "#64748b",
           inverted: "#ffffff",
@@ -26,7 +29,7 @@ const config: Config = {
           disabled: "#94a3b8",
         },
         background: {
-          DEFAULT: "var(--background)",
+          DEFAULT: "#ffffff",
           50: "#f9fafb",
           100: "#f3f4f6",
           200: "#e5e7eb",
@@ -39,17 +42,42 @@ const config: Config = {
           subtle: "#cbd5e1",
           strong: "#94a3b8",
         },
+        // Fjord blue: the main brand colour.
         brand: {
-          50: "#eff6ff",
-          100: "#dbeafe",
-          200: "#bfdbfe",
-          300: "#93c5fd",
-          400: "#60a5fa",
-          500: "#3b82f6",
-          600: "#2563eb",
-          700: "#1d4ed8",
-          800: "#1e40af",
-          900: "#1e3a8a",
+          50: "#eef6fc",
+          100: "#d6e9f7",
+          200: "#add3ef",
+          300: "#7db8e4",
+          400: "#4a98d6",
+          500: "#2479c2",
+          600: "#1a62a6",
+          700: "#164f87",
+          800: "#143f6b",
+          900: "#102f50",
+        },
+        // Deep navy for headings, dark sections and the footer.
+        ink: {
+          600: "#334e68",
+          700: "#243b53",
+          800: "#1b3a5b",
+          900: "#102a43",
+          950: "#0b1f33",
+        },
+        // Warm earth accent (soil, clay): highlights and secondary CTAs.
+        clay: {
+          50: "#fbf4ee",
+          100: "#f4e3d3",
+          200: "#e8c6a7",
+          400: "#d08a55",
+          500: "#c2703d",
+          600: "#a55a2e",
+          700: "#84462a",
+        },
+        // Light warm background for alternating sections.
+        sand: {
+          50: "#fbf9f6",
+          100: "#f5f1ea",
+          200: "#ebe4d8",
         },
         // orange: {
         //   50: "#fff8f1",

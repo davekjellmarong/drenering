@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { PostHogProvider } from "@/src/providers/PosthogProvider";
-// import Navbar from "@/src/components/nav/NavBar";
-import Footer from "@/src/components/features/footer/Footer";
-import { Header } from "@/src/components/features/header/Header";
+import { Header } from "@/src/components/site/Header";
+import { Footer } from "@/src/components/site/Footer";
+import { MobileCta } from "@/src/components/site/MobileCta";
+import { ContentMethods } from "@/src/queryFactory/Article";
+import { CityMethods } from "@/src/queryFactory/City";
 import ReactQueryProvider from "@/src/providers/ReactQueryProvider";
 import { Toaster } from "sonner";
 
@@ -34,41 +36,64 @@ export const metadata: Metadata = {
   },
 };
 
-const organizationJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "DinDrenering",
-  url: "https://www.dindrenering.no",
-  logo: "https://www.dindrenering.no/logo.png",
-  description:
-    "Sammenligningstjeneste for drenering. Få tilbud fra kvalifiserte dreneringsfirmaer i Norge.",
-  areaServed: "NO",
-};
+// A comparison service without a public address, so Organization rather
+// than LocalBusiness.
+const siteJsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "DinDrenering",
+    url: "https://www.dindrenering.no",
+    logo: "https://www.dindrenering.no/logo.png",
+    description:
+      "Gratis tjeneste som setter huseiere i kontakt med dreneringsfirma i Norge.",
+    areaServed: "NO",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "DinDrenering",
+    url: "https://www.dindrenering.no",
+    inLanguage: "nb-NO",
+  },
+];
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const toNav = (base: string) => (entry: { slug: string; navTitle?: string; title: string }) => ({
+    href: `${base}/${entry.slug}`,
+    title: entry.navTitle || entry.title,
+  });
+  const guides = (await ContentMethods.getAll("guides")).map(toNav("/drenering"));
+  const services = (await ContentMethods.getAll("tjenester")).map(toNav("/tjenester"));
+  const cities = (await CityMethods.getAll()).map((city) => ({
+    href: `/drenering/${city.slug}`,
+    title: city.name,
+  }));
+
   return (
     <html lang="no">
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
-        <Header />
+        <Header guides={guides} />
         <ReactQueryProvider>
           <PostHogProvider>
-            <main className="">{children}</main>
+            <main>{children}</main>
             <Toaster richColors />
           </PostHogProvider>
         </ReactQueryProvider>
-        <Footer />
+        <Footer guides={guides} services={services} cities={cities} />
+        <MobileCta />
       </body>
     </html>
   );

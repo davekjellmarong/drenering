@@ -10,8 +10,8 @@ export const metadata = {
 
 export default function KontaktPage() {
   return (
-    <div className="container mx-auto px-4 py-16 max-w-3xl text-brand-700 text-lg space-y-6">
-      <h1 className="text-4xl font-bold text-brand-900">Kontakt oss</h1>
+    <div className="container mx-auto px-4 py-16 max-w-3xl text-slate-700 text-lg space-y-6">
+      <h1 className="text-4xl font-bold text-ink-900">Kontakt oss</h1>
       <p>
         DinDrenering drives av én person, så den raskeste veien er e-post:{" "}
         <a

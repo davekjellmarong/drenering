@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img">
+  <rect width="1200" height="600" fill="#f5f1ea"/>
+  <!-- lawn -->
+  <rect x="140" y="70" width="920" height="460" rx="30" fill="#a9c99a"/>
+  <!-- trench around the house (dashed) -->
+  <rect x="330" y="150" width="540" height="300" rx="8" fill="none" stroke="#c9a27e" stroke-width="44"/>
+  <rect x="330" y="150" width="540" height="300" rx="8" fill="none" stroke="#1a62a6" stroke-width="6" stroke-dasharray="18 12"/>
+  <!-- house roof seen from above -->
+  <rect x="360" y="180" width="480" height="240" rx="6" fill="#102a43"/>
+  <path d="M360 300 H840" stroke="#243b53" stroke-width="8"/>
+  <rect x="740" y="210" width="40" height="40" fill="#334e68"/>
+  <!-- inspection wells at corners -->
+  <g fill="#ffffff" stroke="#1a62a6" stroke-width="5">
+    <circle cx="330" cy="150" r="16"/><circle cx="870" cy="150" r="16"/>
+    <circle cx="330" cy="450" r="16"/><circle cx="870" cy="450" r="16"/>
+  </g>
+  <!-- outlet -->
+  <path d="M870 450 C 930 480, 980 500, 1020 500" fill="none" stroke="#1a62a6" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="1030" cy="500" r="20" fill="#ffffff" stroke="#102a43" stroke-width="5"/>
+  <!-- measuring arrows -->
+  <g stroke="#c2703d" stroke-width="6" stroke-linecap="round">
+    <path d="M330 520 H870"/><path d="M330 505 v30"/><path d="M870 505 v30"/>
+    <path d="M940 150 V450"/><path d="M925 150 h30"/><path d="M925 450 h30"/>
+  </g>
+  <!-- tiny measuring tape character for fun -->
+  <g transform="translate(205 395)">
+    <rect x="0" y="0" width="70" height="70" rx="14" fill="#c2703d"/>
+    <circle cx="35" cy="35" r="16" fill="#fbf4ee"/>
+    <circle cx="27" cy="31" r="3" fill="#102a43"/><circle cx="43" cy="31" r="3" fill="#102a43"/>
+    <path d="M27 41 q8 7 16 0" stroke="#102a43" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <rect x="70" y="52" width="60" height="10" fill="#e8c6a7"/>
+  </g>
+</svg>
