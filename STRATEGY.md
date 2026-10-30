@@ -181,7 +181,10 @@ sourced data**, never invented "local insight":
 - lowercase city slugs with 301s
 - canonicals on every page
 - sitemap cleanup
-- `www` as the canonical host (Netlify serves `www.dindrenering.no`; the apex domain 301s to it)
+- `www` as the canonical host (the apex domain 301s to `www.dindrenering.no`)
+- Hosting moved from Netlify to Cloudflare Pages as a static export (2026-10-30). Netlify's free
+  credits ran out from deploys plus about 140k bot requests a month; on Cloudflare,
+  static requests are free and unlimited.
 
 **To do** (in PLAN.md):
 - Hub pages for `/drenering`, `/tjenester` and `/om-oss`, which are 404 today.

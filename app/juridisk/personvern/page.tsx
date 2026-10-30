@@ -8,7 +8,7 @@ export const metadata = {
     "Hvilke opplysninger DinDrenering samler inn når du ber om tilbud, hva de brukes til, hvem som får dem og hvilke rettigheter du har.",
 };
 
-const UPDATED = "27. oktober 2026";
+const UPDATED = "30. oktober 2026";
 
 export default function PersonvernPage() {
   return (
@@ -63,8 +63,13 @@ export default function PersonvernPage() {
           selv ansvarlig for hvordan det behandler opplysningene.
         </li>
         <li>
-          <strong>Netlify</strong> (Netlify, Inc., USA) drifter nettstedet og
-          tar imot innsendte skjemaer.
+          <strong>Cloudflare</strong> (Cloudflare, Inc., USA) drifter nettstedet
+          og tar imot innsendte skjemaer.
+        </li>
+        <li>
+          <strong>Resend</strong> (Plus Five Five, Inc., USA) leverer innsendte
+          skjemaer til oss på e-post. Opplysningene lagres ikke i noen database
+          hos oss; e-posten er det eneste eksemplaret.
         </li>
         <li>
           <strong>PostHog</strong> (PostHog, Inc., USA) brukes til anonym
@@ -72,7 +77,7 @@ export default function PersonvernPage() {
         </li>
       </ul>
       <p>
-        Netlify og PostHog behandler opplysningene på våre vegne, og
+        Cloudflare, Resend og PostHog behandler opplysningene på våre vegne, og
         opplysningene kan dermed bli behandlet i USA.
       </p>
 

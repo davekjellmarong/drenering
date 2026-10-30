@@ -1,0 +1,34 @@
+# Cloudflare Pages redirects (https://developers.cloudflare.com/pages/configuration/redirects/).
+# The site is a static export, so redirects that used to live in Next.js
+# (middleware.ts, next.config redirects) are here instead.
+
+# The vision page was only ever a placeholder; its content is on the team page.
+/om-oss/visjon /om-oss/team 301
+
+# Old city URLs used the display name (/drenering/Oslo, /drenering/Tromsø).
+# They now live at lowercase ASCII slugs (/drenering/oslo, /drenering/tromso).
+/drenering/Oslo /drenering/oslo 301
+/drenering/Bergen /drenering/bergen 301
+/drenering/Trondheim /drenering/trondheim 301
+/drenering/Stavanger /drenering/stavanger 301
+/drenering/Drammen /drenering/drammen 301
+/drenering/Kristiansand /drenering/kristiansand 301
+/drenering/Troms%C3%B8 /drenering/tromso 301
+/drenering/Tromsø /drenering/tromso 301
+/drenering/Fredrikstad /drenering/fredrikstad 301
+/drenering/Sandnes /drenering/sandnes 301
+/drenering/Sarpsborg /drenering/sarpsborg 301
+/drenering/Bod%C3%B8 /drenering/bodo 301
+/drenering/Bodø /drenering/bodo 301
+/drenering/%C3%85lesund /drenering/alesund 301
+/drenering/Ålesund /drenering/alesund 301
+/drenering/Sandefjord /drenering/sandefjord 301
+/drenering/Larvik /drenering/larvik 301
+/drenering/T%C3%B8nsberg /drenering/tonsberg 301
+/drenering/Tønsberg /drenering/tonsberg 301
+/drenering/Halden /drenering/halden 301
+/drenering/Moss /drenering/moss 301
+/drenering/Hamar /drenering/hamar 301
+/drenering/Lillehammer /drenering/lillehammer 301
+/drenering/Gj%C3%B8vik /drenering/gjovik 301
+/drenering/Gjøvik /drenering/gjovik 301

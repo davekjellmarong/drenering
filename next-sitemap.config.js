@@ -1,6 +1,8 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: "https://www.dindrenering.no",
+  // Static export: the site is built into out/, so write the sitemap there.
+  outDir: "out",
   generateRobotsTxt: true,
   exclude: [
     "/cities",
@@ -9,7 +11,6 @@ module.exports = {
     "/bli-partner/takk",
     "/icon.png",
     "/apple-icon.png",
-    "/om-oss/visjon",
   ],
   robotsTxtOptions: {
     policies: [{ userAgent: "*", allow: "/", disallow: ["/kontrollpanel"] }],

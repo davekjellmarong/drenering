@@ -4,7 +4,7 @@ import type React from "react";
 import { toast } from "sonner";
 import { useState } from "react";
 import { useMutation } from "@tanstack/react-query";
-import { submitNetlifyForm } from "@/src/utils/netlifyForms";
+import { submitForm } from "@/src/utils/submitForm";
 import { useRouter } from "next/navigation";
 import { SuccessMessage } from "./SuccessMessage";
 import { PartnerAddressFields } from "./AddressFields";
@@ -53,7 +53,7 @@ export function PartnerSignupForm() {
     // Address fields are filled from the company search, so read them from
     // the submitted form; the rest is kept in state.
     mutationFn: (submitted: FormData) =>
-      submitNetlifyForm("partner", {
+      submitForm("partner", {
         companyName: formData.companyName,
         contactName: formData.contactName,
         email: formData.email,

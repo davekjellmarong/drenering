@@ -2,7 +2,7 @@
 
 import type React from "react";
 import { useState } from "react";
-import { submitNetlifyForm } from "@/src/utils/netlifyForms";
+import { submitForm } from "@/src/utils/submitForm";
 import { useMutation } from "@tanstack/react-query";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
@@ -47,7 +47,7 @@ export function QuoteForm() {
 
   const { mutate, isPending } = useMutation({
     mutationFn: (data: QuoteFormData) =>
-      submitNetlifyForm("tilbud", { ...data }),
+      submitForm("tilbud", { ...data }),
     onSuccess: () => {
       toast.success("Forespørselen er sendt!");
       router.push("/tilbud/takk");

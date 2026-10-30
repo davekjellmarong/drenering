@@ -1,8 +1,11 @@
 # DinDrenering (dindrenering.no)
 
 Norwegian site that compares drainage (drenering) contractors and sends homeowners'
-quote requests on to them. Next.js 15 App Router, deployed by Netlify on every push to
-`main`. There is no CMS and no paid service; keep it that way.
+quote requests on to them. Next.js 15 App Router as a fully static export
+(`output: "export"` → `out/`), hosted free on Cloudflare Pages, which builds every
+push to `main`. There is no CMS and no paid service; keep it that way. (Moved off
+Netlify on 2026-10-30, after its credit-based free plan ran out from deploys plus
+bot traffic.)
 
 ## Goal
 
@@ -78,8 +81,12 @@ whole site its credibility.
   be removed.
 - Owner and contact details live in `OWNER` in `src/utils/Constants.ts`; reuse
   it instead of hardcoding them.
-- Forms post to Netlify Forms via `src/utils/netlifyForms.ts`; any new form or
-  field must also be added to `public/__forms.html`.
+- Forms post JSON to the Cloudflare Pages Function `functions/api/[form].ts` via
+  `src/utils/submitForm.ts`. It emails the lead to the owner through Resend
+  (free: 100 emails a day). A new form or field must be added to `FORMS` there.
+- Static export means no Next.js server features: no middleware, no
+  `redirects()`, no route handlers that take POST, no server actions, no image
+  optimisation, no ISR. Redirects go in `public/_redirects`.
 
 ## Images
 
@@ -94,11 +101,12 @@ whole site its credibility.
 
 ## Shipping changes
 
-- Run `npm run build` before committing; it also regenerates `public/sitemap*.xml`
-  (commit those too). Optionally run `npx next start` and curl changed pages.
-- Commit to `main` and push. Netlify deploys automatically. Don't wait for or poll
-  the live deploy.
-- Old city URLs (`/drenering/Oslo`) 301 to slugs in `middleware.ts`. Every
+- Run `npm run build` before committing; it writes the site plus sitemap and
+  robots.txt to `out/` (git-ignored). To check pages locally, serve `out/` with
+  `npx serve out`.
+- Commit to `main` and push. Cloudflare Pages builds and deploys automatically
+  (free plan: 500 builds a month). Don't wait for or poll the live deploy.
+- Old city URLs (`/drenering/Oslo`) 301 to slugs in `public/_redirects`. Every
   indexable page sets `alternates.canonical`.
-- The canonical host is `https://www.dindrenering.no` (Netlify 301s the apex to
-  www). Hardcoded absolute URLs must use www.
+- The canonical host is `https://www.dindrenering.no` (the apex redirects to www).
+  Hardcoded absolute URLs must use www.
