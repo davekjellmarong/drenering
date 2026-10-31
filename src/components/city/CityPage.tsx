@@ -60,7 +60,7 @@ export function CityPage({ city, guides, otherCities }: CityPageProps) {
             </p>
             <ul className="mt-6 space-y-2 text-slate-700">
               <li>✓ Gratis og uforpliktende</li>
-              <li>✓ Opptil 3 tilbud å sammenligne</li>
+              <li>✓ Du sammenligner tilbudene selv</li>
               <li>✓ Du velger selv hvem du vil bruke</li>
             </ul>
             <Image

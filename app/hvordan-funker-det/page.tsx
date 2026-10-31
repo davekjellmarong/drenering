@@ -7,7 +7,7 @@ export const metadata = {
   alternates: { canonical: "/hvordan-funker-det" },
   title: "Slik fungerer DinDrenering",
   description:
-    "Slik fungerer DinDrenering: én gratis forespørsel som vi sender til opptil 3 dreneringsfirma i ditt område. Og hvordan tjenesten finansieres.",
+    "Slik fungerer DinDrenering: én gratis forespørsel som sendes til opptil 3 dreneringsfirma i ditt område, og hvordan tjenesten finansieres.",
 };
 
 const STEPS = [
@@ -17,7 +17,7 @@ const STEPS = [
   },
   {
     title: "Vi sender forespørselen videre",
-    text: "Forespørselen går til opptil 3 dreneringsfirma som jobber i området ditt. Vi deler bare det du har fylt inn i skjemaet.",
+    text: "Forespørselen går til opptil 3 dreneringsfirma som jobber i området ditt. Tjenesten drives av én person, og forespørslene gjennomgås og videresendes manuelt. Vi deler bare det du har fylt inn i skjemaet.",
   },
   {
     title: "Firmaene kontakter deg",

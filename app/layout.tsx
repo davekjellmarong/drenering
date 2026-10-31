@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   title: "Drenering | Sammenlign tilbud fra dreneringsfirma i Norge",
   description:
-    "Få opptil 3 gratis tilbud på drenering fra lokale firma. Se priser, les guider om drenering rundt hus og fuktsikring, og finn riktig dreneringsfirma.",
+    "Beskriv dreneringsjobben én gang og få forespørselen sendt til dreneringsfirma i ditt område. Guider om pris, drenering rundt hus og fuktsikring.",
   openGraph: {
     type: "website",
     locale: "nb_NO",

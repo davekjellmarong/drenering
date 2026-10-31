@@ -43,7 +43,7 @@ export async function generateMetadata({
   if (!city) return {};
   return {
     title: `Drenering i ${city.name} | Få tilbud fra lokale firma`,
-    description: `Trenger du drenering i ${city.name}? Beskriv jobben én gang og få opptil 3 tilbud fra dreneringsfirma i ${city.name}. Gratis og uforpliktende.`,
+    description: `Trenger du drenering i ${city.name}? Beskriv jobben én gang og få forespørselen sendt til dreneringsfirma som jobber i ${city.name}. Gratis og uforpliktende.`,
     alternates: { canonical: `/drenering/${city.slug}` },
   };
 }

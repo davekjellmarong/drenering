@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 const NEXT_STEPS = [
-  "Vi går gjennom forespørselen og sender den til opptil 3 dreneringsfirma som jobber i ditt område.",
+  "Vi går gjennom forespørselen og sender den til opptil 3 dreneringsfirma som jobber i ditt område. Vi kan ikke love at alle områder har firma som tar oppdraget.",
   "Firmaene kontakter deg direkte, ofte for å avtale en befaring før de gir en fast pris.",
   "Du sammenligner tilbudene og velger selv om du vil takke ja til noen av dem.",
 ];

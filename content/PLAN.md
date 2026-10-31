@@ -49,7 +49,6 @@ large group.
 - [ ] Article: vann i kjeller ved snøsmelting og vårflom (MUST be live by 2027-02-01; move up if needed).
 - [ ] Article: takrenner, nedløp og overvann (connection to drainage, simple fixes first).
 - [ ] Article: pumpekum og pumpesump.
-- [ ] Fact-audit `/hvordan-funker-det` and the homepage copy against what the service actually does today.
 - [ ] City data: Sarpsborg, Ålesund, Sandefjord.
 - [ ] Article: spyling og inspeksjon av drensrør (kamera-inspeksjon, when it's worth it).
 - [ ] `/tjenester/drensror-installasjon`: expand.
@@ -67,6 +66,7 @@ large group.
 - [ ] Price index from partner quote data (STRATEGY.md section 6).
 
 ## Done
+- 2026-10-31: Fact-audit of `/hvordan-funker-det`, homepage, layout metadata, city meta/hero and thank-you page against what the service does today (leads are emailed to the owner and forwarded manually; partners are only being recruited). Removed "få opptil 3 tilbud" / "3 gratis tilbud fra lokale firma" promises from meta descriptions and city hero, added that requests are handled manually and coverage is not guaranteed. Info gain: none (trust fix). NOTE: the 2026-10-31 run could not reach SSB, met.no, dibk.no, NGU or byggebolig.no (proxy 403 / ENOTFOUND), so all source-dependent backlog items were skipped; the sites must be allowed in the session network settings. Open follow-up: footer/QuoteWizard consent text still says "opptil 3" (an upper bound, kept).
 - 2026-10-28: Rebuilt `/drenering/pris`. Removed the invented price tiers (150–300k etc.), the "1–3 uker" claim and the "30–50 år" claim, and the same 150–300k line on `hva-er-drenering`. Added a driver table, "pris per meter" section on why meter prices are not comparable, how to calculate meters of wall, drenering + isolering section, a 10-point checklist of what a quote must itemise, FAQ (5 questions) and an inline SVG plan view. Inbound links added from two blog articles. Info gain: quote checklist + meter calculation + honest no-number stance. Sources: none cited (no kroner or rules stated) because the sites needed were unreachable; see follow-up item.
 - 2026-10-27: Phase 1 technical fixes. Blog moved to Markdown, city URL slugs + 301s, canonicals, sitemap cleanup, removed invented per-city price from city FAQ.
 - 2026-10-30: Full UI redesign. New palette (navy/fjord blue/clay), SVG logo, sticky header with Guider menu, mobile CTA bar, new footer. Job-first 3-step quote form (`src/components/quote/`) with answers carried over from the home/city quick start. All guides and services moved to Markdown (`content/guides`, `content/tjenester`) with one shared ArticleLayout (summary box, table of contents, FAQ + JSON-LD, sources, related, CTA). Hubs `/drenering`, `/tjenester`, `/om-oss`, a 404 page, breadcrumbs, and Organization + WebSite JSON-LD. Rewrote drenering-rundt-hus (was empty) and drenerings-renne (showed the wrong content); merged fordeler/baerekraftig/klimaendringer with 301s; removed the fake dashboard and unused components. Removed unsourced "30–50 år" lifetime claims and a "1–2 virkedager" response promise.
