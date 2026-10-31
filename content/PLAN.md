@@ -11,6 +11,11 @@ Content lives in `content/guides`, `content/tjenester` and `content/blog` (Markd
 Exception: if a new file appears in `content/data/gsc/` that no Done entry
 mentions, do an optimisation run instead (STRATEGY.md section 10).
 
+Content ceiling: drenering supports about 40–60 distinct articles. Prefer
+extending an existing page over a new one, and when the backlog runs dry,
+follow the order in STRATEGY.md section 10 ("Content ceiling") instead of
+inventing new article ideas.
+
 ## Backlog (in priority order)
 
 Reordered 2026-10-27 from the first GSC export (`content/data/gsc/2026-10/`, see

@@ -242,6 +242,27 @@ Never use paid links, link networks or link exchanges at scale.
   with unsourced claims hurt trust more than missing pages do.
 - **Leads:** if a run notices the quote form failing, put it at the top of
   PLAN.md and say so in the final summary.
+- **Content ceiling (decided 2026-10-31):** drenering supports roughly 40–60
+  genuinely distinct articles (price, method, problems, rules, overvann,
+  hiring) plus sourced city pages for perhaps 20–40 of the largest
+  municipalities. Past that, new pages split hairs and cannibalise existing
+  ones. Page count is not the goal; being the most useful result for each
+  search is. So:
+  1. Before adding a new page, ask whether it serves a search intent no
+     existing page covers. If an existing page could answer it with a new
+     section or FAQ, extend that page instead.
+  2. Once the core clusters in the keyword map (section 4) are mostly ✔, and
+     at the latest when Expansion in PLAN.md is used up, runs stop defaulting
+     to new articles. They switch to, in this order: GSC optimisation of pages
+     at positions 5–20; deepening and re-sourcing existing pages (bump
+     `updated`); city data for the next municipalities; linkable assets
+     (section 8); and only then adjacent topics that bring the same customer
+     (kjellerrehabilitering, fukt og mugg i kjeller, etterisolering av
+     grunnmur, radonsikring ved graving), each checked against the keyword map
+     first.
+  3. Never publish a city page that only swaps the name (section 5), and never
+     pad the backlog with near-duplicate keyword variants; those belong as
+     sections, FAQs or synonyms on the page that already ranks.
 
 ## 11. Owner tasks (not doable from code)
 
