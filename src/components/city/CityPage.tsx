@@ -5,6 +5,7 @@ import { Faq } from "@/src/components/site/Faq";
 import { QuickStart } from "@/src/components/quote/QuickStart";
 import type { City } from "@/src/utils/types";
 import type { NavItem } from "@/src/components/site/Header";
+import { CITY_DATA } from "@/src/utils/cityData";
 
 const SIGNS = [
   { title: "Fukt på kjellerveggene", text: "Ofte nederst på veggen, og verst etter regn eller snøsmelting." },
@@ -44,6 +45,9 @@ export function CityPage({ city, guides, otherCities }: CityPageProps) {
     },
   ];
 
+  const data = CITY_DATA[city.slug];
+  const houses = data?.detachedHouses;
+
   return (
     <>
       <section className="border-b border-border bg-sand-50">
@@ -74,6 +78,25 @@ export function CityPage({ city, guides, otherCities }: CityPageProps) {
           <QuickStart city={city.name} />
         </div>
       </section>
+
+      {houses && (
+        <section className="container mx-auto max-w-6xl px-4 pt-14">
+          <h2 className="text-2xl font-bold text-ink-900 md:text-3xl">Boliger og grunn i {city.name}</h2>
+          <p className="mt-3 max-w-3xl text-slate-700">
+            Det er registrert {houses.value.toLocaleString("nb-NO")} eneboliger i {data.municipality} kommune
+            ({houses.year}, kilde:{" "}
+            <a href={houses.sourceUrl} className="text-brand-700 underline" rel="noopener">{houses.sourceName}</a>).
+            En drenering har begrenset levetid, og hvor lenge den holder varierer med grunn, materialer og hvordan den ble lagt.{" "}
+            <Link href="/drenering/pris" className="text-brand-700 underline">Se hva som bestemmer prisen</Link>.
+          </p>
+          <p className="mt-3 max-w-3xl text-slate-700">
+            Grunnforholdene varierer fra tomt til tomt. NGUs{" "}
+            <a href="https://geo.ngu.no/kart/losmasse_mobil/" className="text-brand-700 underline" rel="noopener">løsmassekart</a>{" "}
+            viser hvilke typer løsmasser som er registrert i området ditt, men det erstatter ikke en befaring på
+            eiendommen.
+          </p>
+        </section>
+      )}
 
       <section className="container mx-auto max-w-6xl px-4 py-14">
         <h2 className="text-2xl font-bold text-ink-900 md:text-3xl">Slik får du tilbud</h2>
