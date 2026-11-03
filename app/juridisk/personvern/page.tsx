@@ -8,7 +8,7 @@ export const metadata = {
     "Hvilke opplysninger DinDrenering samler inn når du ber om tilbud, hva de brukes til, hvem som får dem og hvilke rettigheter du har.",
 };
 
-const UPDATED = "30. oktober 2026";
+const UPDATED = "3. november 2026";
 
 export default function PersonvernPage() {
   return (
@@ -36,8 +36,9 @@ export default function PersonvernPage() {
         kontaktperson, e-post, telefonnummer, nettside og adresse.
       </p>
       <p>
-        <strong>Når du besøker nettstedet</strong>: anonym bruksstatistikk, som
-        hvilke sider som besøkes. Se avsnittet om statistikk nedenfor.
+        <strong>Når du besøker nettstedet</strong>: hvilke sider du besøker,
+        hva du klikker på, hvor langt du scroller, og et opptak av besøket. Se
+        avsnittet om statistikk nedenfor.
       </p>
 
       <h2>Hva opplysningene brukes til, og grunnlaget for det</h2>
@@ -72,8 +73,8 @@ export default function PersonvernPage() {
           hos oss; e-posten er det eneste eksemplaret.
         </li>
         <li>
-          <strong>PostHog</strong> (PostHog, Inc., USA) brukes til anonym
-          bruksstatistikk.
+          <strong>PostHog</strong> (PostHog, Inc., USA) brukes til statistikk
+          og opptak av besøk. Dataene lagres i EU.
         </li>
       </ul>
       <p>
@@ -81,13 +82,18 @@ export default function PersonvernPage() {
         opplysningene kan dermed bli behandlet i USA.
       </p>
 
-      <h2>Statistikk og informasjonskapsler</h2>
+      <h2>Statistikk og opptak av besøk</h2>
       <p>
-        Vi bruker PostHog til å telle sidevisninger og se hvordan nettstedet
-        brukes, slik at vi kan forbedre innholdet. PostHog er satt opp uten
-        informasjonskapsler (cookies) og uten å lagre noe på enheten din, og vi
-        bruker ikke opptak av økter. Vi bruker ikke informasjonskapsler til
-        annonsering eller sporing.
+        Vi bruker PostHog til å forstå hvordan siden brukes: hvilke sider som
+        besøkes, hva som klikkes på, hvor langt det scrolles, og et opptak av
+        besøket på siden. Det du skriver i skjemaet, blir skjult i opptakene.
+        PostHog lagrer informasjonskapsler i nettleseren din for å kjenne igjen
+        besøket, og dataene lagres i EU.
+      </p>
+      <p>
+        Vi bruker dette bare til å forbedre siden, ikke til annonsering, og
+        sletter dataene når vi ikke lenger trenger dem til dette. Du kan slette
+        informasjonskapslene i nettleseren din når som helst.
       </p>
 
       <h2>Hvor lenge vi lagrer opplysningene</h2>

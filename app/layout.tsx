@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { PostHogProvider } from "@/src/providers/PosthogProvider";
+import { POSTHOG_SNIPPET } from "@/src/utils/posthogSnippet";
 import { Header } from "@/src/components/site/Header";
 import { Footer } from "@/src/components/site/Footer";
 import { MobileCta } from "@/src/components/site/MobileCta";
@@ -77,6 +77,8 @@ export default async function RootLayout({
   return (
     <html lang="no">
       <head>
+        {/* PostHog (statistics and session replay) */}
+        <script dangerouslySetInnerHTML={{ __html: POSTHOG_SNIPPET }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
@@ -87,10 +89,9 @@ export default async function RootLayout({
       >
         <Header guides={guides} />
         <ReactQueryProvider>
-          <PostHogProvider>
-            <main>{children}</main>
-            <Toaster richColors />
-          </PostHogProvider>
+          <main>{children}</main>
+          <Toaster richColors />
+
         </ReactQueryProvider>
         <Footer guides={guides} services={services} cities={cities} />
         <MobileCta />

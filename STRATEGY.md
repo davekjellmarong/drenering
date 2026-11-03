@@ -294,6 +294,18 @@ Then:
      - (c) a fact-check of one or two articles ("Faglig gjennomgått av …",
        a strong trust signal).
    - Contractors buy leads, not rankings, so this unlocks both revenue and content.
+   - **How leads are handled for now (decided 2026-11-03):** manually. Each
+     lead is emailed to the owner (the first real one came from Hamar). Within
+     about one working day, the owner emails or calls 2–3 contractors in that
+     area with the job details (no personal data), gives the first lead free,
+     and passes the homeowner's contact details only to those who say yes
+     (never more than three; that is the consent the form asks for). The owner logs
+     leads and contractors in a sheet and checks with the homeowner after a
+     week whether anyone made contact. This builds the partner list one real
+     job at a time. Automatic routing to partners (by municipality, from the
+     form function) comes once 3–5 contractors have agreed to pay per lead.
+     Until then the site must not promise a response time or a number of
+     offers, only "opptil 3" firms and no guarantee.
 8. **Facebook ads**, only after items 4 and 7 so leads have somewhere to go.
    - Use a small budget, target homeowners in the partner cities, and run them
      seasonally (section 9).

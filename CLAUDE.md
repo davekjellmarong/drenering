@@ -108,6 +108,11 @@ whole site its credibility.
 - Forms post JSON to the Cloudflare Pages Function `functions/api/[form].ts` via
   `src/utils/submitForm.ts`. It emails the lead to the owner through Resend
   (free: 100 emails a day). A new form or field must be added to `FORMS` there.
+- Analytics: PostHog (EU cloud, session replay on every visit, inputs masked)
+  loads from the inline snippet in `src/utils/posthogSnippet.ts`, rendered in
+  `<head>` by `app/layout.tsx`. Keep the loader line verbatim. There is no
+  consent banner yet (the owner's temporary choice); the privacy page
+  describes the setup, so update it if the tracking changes.
 - Static export means no Next.js server features: no middleware, no
   `redirects()`, no route handlers that take POST, no server actions, no image
   optimisation, no ISR. Redirects go in `public/_redirects`.
