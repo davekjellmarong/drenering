@@ -97,4 +97,5 @@ Et tilbud som ser billig ut, men mangler flere av punktene, blir ofte dyrere und
 - Be om samme omfang fra alle, med isolasjon som eget alternativ.
 - Sjekk først om dreneringen faktisk trengs: en kamerainspeksjon av eksisterende drensrør kan vise tilstanden før du velger omfang. Se [vanninntrenging i kjeller](/drenering/vanninntrenging) for hvordan problemet kan se ut.
 - Avklar på forhånd hvem som gjør hva hvis du vil bidra selv, for eksempel graving. Det påvirker både pris og ansvar.
+- Be om at tilbudet oppgir masser, fall og kum. Hvordan det ser ut når jobben er riktig utført, står i [drenering rundt hus: steg for steg og mål](/drenering/drenering-rundt-hus).
 - Spør om fremdriftsplan. Hvor lang tid jobben tar avhenger av grunnforhold, vær og omfang, så vær skeptisk til et tall uten forbehold.

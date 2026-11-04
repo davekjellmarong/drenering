@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img">
+  <rect width="1200" height="600" fill="#eff6ff"/>
+  <!-- sky rain -->
+  <g stroke="#60a5fa" stroke-width="5" stroke-linecap="round">
+    <path d="M620 40l-12 34M700 70l-12 34M780 30l-12 34M860 80l-12 34M940 45l-12 34M1020 75l-12 34M1100 35l-12 34"/>
+  </g>
+  <!-- soil -->
+  <path d="M0 250 L820 250 L1200 290 L1200 600 L0 600Z" fill="#b08968"/>
+  <path d="M0 250 L820 250 L1200 290" fill="none" stroke="#6b4f3a" stroke-width="6"/>
+  <!-- grass strip -->
+  <path d="M520 250 L820 250 L1200 290 L1200 302 L820 262 L520 262Z" fill="#7aa05a"/>
+  <!-- trench gravel -->
+  <rect x="430" y="262" width="230" height="300" fill="#d6c7a8"/>
+  <g fill="#a8977a">
+    <circle cx="460" cy="330" r="7"/><circle cx="520" cy="360" r="8"/><circle cx="590" cy="320" r="7"/><circle cx="630" cy="400" r="8"/><circle cx="470" cy="430" r="8"/><circle cx="560" cy="480" r="7"/><circle cx="620" cy="520" r="8"/><circle cx="480" cy="520" r="7"/>
+  </g>
+  <!-- foundation wall + house -->
+  <rect x="0" y="40" width="330" height="520" fill="#e5e7eb"/>
+  <rect x="0" y="180" width="330" height="70" fill="#f3f4f6"/>
+  <path d="M0 40 L165 -20 L330 40Z" fill="#1e3a8a"/>
+  <rect x="300" y="250" width="40" height="310" fill="#9ca3af"/>
+  <!-- insulation -->
+  <rect x="340" y="262" width="36" height="298" fill="#fde68a"/>
+  <!-- knott -->
+  <rect x="376" y="262" width="18" height="298" fill="#2563eb"/>
+  <g fill="#1e3a8a"><circle cx="400" cy="290" r="6"/><circle cx="400" cy="340" r="6"/><circle cx="400" cy="390" r="6"/><circle cx="400" cy="440" r="6"/><circle cx="400" cy="490" r="6"/></g>
+  <!-- fiberduk -->
+  <path d="M420 262 V540 H670 V262" fill="none" stroke="#1e3a8a" stroke-width="5" stroke-dasharray="14 8"/>
+  <!-- footing -->
+  <rect x="290" y="545" width="130" height="30" fill="#9ca3af"/>
+  <!-- pipe -->
+  <circle cx="500" cy="500" r="30" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="6"/>
+  <circle cx="500" cy="500" r="12" fill="#eff6ff"/>
+  <!-- water arrows -->
+  <path d="M520 150 Q500 200 480 255" fill="none" stroke="#2563eb" stroke-width="6" stroke-linecap="round"/>
+  <path d="M410 300 V470" stroke="#60a5fa" stroke-width="5" stroke-linecap="round"/>
+  <path d="M462 500 L416 500" stroke="#60a5fa" stroke-width="5" stroke-linecap="round" opacity="0"/>
+  <!-- slope arrows on ground -->
+  <path d="M700 232 L860 248" stroke="#1e3a8a" stroke-width="5" stroke-linecap="round" marker-end="url(#a)"/>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#1e3a8a"/></marker></defs>
+  <!-- outlet pipe to kum -->
+  <rect x="520" y="486" width="560" height="28" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="5"/>
+  <rect x="1060" y="400" width="100" height="160" rx="10" fill="#60a5fa" stroke="#1e3a8a" stroke-width="6"/>
+  <rect x="1060" y="400" width="100" height="24" fill="#1e3a8a"/>
+</svg>
