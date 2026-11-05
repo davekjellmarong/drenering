@@ -5,7 +5,7 @@ navTitle: "Dreneringsrenne"
 description: "Når trenger du dreneringsrenne? Slik fungerer overflatedrenering foran garasje, innkjørsel og terrasse, og hva du bør tenke på ved valg og montering."
 summary: "En dreneringsrenne er en åpen renne med rist som samler opp regn og smeltevann fra harde flater som innkjørsel, garasjeplass og terrasse, og leder det bort før det renner mot huset. Den løser overflatevann, men erstatter ikke drenering rundt grunnmuren."
 date: "2025-03-01"
-updated: "2026-10-30"
+updated: "2026-11-05"
 readingTime: 4
 order: 6
 image: "/illustrations/dreneringsrenne.svg"
@@ -13,8 +13,13 @@ imageAlt: "Innkjørsel med dreneringsrenne foran garasjen som fanger regnvannet.
 faq:
   - q: "Erstatter en dreneringsrenne drenering rundt huset?"
     a: "Nei. Rennen tar vann på overflaten. Vann som allerede har trukket ned i bakken mot grunnmuren, må håndteres av drenering rundt grunnmuren."
+  - q: "Hva er forskjellen på overflatedrenering og overvannshåndtering?"
+    a: "Overflatedrenering er selve løsningen, for eksempel en renne som samler vann fra en flate. Overvannshåndtering er hele planen for hvor regn og smeltevann fra tak og tomt skal ta veien."
   - q: "Hvor skal vannet fra rennen gå?"
     a: "Til et sted der det får renne bort uten å skade: kommunalt overvannsnett, en kum eller infiltrasjon på tomten, avhengig av hva kommunen tillater. Rennen må ha et utløp, ellers flytter du bare problemet."
+sources:
+  - name: "Oslo kommune, Vann- og avløpsetaten: Frakobling av taknedløp (faktaark, mai 2018)"
+    url: "https://www.klimaoslo.no/wp-content/uploads/sites/2/2023/11/Overvann%20-%20frakobling%20taknedl%C3%B8p.pdf"
 ---
 
 Renner det vann mot garasjeporten, blir det dammer foran inngangen, eller fosser regnvannet nedover innkjørselen mot huset? Da er det overflatevannet du må få kontroll på, og en dreneringsrenne er ofte det enkleste tiltaket.
@@ -41,4 +46,10 @@ Overflatedrenering tar vannet som renner på bakken. Grunnmursdrenering tar vann
 - **Vedlikehold.** Risten og rennen må rengjøres for løv og grus, ellers tetter den seg.
 - **Fall.** Rennen fungerer best sammen med riktig fall på flaten rundt.
 
-Vil du se hele bildet av vann på tomten, les om [overvannshåndtering](/tjenester/overvannshandtering) og [typer drenering](/drenering/typer-drenering).
+## Før du kjøper renne: sjekk takvannet først
+
+Kommer mye av vannet fra taket, er et frakoblet nedløp ofte billigere og enklere enn en renne. Oslo kommune beskriver frakobling av taknedløp som ett av de rimeligste og enkleste tiltakene mot skadelig avrenning, og anbefaler minst 2 m avstand til hus med kjeller. Les mer i [overvannshåndtering for boligen](/tjenester/overvannshandtering), der du også finner kommunenes tretrinnsstrategi for lokal håndtering av regnvann.
+
+Se også [typer drenering](/drenering/typer-drenering).
+
+Trenger du hjelp med både renne og utløp, kan du [be om tilbud](/tilbud).

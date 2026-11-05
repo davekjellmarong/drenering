@@ -98,7 +98,7 @@ Status: ✔ exists and is good, ◐ exists but needs work, ○ planned.
 | Basics | typer drenering | /drenering/typer-drenering | ◐ fact-audit |
 | Materials | drenerende masser, drensmasser, pukk drenering | /blog/drenerende-masser | ○ |
 | Price tool | drenering kalkulator | on /drenering/pris or own page | ○ sourced inputs only |
-| Overvann | overvannshåndtering, overvann tomt, drenering av overvann, overvannsanlegg | /tjenester/overvannshandtering | ◐ thin |
+| Overvann | overvannshåndtering, overvann tomt, drenering av overvann, overvannsanlegg | /tjenester/overvannshandtering | ◐ expanded 2026-11-05 |
 | Overvann | overflatedrenering, dreneringsrenne | /drenering/drenerings-renne | ◐ basic, needs sources |
 | Price | drenering pris, hva koster drenering, drenering pris per meter | /drenering/pris | ◐ sourced Huseierne range + lifetime added 2026-10-31; needs recent quote data |
 | Price | drenering og isolering pris / etterisolering grunnmur | /blog/drenering-og-etterisolering-av-grunnmur | ○ |
