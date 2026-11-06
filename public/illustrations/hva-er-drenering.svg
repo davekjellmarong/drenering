@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img">
+  <rect width="1200" height="600" fill="#eff6ff"/>
+  <!-- rain cloud -->
+  <g fill="#ffffff"><ellipse cx="200" cy="70" rx="70" ry="32"/><ellipse cx="255" cy="55" rx="55" ry="36"/><ellipse cx="305" cy="75" rx="48" ry="26"/></g>
+  <g stroke="#60a5fa" stroke-width="5" stroke-linecap="round">
+    <line x1="185" y1="115" x2="175" y2="140"/><line x1="230" y1="115" x2="220" y2="140"/>
+    <line x1="275" y1="115" x2="265" y2="140"/><line x1="320" y1="115" x2="310" y2="140"/>
+  </g>
+  <!-- soil -->
+  <rect y="250" width="1200" height="350" fill="#c9a27e"/>
+  <rect y="250" width="780" height="20" fill="#7fae6b"/>
+  <g fill="#b58a63"><circle cx="60" cy="400" r="7"/><circle cx="130" cy="540" r="8"/><circle cx="560" cy="560" r="6"/><circle cx="640" cy="330" r="6"/><circle cx="740" cy="520" r="8"/></g>
+  <!-- house wearing rain boots -->
+  <rect x="150" y="130" width="260" height="120" fill="#ffffff"/>
+  <polygon points="130,135 280,40 430,135" fill="#1e3a8a"/>
+  <rect x="180" y="165" width="50" height="45" rx="4" fill="#bfdbfe"/>
+  <rect x="330" y="165" width="50" height="45" rx="4" fill="#bfdbfe"/>
+  <rect x="255" y="175" width="40" height="75" rx="4" fill="#2563eb"/>
+  <!-- basement -->
+  <rect x="150" y="250" width="260" height="190" fill="#f5f1ea"/>
+  <rect x="150" y="250" width="16" height="200" fill="#94a3b8"/>
+  <rect x="394" y="250" width="16" height="200" fill="#94a3b8"/>
+  <rect x="140" y="440" width="280" height="14" fill="#64748b"/>
+  <!-- rain boots on the house -->
+  <path d="M170 440 v-30 h34 v30 q0 14 -17 14 h-30 z" fill="#2563eb"/>
+  <path d="M356 440 v-30 h34 v30 q0 14 -17 14 h-30 z" fill="#2563eb"/>
+  <!-- gravel bed + pipe -->
+  <rect x="418" y="400" width="110" height="80" fill="#ebe4d8" stroke="#2563eb" stroke-width="3" stroke-dasharray="10 6"/>
+  <g fill="#b6a58f"><circle cx="435" cy="418" r="6"/><circle cx="505" cy="420" r="6"/><circle cx="440" cy="465" r="6"/><circle cx="510" cy="463" r="5"/></g>
+  <circle cx="472" cy="440" r="22" fill="#1e3a8a"/><circle cx="472" cy="440" r="11" fill="#60a5fa"/>
+  <!-- seeping water -->
+  <g fill="#2563eb"><path d="M560 330 q-9 15 0 22 q9 -7 0 -22z"/><path d="M520 370 q-9 15 0 22 q9 -7 0 -22z"/></g>
+  <path d="M555 360 C 540 380, 520 395, 500 420" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 10"/>
+  <!-- pipe to junction -->
+  <path d="M494 440 H 640" stroke="#1e3a8a" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="660" cy="440" r="26" fill="#1e3a8a"/><circle cx="660" cy="440" r="14" fill="#bfdbfe"/>
+  <!-- three outlets -->
+  <path d="M680 428 C 740 380, 800 330, 880 300" fill="none" stroke="#1e3a8a" stroke-width="10" stroke-linecap="round"/>
+  <path d="M686 440 H 880" stroke="#1e3a8a" stroke-width="10" stroke-linecap="round"/>
+  <path d="M680 452 C 740 490, 800 520, 880 535" fill="none" stroke="#1e3a8a" stroke-width="10" stroke-linecap="round"/>
+  <!-- stream -->
+  <path d="M900 285 q50 -25 100 0 t100 0 t100 0 v30 q-50 25 -100 0 t-100 0 t-100 0z" fill="#60a5fa"/>
+  <!-- storm sewer manhole -->
+  <rect x="900" y="405" width="70" height="70" rx="6" fill="#64748b"/>
+  <rect x="915" y="420" width="40" height="40" rx="4" fill="#94a3b8"/>
+  <path d="M970 440 H 1130" stroke="#475569" stroke-width="14" stroke-linecap="round"/>
+  <!-- pump sump -->
+  <rect x="900" y="500" width="70" height="80" rx="6" fill="#64748b"/>
+  <rect x="912" y="515" width="46" height="55" fill="#bfdbfe"/>
+  <rect x="925" y="540" width="20" height="24" rx="4" fill="#1e3a8a"/>
+  <path d="M935 515 V 490 H 1000 V 470" fill="none" stroke="#2563eb" stroke-width="8" stroke-linecap="round"/>
+  <path d="M990 480 L1000 462 L1010 480 z" fill="#2563eb"/>
+</svg>

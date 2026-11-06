@@ -72,6 +72,8 @@ Når grunnmuren er gravd fri, er det naturlig å vurdere isolasjon og grunnmursp
 
 ## Hvor lenge varer en drenering?
 
+Hva en drenering består av og hvor vannet ledes, forklarer vi i [hva er drenering](/drenering/hva-er-drenering).
+
 Huseierne oppgir at en fungerende drenering vanligvis varer mellom 20 og 60 år, avhengig av vær og grunnforhold. Det er et stort spenn, og alder alene er ikke et bevis på at dreneringen er ødelagt eller at du må grave. En kamerainspeksjon viser tilstanden før du bestemmer omfang. Les mer i [tegn på at boligen trenger ny drenering](/blog/tegn-pa-at-boligen-trenger-ny-drenering).
 
 ## Hva bør et tilbud på drenering inneholde?

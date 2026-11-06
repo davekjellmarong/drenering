@@ -94,8 +94,8 @@ Status: ✔ exists and is good, ◐ exists but needs work, ○ planned.
 
 | Cluster | Primary keyword (and close variants) | URL | Status |
 |---|---|---|---|
-| Head + basics | drenering, hva er drenering, drenering definisjon | /drenering/hva-er-drenering (Google already ranks this for "drenering"; `/drenering` is a navigation hub only) | ◐ fact-audit |
-| Basics | typer drenering | /drenering/typer-drenering | ◐ fact-audit |
+| Head + basics | drenering, hva er drenering, drenering definisjon | /drenering/hva-er-drenering (Google already ranks this for "drenering"; `/drenering` is a navigation hub only) | ✔ sourced + rewritten 2026-11-06 |
+| Basics | typer drenering | /drenering/typer-drenering | ◐ sourced 2026-11-06; still thin |
 | Materials | drenerende masser, drensmasser, pukk drenering | /blog/drenerende-masser | ○ |
 | Price tool | drenering kalkulator | on /drenering/pris or own page | ○ sourced inputs only |
 | Overvann | overvannshåndtering, overvann tomt, drenering av overvann, overvannsanlegg | /tjenester/overvannshandtering | ◐ expanded 2026-11-05 |

@@ -5,26 +5,31 @@ navTitle: "Typer drenering"
 description: "Oversikt over de vanligste typene drenering: grunnmursdrenering, overflatedrenering, drensgrøft og overvannshåndtering, og når hver av dem passer."
 summary: "De vanligste typene er grunnmursdrenering (vann i bakken rundt huset), overflatedrenering (regn og smeltevann på bakken), drensgrøft (vann i hage og terreng) og overvannshåndtering (alt vannet fra tak og tomt). Mange hus trenger en kombinasjon."
 date: "2025-03-01"
-updated: "2026-10-30"
+updated: "2026-11-06"
 readingTime: 4
 order: 5
 image: "/illustrations/hus-drenering-snitt.svg"
 imageAlt: "Snitt av et hus som viser drensrør ved grunnmuren og overflatevann som ledes bort."
+sources:
+  - name: "Store norske leksikon: drenering (av bygninger)"
+    url: "https://snl.no/drenering_-_av_bygninger"
+  - name: "Huseierne: Drenering, når og hvordan gjør du det (oppdatert 06.11.2025)"
+    url: "https://www.huseierne.no/alt-om-bolig/vedlikehold-og-oppussing/drenering-nar-og-hvordan-gjor-du-det/"
 ---
 
-Hvilken drenering du trenger, avhenger av hvor vannet kommer fra: fra bakken rundt huset, fra overflaten, eller fra taket og tomten. Her er de vanligste løsningene.
+Hvilken drenering du trenger, avhenger av hvor vannet kommer fra: fra bakken rundt huset, fra overflaten, eller fra taket og tomten. Her er de vanligste løsningene. Er du ny på temaet, start med [hva drenering er](/drenering/hva-er-drenering).
 
 ## Grunnmursdrenering
 
-Drensrør i drenerende masser langs foten av grunnmuren, sammen med grunnmursplate. Den tar vannet i jorden rundt huset før det trenger inn i kjelleren. Det er dette de fleste mener med «drenering rundt hus». Se [hvordan jobben gjøres](/drenering/drenering-rundt-hus).
+Drensrør i drenerende masser langs foten av grunnmuren, sammen med grunnmursplate. Formålet er ifølge [Store norske leksikon](https://snl.no/drenering_-_av_bygninger) å senke grunnvannsstanden under kjellergulvet og lede bort overflatevann som siver ned rundt huset, før det trenger inn i kjelleren. Det er dette de fleste mener med «drenering rundt hus». Se [hvordan jobben gjøres](/drenering/drenering-rundt-hus).
 
 ## Overflatedrenering
 
 Leder bort regn og smeltevann som renner på bakken, før det trekker ned mot grunnmuren. Typiske løsninger er riktig fall på terrenget, [dreneringsrenner](/drenering/drenerings-renne) foran garasje og innkjørsel, og sluk.
 
-## Drensgrøft (fransk drenering)
+## Drensgrøft
 
-En grøft med perforert rør i pukk eller singel som samler vann i hage og terreng og leder det bort. Brukes for eksempel der vann blir stående i plenen, eller i skråninger der vannet renner mot huset.
+En grøft med perforert rør i pukk eller singel som samler vann i hage og terreng og leder det bort. Ofte brukt der vann blir stående i plenen, eller i skråninger der vannet renner mot huset. Prinsippet er det samme som ved grunnmursdrenering, men uten at den er knyttet til en kjellervegg.
 
 ## Overvannshåndtering
 
@@ -33,3 +38,9 @@ Handler om alt vannet fra tak, innkjørsel og tomt, og hvor det skal ta veien: k
 ## Kombinert løsning
 
 Mange hus trenger mer enn én ting. Et typisk eksempel er ny grunnmursdrenering, nytt fall på terrenget og at takvannet ledes bort i egne rør. Et firma som ser på tomten, kan vurdere hva som gir mest effekt.
+
+## Hvor går vannet til slutt?
+
+Uansett type må vannet ha et sted å gå. Store norske leksikon og Huseierne nevner utløp til åpen grunn eller bekk, kobling til kommunalt overvannsnett via drenskum (bare der kommunen tillater det) og pumpekum der terrenget ikke gir fall. Les mer i [hva er drenering](/drenering/hva-er-drenering#hvor-tar-vannet-veien).
+
+Vil du vite hva det koster, se [prisguiden](/drenering/pris). Når du vet hva du trenger, kan du [be om tilbud](/tilbud) fra firma som tar jobber i ditt område. Dekning er ikke garantert overalt.

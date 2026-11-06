@@ -12,6 +12,8 @@ Dreneringssystemet rundt boligen din beskytter grunnmuren mot fukt og vannskader
 
 ## Vanlige tegn på dreneringssvikt
 
+Oversikten over [hva drenering er og hvordan den virker](/drenering/hva-er-drenering) gir bakgrunnen for tegnene under.
+
 - ✅ **Fuktige kjellervegger** – Mørke flekker, saltutslag eller fukt i murvegger kan tyde på sviktende drenering.
 - ✅ **Lukt av mugg eller kjellerlukt** – Konstant lukt av fukt i kjelleren er et tegn på at vann ikke dreneres ordentlig bort.
 - ✅ **Vannansamlinger rundt grunnmuren** – Pytter eller stående vann langs husveggen kan tyde på at dreneringssystemet ikke fungerer som det skal.

@@ -19,7 +19,7 @@ faq:
     a: "Kondens oppstår når varm, fuktig luft treffer kalde flater, og er ofte verst om sommeren. Vann utenfra følger gjerne nedbør og snøsmelting og gir saltutslag på muren. Er du usikker, la en fagperson måle fukt og se på grunnmuren."
 ---
 
-Står det vann i kjelleren, eller lukter det fuktig? Da er det lurt å finne årsaken før du bruker penger på tiltak. Ikke all fukt i kjelleren kommer utenfra.
+Står det vann i kjelleren, eller lukter det fuktig? Da er det lurt å finne årsaken før du bruker penger på tiltak. Ikke all fukt i kjelleren kommer utenfra. Vil du først forstå hvordan et drenssystem virker, se [hva drenering er](/drenering/hva-er-drenering).
 
 ## Tegn på vanninntrenging
 
