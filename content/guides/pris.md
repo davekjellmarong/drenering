@@ -76,6 +76,8 @@ Hva en drenering består av og hvor vannet ledes, forklarer vi i [hva er dreneri
 
 Huseierne oppgir at en fungerende drenering vanligvis varer mellom 20 og 60 år, avhengig av vær og grunnforhold. Det er et stort spenn, og alder alene er ikke et bevis på at dreneringen er ødelagt eller at du må grave. En kamerainspeksjon viser tilstanden før du bestemmer omfang. Les mer i [tegn på at boligen trenger ny drenering](/blog/tegn-pa-at-boligen-trenger-ny-drenering).
 
+Kjøper du bolig med TG2 på drenering, kan du lese hva det betyr for ansvaret i [TG2 og TG3 på drenering i tilstandsrapporten](/blog/tg2-tg3-drenering-tilstandsrapport).
+
 ## Hva bør et tilbud på drenering inneholde?
 
 Et tilbud du kan sammenligne skal være skriftlig og gjelde din bolig. Sjekk at det svarer på dette:

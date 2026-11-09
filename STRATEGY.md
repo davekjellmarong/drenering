@@ -116,7 +116,7 @@ Status: ✔ exists and is good, ◐ exists but needs work, ○ planned.
 | Problem | tegn på dårlig drenering, levetid drenering, når bør man drenere | /blog/tegn-pa-at-boligen-trenger-ny-drenering | ◐ rewrite + expand |
 | Problem | vann i kjeller snøsmelting / vårflom | /blog/vann-i-kjeller-ved-snosmelting | ○ publish by early Feb |
 | Problem | drenering leirgrunn | /blog/drenering-pa-leirgrunn | ○ |
-| Housing | TG2 drenering, TG3 drenering, tilstandsrapport drenering | /blog/tg2-tg3-drenering-tilstandsrapport | ○ high priority |
+| Housing | TG2 drenering, TG3 drenering, tilstandsrapport drenering | /blog/tg2-tg3-drenering-tilstandsrapport | ✓ published 2026-11-09 |
 | Housing | forsikring vann i kjeller, eierskifteforsikring drenering | /blog/dekker-forsikringen-drenering | ○ |
 | Hiring | dreneringsfirma, velge dreneringsfirma, kontrakt drenering | /blog/hvordan-velge-riktig-dreneringsfirma | ◐ rewrite |
 | Hiring | søknadsplikt drenering | /blog/soknadsplikt-drenering | ○ (dibk.no only) |

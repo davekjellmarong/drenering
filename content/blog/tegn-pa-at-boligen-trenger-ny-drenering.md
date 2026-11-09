@@ -31,3 +31,5 @@ Hvis du ender opp med å trenge ny drenering, forklarer vi hva som styrer prisen
 Å oppdage dreneringsproblemer tidlig kan spare deg for store utgifter og skader på boligen. Hvis du merker noen av disse tegnene, bør du ta grep så snart som mulig for å unngå fuktskader og muggsopp.
 
 Vil du sjekke dreneringen din? Få en gratis vurdering fra erfarne dreneringsfirmaer her!
+
+Får du TG2 på dreneringen i en tilstandsrapport, betyr det ofte alder og ikke en påvist skade. Se [TG2 og TG3 på drenering i tilstandsrapporten](/blog/tg2-tg3-drenering-tilstandsrapport).

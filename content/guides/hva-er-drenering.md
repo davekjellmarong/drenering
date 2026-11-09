@@ -69,6 +69,7 @@ Oversikten over [typer drenering](/drenering/typer-drenering) går gjennom løsn
 ## Hvor lenge varer en drenering?
 
 Huseierne oppgir at en drenering normalt varer mellom 20 og 60 år. Spennet er stort fordi levetiden avhenger av massene som ble brukt, jordtype og terreng og hvor mye det regner der du bor. Derfor sier alder alene lite om tilstanden. En drenering som er 40 år kan være i orden, og en yngre kan være tett av finstoff.
+ Står det TG2 på dreneringen i en tilstandsrapport, er det ofte alderen som ligger bak. Les [hva TG2 og TG3 på drenering betyr](/blog/tg2-tg3-drenering-tilstandsrapport).
 
 ## Tegn på at dreneringen ikke fungerer
 
