@@ -48,6 +48,8 @@ Målene som oppgis:
 
 ## 1. Befaring og vurdering
 
+Har du fukt i kjelleren, bør årsaken være klar først: se [vanninntrenging i kjeller](/drenering/vanninntrenging) for forskjellen på vann utenfra, oppstigende fukt og kondens.
+
 Et seriøst firma vil se på huset før de gir en fast pris. De ser på terrenget rundt huset, hvor dypt grunnmuren går, hva slags masser som ligger der, hvor vannet kan ledes og hvordan maskinene kommer til. Har du tegninger av huset, gjør det jobben enklere.
 
 Er du usikker på om dreneringen faktisk er problemet, kan en kamerainspeksjon av det eksisterende drensrøret vise om det er tett, knust eller mangler. Huseierne nevner også dette som en måte å sjekke tilstanden på.

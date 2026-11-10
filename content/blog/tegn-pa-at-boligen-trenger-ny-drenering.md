@@ -24,6 +24,8 @@ Oversikten over [hva drenering er og hvordan den virker](/drenering/hva-er-drene
 - 🔹 **Sjekk dreneringsrørene** – Hvis du har en inspeksjonsbrønn, kan du kontrollere om rørene er tette.
 - 🔹 **Vurder alternativer til full utskifting** – I noen tilfeller kan vedlikehold eller forbedringer være tilstrekkelig.
 
+Er det vann eller fukt du ser i kjelleren, kan det også være kondens eller oppstigende fukt. Les [hvordan du skiller vanninntrenging fra kondens](/drenering/vanninntrenging) før du bestemmer deg.
+
 ## Hva koster det?
 
 Hvis du ender opp med å trenge ny drenering, forklarer vi hva som styrer prisen og hvordan du regner ut meter grunnmur i [drenering pris: hva koster det](/drenering/pris).

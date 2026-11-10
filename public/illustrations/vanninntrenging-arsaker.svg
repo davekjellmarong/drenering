@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img">
+<rect width="1200" height="600" fill="#eff6ff"/>
+<rect y="300" width="1200" height="300" fill="#a98467"/>
+<rect y="300" width="1200" height="40" fill="#8a6a4f"/>
+<circle cx="120" cy="450" r="14" fill="#d6c3a5"/><circle cx="200" cy="520" r="18" fill="#d6c3a5"/><circle cx="1040" cy="470" r="16" fill="#d6c3a5"/><circle cx="1120" cy="540" r="12" fill="#d6c3a5"/>
+<!-- groundwater -->
+<path d="M0 500 Q150 480 300 500 T600 500 T900 500 T1200 500 V600 H0Z" fill="#60a5fa" opacity=".6"/>
+<!-- house above ground -->
+<rect x="400" y="150" width="400" height="150" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="6"/>
+<polygon points="380,150 600,40 820,150" fill="#1e3a8a"/>
+<rect x="560" y="200" width="80" height="100" fill="#2563eb"/>
+<!-- basement -->
+<rect x="400" y="300" width="400" height="200" fill="#eff6ff" stroke="#1e3a8a" stroke-width="10"/>
+<rect x="410" y="440" width="380" height="50" fill="#60a5fa" opacity=".7"/>
+<!-- condensation drops inside -->
+<g fill="#60a5fa"><path d="M470 340 q-10 18 0 24 q10 -6 0 -24z"/><path d="M520 360 q-10 18 0 24 q10 -6 0 -24z"/><path d="M700 345 q-10 18 0 24 q10 -6 0 -24z"/></g>
+<!-- gutter and downspout pouring at wall -->
+<rect x="800" y="140" width="20" height="150" fill="#1e3a8a"/>
+<path d="M830 290 q10 16 0 24 q-10 -8 0 -24z M845 320 q10 16 0 24 q-10 -8 0 -24z" fill="#2563eb"/>
+<!-- slope toward house arrows -->
+<path d="M120 300 L390 318" stroke="#1e3a8a" stroke-width="6" fill="none"/>
+<polygon points="395,319 372,305 372,331" fill="#1e3a8a"/>
+<!-- rain -->
+<g stroke="#2563eb" stroke-width="6" stroke-linecap="round"><path d="M100 60 l-14 34"/><path d="M180 100 l-14 34"/><path d="M260 50 l-14 34"/><path d="M1000 70 l-14 34"/><path d="M1080 120 l-14 34"/></g>
+<!-- water into wall -->
+<path d="M330 400 H395" stroke="#2563eb" stroke-width="10" stroke-linecap="round"/><polygon points="405,400 385,388 385,412" fill="#2563eb"/>
+<path d="M330 450 H395" stroke="#2563eb" stroke-width="10" stroke-linecap="round"/><polygon points="405,450 385,438 385,462" fill="#2563eb"/>
+<!-- rising moisture -->
+<path d="M700 500 V470 M740 500 V470" stroke="#2563eb" stroke-width="8" stroke-linecap="round"/>
+</svg>
