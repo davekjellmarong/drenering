@@ -20,7 +20,7 @@ Har huset stakekummer, kan røret spyles og inspiseres med kamera. Det er en rel
 
 ## Utskifting av drensrør
 
-Er røret knust, mangler fall eller er tett av masser rundt, hjelper det sjelden å spyle. Da må grunnmuren graves fram og røret skiftes, gjerne sammen med nye drenerende masser og grunnmursplate. Se [drenering rundt hus](/drenering/drenering-rundt-hus).
+Er røret knust, mangler fall eller er tett av masser rundt, hjelper det sjelden å spyle. Da må grunnmuren graves fram og røret skiftes, gjerne sammen med nye [drenerende masser](/blog/drenerende-masser) og grunnmursplate. Se [drenering rundt hus](/drenering/drenering-rundt-hus).
 
 ## Hva tilbudet bør si om rørene
 

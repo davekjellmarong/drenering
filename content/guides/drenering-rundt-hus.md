@@ -16,7 +16,7 @@ faq:
   - q: "Hvilket fall skal et drensrør ha?"
     a: "Huseierne, som viser til SINTEF, oppgir fall 1:200, altså 1 cm per 2 meter. Det er et minimum for at vannet skal renne mot kum eller utløp."
   - q: "Hva slags masser skal ligge rundt drensrøret?"
-    a: "Drenerende masser som pukk, singel eller lettklinker med kornstørrelse 4–16 mm, ifølge Huseierne. Massene skal ikke inneholde jord, og fiberduk hindrer at finstoff tetter dem."
+    a: "Drenerende masser som grus eller lettklinker med kornstørrelse 4–16 mm, ifølge Huseierne. Massene skal ikke inneholde jord, og fiberduk hindrer at finstoff tetter dem. Andre kilder bruker også grovere pukk, se [drenerende masser](/blog/drenerende-masser)."
   - q: "Må jeg søke kommunen om å drenere?"
     a: "Vanlig drenering rundt eget hus er som regel ikke søknadspliktig, men det kan være regler for hvor vannet skal ledes, og om du kobler deg til kommunalt nett. Huseierne skriver at kobling til kommunalt overvanns- eller avløpsnett bare er tillatt hvis kommunen tillater det. Sjekk med kommunen eller la firmaet avklare det, og husk gravemelding hvis det graves nær kabler og ledninger."
   - q: "Hvor lang tid tar det?"
@@ -36,7 +36,7 @@ Målene som oppgis:
 
 | Del | Anbefalt utførelse |
 |---|---|
-| Drenerende masser | Kornstørrelse 4–16 mm (pukk, singel eller lettklinker), uten jord |
+| Drenerende masser | Kornstørrelse 4–16 mm (grus eller lettklinker), uten jord |
 | Under røret | 5–10 cm drenerende masser |
 | Rundt og over røret | minst 10 cm av samme masse |
 | Rørets plassering | 5–30 cm utenfor grunnmurens såle |
@@ -64,7 +64,7 @@ Gammelt drensrør fjernes. Grunnmuren rengjøres og sjekkes for sprekker og hull
 
 ## 4. Nytt drensrør og drenerende masser
 
-Røret legges på et lag drenerende masser, med minst 10 cm av samme masse over og på sidene. Fiberduken omslutter røret og massene og trekkes opp langs muren, slik at finstoff ikke trenger inn og tetter røret. Se tabellen over for mål og fall.
+Røret legges på et lag drenerende masser, med minst 10 cm av samme masse over og på sidene. Fiberduken omslutter røret og massene og trekkes opp langs muren, slik at finstoff ikke trenger inn og tetter røret. Se tabellen over for mål og fall, og [drenerende masser](/blog/drenerende-masser) for forskjellen på pukk, grus og lettklinker og hvorfor kildene oppgir ulik kornstørrelse.
 
 Et regneeksempel på fallet: 1 cm per 2 meter betyr at et 30 meter langt rør skal falle 15 cm fra høyeste til laveste punkt. Be firmaet vise hvordan de kontrollerer fallet.
 

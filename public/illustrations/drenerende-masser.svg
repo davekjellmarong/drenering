@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img">
+  <rect width="1200" height="600" fill="#c9a27e"/>
+  <rect width="1200" height="70" fill="#7fae6b"/>
+  <!-- native soil speckles -->
+  <g fill="#b08968"><circle cx="80" cy="200" r="9"/><circle cx="140" cy="330" r="7"/><circle cx="60" cy="460" r="10"/><circle cx="1110" cy="220" r="8"/><circle cx="1140" cy="400" r="9"/><circle cx="1070" cy="520" r="7"/></g>
+  <!-- fabric-wrapped trench -->
+  <path d="M220 150 H980 V550 H220 Z" fill="#eff6ff" stroke="#2563eb" stroke-width="6" stroke-dasharray="18 10"/>
+  <!-- coarse gravel layer on top -->
+  <g fill="#9aa3b2" stroke="#6b7280" stroke-width="2">
+    <circle cx="270" cy="190" r="26"/><circle cx="340" cy="205" r="22"/><circle cx="420" cy="188" r="27"/><circle cx="500" cy="208" r="23"/><circle cx="580" cy="190" r="26"/><circle cx="660" cy="206" r="22"/><circle cx="740" cy="190" r="27"/><circle cx="820" cy="206" r="23"/><circle cx="900" cy="190" r="26"/>
+  </g>
+  <!-- finer gravel around pipe -->
+  <g fill="#bfc6d1" stroke="#8b93a1" stroke-width="2">
+    <circle cx="260" cy="300" r="12"/><circle cx="310" cy="320" r="11"/><circle cx="360" cy="296" r="12"/><circle cx="420" cy="322" r="11"/><circle cx="780" cy="298" r="12"/><circle cx="840" cy="322" r="11"/><circle cx="900" cy="300" r="12"/><circle cx="950" cy="320" r="11"/>
+    <circle cx="260" cy="430" r="12"/><circle cx="320" cy="455" r="11"/><circle cx="390" cy="432" r="12"/><circle cx="460" cy="458" r="11"/><circle cx="540" cy="434" r="12"/><circle cx="620" cy="458" r="11"/><circle cx="700" cy="434" r="12"/><circle cx="780" cy="456" r="11"/><circle cx="860" cy="432" r="12"/><circle cx="940" cy="456" r="11"/>
+    <circle cx="270" cy="510" r="12"/><circle cx="360" cy="525" r="11"/><circle cx="460" cy="512" r="12"/><circle cx="560" cy="526" r="11"/><circle cx="660" cy="512" r="12"/><circle cx="760" cy="526" r="11"/><circle cx="860" cy="512" r="12"/><circle cx="940" cy="522" r="11"/>
+  </g>
+  <!-- pipe -->
+  <rect x="300" y="305" width="600" height="100" rx="50" fill="#1e3a8a"/>
+  <g fill="#60a5fa"><ellipse cx="380" cy="335" rx="15" ry="7"/><ellipse cx="480" cy="335" rx="15" ry="7"/><ellipse cx="580" cy="335" rx="15" ry="7"/><ellipse cx="680" cy="335" rx="15" ry="7"/><ellipse cx="780" cy="335" rx="15" ry="7"/></g>
+  <!-- face -->
+  <circle cx="1090" cy="345" r="0" fill="none"/>
+  <g transform="translate(540 355)"><circle cx="0" cy="0" r="9" fill="#fff"/><circle cx="2" cy="1" r="4" fill="#1e3a8a"/><circle cx="60" cy="0" r="9" fill="#fff"/><circle cx="62" cy="1" r="4" fill="#1e3a8a"/><path d="M12 22 Q30 36 48 22" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/></g>
+  <!-- water drops falling -->
+  <g fill="#60a5fa"><path d="M600 80 q-14 22 0 30 q14 -8 0 -30z"/><path d="M440 90 q-12 20 0 27 q12 -7 0 -27z"/><path d="M760 85 q-12 20 0 27 q12 -7 0 -27z"/></g>
+  <!-- soil clump trying to enter, blocked by fabric -->
+  <circle cx="150" cy="300" r="22" fill="#8a5a3c"/><circle cx="175" cy="330" r="14" fill="#8a5a3c"/>
+  <path d="M185 310 H214" stroke="#1e3a8a" stroke-width="5" stroke-linecap="round"/>
+</svg>
