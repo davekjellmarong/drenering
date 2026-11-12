@@ -46,6 +46,14 @@ export default async function DreneringHub() {
           ))}
         </div>
 
+        <p className="mt-8 text-slate-700">
+          Vil du regne ut meter grunnmur og se et grovt prisspenn? Prøv{" "}
+          <Link href="/drenering/kalkulator" className="font-medium text-brand-700 underline underline-offset-2">
+            drenering kalkulator
+          </Link>
+          .
+        </p>
+
         {posts.length > 0 && (
           <>
             <h2 className="mt-14 text-2xl font-bold text-ink-900">Fra bloggen</h2>

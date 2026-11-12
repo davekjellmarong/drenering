@@ -70,7 +70,7 @@ Et regneeksempel på fallet: 1 cm per 2 meter betyr at et 30 meter langt rør sk
 
 ## 5. Grunnmursplate og isolasjon
 
-Grunnmursplate (knotteplast) settes på utsiden av muren. Den beskytter muren og lar vann renne ned til drenslaget. Mange isolerer samtidig, og Huseierne beskriver at SINTEF anbefaler minst 5 cm isolasjon utenpå en betongvegg mot terreng, og 15 cm hvis kjelleren er eller skal bli oppvarmet. Isoleringen settes direkte mot muren, og grunnmursplaten kommer utenpå. Kostnaden og avveiningene står i [prisguiden for drenering](/drenering/pris).
+Grunnmursplate (knotteplast) settes på utsiden av muren. Den beskytter muren og lar vann renne ned til drenslaget. Mange isolerer samtidig, og Huseierne beskriver at SINTEF anbefaler minst 5 cm isolasjon utenpå en betongvegg mot terreng, og 15 cm hvis kjelleren er eller skal bli oppvarmet. Isoleringen settes direkte mot muren, og grunnmursplaten kommer utenpå. Kostnaden og avveiningene står i [prisguiden for drenering](/drenering/pris), og med [drenering kalkulator](/drenering/kalkulator) kan du regne ut meter grunnmur.
 
 ## 6. Kum og bortledning av vannet
 

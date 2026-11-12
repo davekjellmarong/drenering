@@ -28,7 +28,7 @@ Er det vann eller fukt du ser i kjelleren, kan det også være kondens eller opp
 
 ## Hva koster det?
 
-Hvis du ender opp med å trenge ny drenering, forklarer vi hva som styrer prisen og hvordan du regner ut meter grunnmur i [drenering pris: hva koster det](/drenering/pris).
+Hvis du ender opp med å trenge ny drenering, forklarer vi hva som styrer prisen og hvordan du regner ut meter grunnmur i [drenering pris: hva koster det](/drenering/pris). Vil du regne ut meterne selv, kan du bruke [kalkulatoren for drenering](/drenering/kalkulator).
 
 Å oppdage dreneringsproblemer tidlig kan spare deg for store utgifter og skader på boligen. Hvis du merker noen av disse tegnene, bør du ta grep så snart som mulig for å unngå fuktskader og muggsopp.
 

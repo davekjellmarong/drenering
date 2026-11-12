@@ -5,7 +5,7 @@ navTitle: "Pris på drenering"
 description: "Hva koster drenering rundt hus? Se hva som styrer prisen, hvordan du regner ut meter grunnmur, og hva et tilbud på drenering bør inneholde."
 summary: "Prisen på drenering rundt hus avhenger i hovedsak av hvor mange meter grunnmur som skal graves ut, hvor dypt, hvilke grunnforhold du har og hvor lett maskinene kommer til. Derfor finnes det ingen riktig fastpris: det eneste som gir et pålitelig tall er skriftlige tilbud fra flere firma etter befaring."
 date: "2025-03-01"
-updated: "2026-10-31"
+updated: "2026-11-12"
 readingTime: 7
 order: 2
 image: "/illustrations/hus-omkrets.svg"
@@ -36,7 +36,7 @@ Vi har ikke egne prisdata ennå, og vi gjetter ikke. Det vi kan vise til er åpn
 - **Huseierne** (oppdatert 6. november 2025): «Priser for drenering varierer mellom 4000 og 9000 kroner per løpemeter.» Artikkelen sier ikke om beløpet er med eller uten mva., eller hva som er inkludert.
 - **Forum:** På byggebolig.no finnes mange tråder der privatpersoner oppgir meterpriser. Tallene vi fant i en av de mest leste trådene er 15 år gamle (2010–2011), så vi gjengir dem ikke som pris. De viser først og fremst hvor mye tallene sprikker og at mange spør om hva som er med.
 
-Les derfor tallene som en ramme, ikke som et overslag for din bolig. Se også [hvor lenge drenering varer](#hvor-lenge-varer-en-drenering) før du vurderer om jobben haster.
+Les derfor tallene som en ramme, ikke som et overslag for din bolig. Vil du regne ut meterne og se spennet i kroner, finnes en enkel [drenering kalkulator](/drenering/kalkulator). Se også [hvor lenge drenering varer](#hvor-lenge-varer-en-drenering) før du vurderer om jobben haster.
 
 ## Hva påvirker prisen på drenering?
 
