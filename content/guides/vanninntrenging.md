@@ -93,7 +93,7 @@ Huseierne foreslår også kamerainspeksjon av drensrørene som en mulighet. Det 
 
 ## Når er drenering løsningen?
 
-Er fukten utenfra, og terreng og nedløp er i orden, er dreneringen den neste mistenkte. Huseierne anbefaler å forbedre dreneringen sammen med utvendig isolering og fuktsikring, heller enn å løse problemet fra innsiden. Hva som gjøres rundt grunnmuren, står i guiden om [drenering rundt hus](/drenering/drenering-rundt-hus), og hva det typisk koster i [prisguiden](/drenering/pris). Skal du kjøpe eller selge bolig og drenering er tema, se også [TG2 og TG3 i tilstandsrapporten](/blog/tg2-tg3-drenering-tilstandsrapport).
+Er fukten utenfra, og terreng og nedløp er i orden, er dreneringen den neste mistenkte. Huseierne anbefaler å forbedre dreneringen sammen med utvendig isolering og fuktsikring, heller enn å løse problemet fra innsiden. Hva som gjøres rundt grunnmuren, står i guiden om [drenering rundt hus](/drenering/drenering-rundt-hus), og hva det typisk koster i [prisguiden](/drenering/pris). Usikker på om det er på tide å drenere? Se [når du bør drenere og hvilke tegn som teller](/blog/tegn-pa-at-boligen-trenger-ny-drenering). Skal du kjøpe eller selge bolig og drenering er tema, se også [TG2 og TG3 i tilstandsrapporten](/blog/tg2-tg3-drenering-tilstandsrapport).
 
 Vær forsiktig med innvendige løsninger i fuktige kjellere. Huseierne anbefaler for eksempel ikke å isolere uisolerte kjellerrom, og ikke mer enn 5 cm isolasjon på innsiden av yttervegger under bakken, siden tykkere lag kan gi kondens bak isolasjonen.
 

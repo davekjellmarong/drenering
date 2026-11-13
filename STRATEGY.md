@@ -113,7 +113,7 @@ Status: ✔ exists and is good, ◐ exists but needs work, ○ planned.
 | Problem | vann i kjeller, vanninntrenging | /drenering/vanninntrenging | ✓ (2026-11-10) |
 | Problem | fukt i kjeller (damp, smell, mould; not running water) | /blog/fukt-i-kjeller | ○ |
 | Problem | saltutslag grunnmur | /blog/saltutslag-pa-grunnmur | ○ |
-| Problem | tegn på dårlig drenering, levetid drenering, når bør man drenere | /blog/tegn-pa-at-boligen-trenger-ny-drenering | ◐ rewrite + expand |
+| Problem | tegn på dårlig drenering, levetid drenering, når bør man drenere | /blog/tegn-pa-at-boligen-trenger-ny-drenering | ✓ (2026-11-13) |
 | Problem | vann i kjeller snøsmelting / vårflom | /blog/vann-i-kjeller-ved-snosmelting | ○ publish by early Feb |
 | Problem | drenering leirgrunn | /blog/drenering-pa-leirgrunn | ○ |
 | Housing | TG2 drenering, TG3 drenering, tilstandsrapport drenering | /blog/tg2-tg3-drenering-tilstandsrapport | ✓ published 2026-11-09 |
