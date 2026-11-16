@@ -29,5 +29,7 @@ export const CITY_DATA: Record<string, CityData> = {
   trondheim: { municipality: "Trondheim", detachedHouses: { value: 24663, year: "2026", ...SSB_BOLIGER } },
   tonsberg: { municipality: "Tønsberg", detachedHouses: { value: 13283, year: "2026", ...SSB_BOLIGER } },
   fredrikstad: { municipality: "Fredrikstad", detachedHouses: { value: 19078, year: "2026", ...SSB_BOLIGER } },
+  oslo: { municipality: "Oslo", detachedHouses: { value: 28349, year: "2026", ...SSB_BOLIGER } },
+  bergen: { municipality: "Bergen", detachedHouses: { value: 36309, year: "2026", ...SSB_BOLIGER } },
   drammen: { municipality: "Drammen", detachedHouses: { value: 18148, year: "2026", ...SSB_BOLIGER } },
 };
