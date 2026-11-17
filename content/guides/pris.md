@@ -29,6 +29,8 @@ sources:
 ---
 Som et grovt referansepunkt oppgir Huseierne at drenering koster mellom 4 000 og 9 000 kroner per løpemeter. Spennet er stort fordi prisen avhenger av hvor i landet du bor, grunnforhold og husets utforming. Ganger du med et hus på 36 meter grunnmur (regnestykket står lenger ned), blir det fra 144 000 til 324 000 kroner. Det er ren regning på Huseiernes spenn, ikke et tilbud. At spennet er så stort viser at bare skriftlige tilbud på din bolig gir et tall du kan bruke.
 
+Hva som normalt er med i jobben, står under [boligdrenering](/tjenester/boligdrenering).
+
 ## Hva sier kildene om pris per meter?
 
 Vi har ikke egne prisdata ennå, og vi gjetter ikke. Det vi kan vise til er åpne kilder, med forbehold:

@@ -122,7 +122,8 @@ Status: ✔ exists and is good, ◐ exists but needs work, ○ planned.
 | Hiring | søknadsplikt drenering | /blog/soknadsplikt-drenering | ○ (dibk.no only) |
 | Outdoor | takrenner nedløp, takvann drenering | /blog/takrenner-og-overvann | ○ |
 | Outdoor | drenering hage plen | /blog/drenering-av-hage-og-plen | ○ |
-| Services | boligdrenering / drensrør installasjon / industriell drenering | /tjenester/* | ◐ thin |
+| Services | drensrør installasjon / industriell drenering | /tjenester/* | ◐ thin |
+| Services | boligdrenering | /tjenester/boligdrenering | ✔ expanded 2026-11-17 |
 | Local | drenering <by> | /drenering/<city> | ◐ templated |
 
 Add rows when you add pages. If GSC shows two URLs ranking for the same query,
