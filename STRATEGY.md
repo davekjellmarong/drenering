@@ -118,7 +118,7 @@ Status: ✔ exists and is good, ◐ exists but needs work, ○ planned.
 | Problem | drenering leirgrunn | /blog/drenering-pa-leirgrunn | ○ |
 | Housing | TG2 drenering, TG3 drenering, tilstandsrapport drenering | /blog/tg2-tg3-drenering-tilstandsrapport | ✓ published 2026-11-09 |
 | Housing | forsikring vann i kjeller, eierskifteforsikring drenering | /blog/dekker-forsikringen-drenering | ○ |
-| Hiring | dreneringsfirma, velge dreneringsfirma, kontrakt drenering | /blog/hvordan-velge-riktig-dreneringsfirma | ◐ rewrite |
+| Hiring | dreneringsfirma, velge dreneringsfirma, kontrakt drenering | /blog/hvordan-velge-riktig-dreneringsfirma | ✓ rewritten 2026-11-18 |
 | Hiring | søknadsplikt drenering | /blog/soknadsplikt-drenering | ○ (dibk.no only) |
 | Outdoor | takrenner nedløp, takvann drenering | /blog/takrenner-og-overvann | ○ |
 | Outdoor | drenering hage plen | /blog/drenering-av-hage-og-plen | ○ |

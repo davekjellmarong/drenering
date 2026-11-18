@@ -82,7 +82,7 @@ Be om skriftlig tilbud fra flere firma, slik Huseierne anbefaler, og sett dem si
 - Hvordan prises ekstraarbeid, for eksempel fjell, skadet mur eller ekstra bortkjøring?
 - Hva er avtalt om fremdrift og betaling?
 
-Bruk en skriftlig kontrakt. Huseierne har en håndverkerkontrakt som er gratis for medlemmer. Fører det ene tilbudet til en lavere pris, sjekk først hva som mangler i forhold til de andre.
+Bruk en skriftlig kontrakt. Huseierne har en håndverkerkontrakt som er gratis for medlemmer. Fører det ene tilbudet til en lavere pris, sjekk først hva som mangler i forhold til de andre. Hva loven sier om prisoverslag, tillegg og reklamasjon, og hvordan du sjekker et firma, står i [hvordan velge riktig dreneringsfirma](/blog/hvordan-velge-riktig-dreneringsfirma).
 
 ## Hvordan forespørselen din behandles hos oss
 

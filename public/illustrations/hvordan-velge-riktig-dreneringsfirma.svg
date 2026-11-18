@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img">
+  <rect width="1200" height="600" fill="#eff6ff"/>
+  <rect y="380" width="1200" height="220" fill="#c9a27e"/>
+  <rect y="380" width="1200" height="18" fill="#7fae6b"/>
+  <!-- house -->
+  <rect x="120" y="230" width="240" height="150" fill="#ffffff"/>
+  <polygon points="100,235 240,140 380,235" fill="#1e3a8a"/>
+  <rect x="150" y="265" width="46" height="42" rx="4" fill="#bfdbfe"/>
+  <rect x="285" y="300" width="42" height="80" rx="4" fill="#2563eb"/>
+  <!-- trench along wall -->
+  <rect x="360" y="398" width="130" height="150" fill="#8a6a4a"/>
+  <rect x="362" y="500" width="126" height="46" fill="#ebe4d8"/>
+  <circle cx="425" cy="520" r="20" fill="#1e3a8a"/><circle cx="425" cy="520" r="10" fill="#60a5fa"/>
+  <!-- person with magnifier -->
+  <circle cx="610" cy="250" r="36" fill="#f3d2b0"/>
+  <path d="M572 245 q38 -50 76 0 z" fill="#1e3a8a"/>
+  <rect x="580" y="288" width="60" height="92" rx="14" fill="#2563eb"/>
+  <rect x="590" y="380" width="16" height="40" fill="#1e3a8a"/><rect x="614" y="380" width="16" height="40" fill="#1e3a8a"/>
+  <circle cx="606" cy="244" r="3" fill="#1e3a8a"/><circle cx="626" cy="244" r="3" fill="#1e3a8a"/>
+  <path d="M606 262 q10 8 20 0" stroke="#1e3a8a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <line x1="640" y1="320" x2="720" y2="290" stroke="#2563eb" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="750" cy="275" r="38" fill="#bfdbfe" fill-opacity="0.7" stroke="#1e3a8a" stroke-width="8"/>
+  <line x1="778" y1="303" x2="810" y2="335" stroke="#1e3a8a" stroke-width="10" stroke-linecap="round"/>
+  <!-- checklist -->
+  <rect x="860" y="130" width="250" height="330" rx="14" fill="#ffffff" stroke="#2563eb" stroke-width="5"/>
+  <rect x="945" y="115" width="80" height="30" rx="8" fill="#1e3a8a"/>
+  <g stroke="#60a5fa" stroke-width="8" stroke-linecap="round">
+    <line x1="925" y1="200" x2="1080" y2="200"/><line x1="925" y1="270" x2="1080" y2="270"/>
+    <line x1="925" y1="340" x2="1080" y2="340"/><line x1="925" y1="410" x2="1040" y2="410"/>
+  </g>
+  <g fill="none" stroke="#2563eb" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M885 200 l10 12 l20 -24"/><path d="M885 270 l10 12 l20 -24"/><path d="M885 340 l10 12 l20 -24"/>
+    <rect x="885" y="396" width="26" height="26" rx="4"/>
+  </g>
+</svg>
