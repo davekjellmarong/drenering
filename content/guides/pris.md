@@ -70,7 +70,7 @@ Eksempel (kun for å vise regnestykket): et hus på 10 × 8 meter har en omkrets
 
 ## Drenering og isolering av grunnmur: pris og samspill
 
-Når grunnmuren er gravd fri, er det naturlig å vurdere isolasjon og grunnmursplate samtidig. Det koster mer i materialer og arbeid, men du slipper å grave ut igjen senere. Huseierne skriver at betongvegger mot grunnen alltid bør isoleres med minst 5 cm på utsiden, selv uten krav til varmeisolasjon, og at SINTEF Byggforsk anbefaler 15 cm plater når kjelleren har oppvarmede rom. Be firmaene prise drenering med og uten isolasjon som to separate alternativer, så ser du hva tillegget faktisk er. Spør også hva slags isolasjon og beskyttelse de tenker å bruke, og hvorfor.
+Når grunnmuren er gravd fri, er det naturlig å vurdere isolasjon og grunnmursplate samtidig. Det koster mer i materialer og arbeid, men du slipper å grave ut igjen senere. Huseierne skriver at betongvegger mot grunnen alltid bør isoleres med minst 5 cm på utsiden, selv uten krav til varmeisolasjon, og at SINTEF Byggforsk anbefaler 15 cm plater når kjelleren har oppvarmede rom. Be firmaene prise drenering med og uten isolasjon som to separate alternativer (les mer i [drenering og etterisolering av grunnmur](/blog/drenering-og-etterisolering-av-grunnmur)), så ser du hva tillegget faktisk er. Spør også hva slags isolasjon og beskyttelse de tenker å bruke, og hvorfor.
 
 ## Hvor lenge varer en drenering?
 

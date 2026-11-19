@@ -53,7 +53,7 @@ Målene kommer fra Huseierne. Et firma kan ha gode grunner til å avvike, så br
 
 ## Isolasjon: velg før du graver
 
-Huseierne viser til SINTEF: betongvegger mot terreng som ikke har krav til varmeisolering bør likevel isoleres med minst 5 cm på utsiden. Er kjelleren oppvarmet eller skal den bli det, anbefaler SINTEF 15 cm isolasjonsplater. Siden grøften uansett er åpen, er dette det billigste tidspunktet å bestemme seg på. Skal kjelleren bli oppholdsrom senere, bør du si det til firmaet før de prisberegner.
+Huseierne viser til SINTEF: betongvegger mot terreng som ikke har krav til varmeisolering bør likevel isoleres med minst 5 cm på utsiden. Er kjelleren oppvarmet eller skal den bli det, anbefaler SINTEF 15 cm isolasjonsplater. Siden grøften uansett er åpen, er dette det billigste tidspunktet å bestemme seg på. Skal kjelleren bli oppholdsrom senere, bør du si det til firmaet før de prisberegner. Lagene og detaljene er forklart i [drenering og etterisolering av grunnmur](/blog/drenering-og-etterisolering-av-grunnmur).
 
 ## Hvor ledes vannet?
 

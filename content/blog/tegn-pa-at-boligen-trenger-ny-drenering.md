@@ -72,7 +72,7 @@ Huseierne nevner ikke kjelleroppussing som en egen utløser. Men skal du bruke p
 
 ## Hvis det må skiftes
 
-Blir konklusjonen at dreneringen må skiftes, er det få som gjør jobben selv. Huseierne anbefaler å innhente tilbud fra flere firmaer og bruke skriftlig kontrakt. De anbefaler også å etterisolere yttervegg når du først graver, og å avklare utløpet: kommunalt nett kan bare brukes hvis kommunen tillater det, og mange kommuner krever at du håndterer overvann på egen tomt. Sjekk med kommunen.
+Blir konklusjonen at dreneringen må skiftes, er det få som gjør jobben selv. Huseierne anbefaler å innhente tilbud fra flere firmaer og bruke skriftlig kontrakt. De anbefaler også å [etterisolere yttervegg når du først graver](/blog/drenering-og-etterisolering-av-grunnmur), og å avklare utløpet: kommunalt nett kan bare brukes hvis kommunen tillater det, og mange kommuner krever at du håndterer overvann på egen tomt. Sjekk med kommunen.
 
 Hva det koster, avhenger av meter grunnmur, dybde og grunnforhold. Prinsippene og et sitert spenn står i [drenering pris: hva koster det](/drenering/pris), og du kan regne ut meterne med [kalkulatoren for drenering](/drenering/kalkulator). Hva et godt tilbud inneholder, kan du lese i [drenering rundt hus](/drenering/drenering-rundt-hus).
 
