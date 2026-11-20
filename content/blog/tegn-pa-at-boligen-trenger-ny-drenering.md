@@ -58,7 +58,7 @@ Mye fukt kommer ikke fra drensrørene. Gå gjennom disse først, siden de er bil
 4. **Skill vann fra kondens.** Kondens dukker opp på kalde flater på varme, fuktige dager. Vann utenfra følger regn og snøsmelting. Se [hvordan du skiller vanninntrenging fra kondens](/drenering/vanninntrenging).
 5. **Sjekk om det finnes en drenskum.** Er huset bygget med kum med sandfang og vannlås, kan du se om det står slam der eller om vannet renner fritt.
 
-Er du fortsatt usikker, er neste steg en befaring. Huseierne foreslår kamerainspeksjon av drensrørene som en måte å få klarhet på. Da ser du om rørene er hele og åpne før du tar stilling til å grave opp grunnmuren.
+Er du fortsatt usikker, er neste steg en befaring. Huseierne foreslår kamerainspeksjon av drensrørene som en måte å få klarhet på. Da ser du om rørene er hele og åpne før du tar stilling til å grave opp grunnmuren. Hva spyling, inspeksjon og utskifting av røret innebærer, står under [drensrør: legging, utskifting og spyling](/tjenester/drensror-installasjon).
 
 ## Hva alderen faktisk sier
 

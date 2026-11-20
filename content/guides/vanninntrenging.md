@@ -89,7 +89,7 @@ Huseierne foreslår disse enkle sjekkene etter neste kraftige regnvær:
 5. Sjekk ventilasjonen i kjelleren, og la ikke ventiler stå lukket gjennom kalde perioder.
 6. Flytt ting vekk fra veggene. Huseierne anbefaler 10 til 15 cm avstand til yttervegg.
 
-Huseierne foreslår også kamerainspeksjon av drensrørene som en mulighet. Det er en tjeneste du kjøper av en fagperson.
+Huseierne foreslår også kamerainspeksjon av drensrørene som en mulighet. Det er en tjeneste du kjøper av en fagperson, og hva den kan avklare om rørene, står under [spyling og utskifting av drensrør](/tjenester/drensror-installasjon). Hvilke løsninger som finnes for å lede vannet bort, går vi gjennom i [typer drenering](/drenering/typer-drenering).
 
 ## Når er drenering løsningen?
 

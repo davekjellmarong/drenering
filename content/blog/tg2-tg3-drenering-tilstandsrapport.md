@@ -65,7 +65,7 @@ Les teksten under dreneringen, ikke bare graden. Se etter hva som er oppgitt om 
 
 Regn med dreneringen i kjøpet hvis den er fra byggeåret og gammel. Kostnaden avhenger av meter grunnmur, dybde og adkomst, se [drenering pris](/drenering/pris). Som tall fra én enkelt sak: i FinKN 2025-335 lå et tilbud på utbedring av drenering rundt en tomannsbolig på 280 000 kr inkludert mva. Det er et eksempel og ikke et prisanslag for din bolig.
 
-Vurder å få en kamerainspeksjon av drensrøret før du bestemmer deg, og spør om det finnes dokumentasjon på tidligere arbeid.
+Vurder å få en kamerainspeksjon av drensrøret (se [spyling og inspeksjon av drensrør](/tjenester/drensror-installasjon#spyling-og-inspeksjon)) før du bestemmer deg, og spør om det finnes dokumentasjon på tidligere arbeid.
 
 ## Hva du gjør som selger
 

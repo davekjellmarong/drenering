@@ -63,7 +63,7 @@ Det er lett å glemme: dreneringen må ha et sted å gå. Huseierne skriver at m
 
 Huseierne oppgir at en drenering som fungerer, vanligvis varer 20 til 60 år, avhengig av vær og grunnforhold. Vann mot muren etter regn, fuktige eller misfargede kjellervegger, saltutslag, avflaket maling og mugg er typiske tegn. Det samme gjelder om du ikke vet hvor gammel dreneringen er. Les mer i artikkelen om [når du bør drenere](/blog/tegn-pa-at-boligen-trenger-ny-drenering) og i guiden om [vanninntrenging i kjeller](/drenering/vanninntrenging). Står dreneringen nevnt i en tilstandsrapport når du kjøper eller selger, finnes det en egen gjennomgang av [TG2 og drenering](/blog/tg2-tg3-drenering-tilstandsrapport).
 
-Er du usikker på tilstanden, kan en kamerainspeksjon av drensrørene vise noe før du bestemmer deg. Hvordan spyling og inspeksjon henger sammen med nytt rør, står på siden om [drensrør](/tjenester/drensror-installasjon).
+Er du usikker på tilstanden, kan en kamerainspeksjon av drensrørene vise noe før du bestemmer deg. Hvordan spyling og inspeksjon henger sammen med nytt rør, står på siden om [drensrør](/tjenester/drensror-installasjon). Gjelder jobben et borettslag, et sameie eller et næringsbygg, er det andre hensyn å ta, som er samlet under [drenering for næringsbygg og borettslag](/tjenester/industriell-drenering).
 
 ## Hva koster boligdrenering?
 

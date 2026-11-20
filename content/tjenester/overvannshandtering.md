@@ -85,6 +85,6 @@ Frakobling av et nedløp og litt terrengforming kan mange gjøre selv. Du bør f
 - tomten heller mot huset og må terrengreguleres, eller
 - du uansett skal grave, for eksempel ved drenering. Da er det smart å vurdere overvannet i samme jobb.
 
-Ved vann i kjelleren, se [vanninntrenging](/drenering/vanninntrenging) for hvordan du finner årsaken. Hva en drenering koster og hva et tilbud bør inneholde, står i [prisguiden](/drenering/pris).
+Ved vann i kjelleren, se [vanninntrenging](/drenering/vanninntrenging) for hvordan du finner årsaken. Hva en drenering koster og hva et tilbud bør inneholde, står i [prisguiden](/drenering/pris). Gjelder det store flater, borettslag eller næringsbygg, se [drenering for næringsbygg og borettslag](/tjenester/industriell-drenering).
 
 Skal du ha en fagperson til å se på både drenering og overvann, kan du [be om tilbud](/tilbud). Vi videresender forespørselen manuelt til firma i ditt område, og vi garanterer ikke dekning.
