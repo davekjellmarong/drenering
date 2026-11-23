@@ -103,7 +103,7 @@ Status: ✔ exists and is good, ◐ exists but needs work, ○ planned.
 | Price | drenering pris, hva koster drenering, drenering pris per meter | /drenering/pris | ◐ sourced Huseierne range + lifetime added 2026-10-31; needs recent quote data |
 | Price | drenering og isolering pris / etterisolering grunnmur | /blog/drenering-og-etterisolering-av-grunnmur | ✓ 2026-11-19 |
 | Process | drenering rundt hus, hvordan drenere hus | /drenering/drenering-rundt-hus | ◐ basic, needs sources |
-| Process | grunnmursplate, knotteplast | /blog/grunnmursplate-knotteplast | ○ |
+| Process | grunnmursplate, knotteplast | /blog/grunnmursplate-knotteplast | ✓ 2026-11-23 |
 | Process | drenering uten graving | /blog/drenering-uten-graving | ◐ fact-check |
 | Process | drenering egeninnsats | /blog/drenering-egeninnsats | ○ |
 | Process | hvor lang tid tar drenering | section in rundt-hus pillar | ○ |

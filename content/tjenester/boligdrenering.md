@@ -45,7 +45,7 @@ Illustrasjonen over viser tverrsnittet. Tabellen under går gjennom delene i job
 | Gammel drenering | Det gamle røret fjernes. | Hva skjer med gamle masser og rør? |
 | Nytt drensrør | Legges på 5–10 cm drenerende masse, med fall på omtrent 1 cm per 2 meter, og pakkes i fiberduk. | Hvilke masser og hvilken kornstørrelse? Se [drenerende masser](/blog/drenerende-masser). |
 | Kum | Røret føres til en kum som skal ha sandfang og vannlås. | Hvor settes kummene, og kan de brukes til spyling og inspeksjon senere? |
-| Isolasjon og grunnmursplate | Dampåpne isolasjonsplater mot muren og ny grunnmursplate (knasteplast) utenpå. | Er isolasjon med, og hvor tykk? Se under. |
+| Isolasjon og grunnmursplate | Dampåpne isolasjonsplater mot muren og ny grunnmursplate (knasteplast) utenpå, se [grunnmursplate og knotteplast](/blog/grunnmursplate-knotteplast). | Er isolasjon med, og hvor tykk? Se under. |
 | Tilbakefylling | Masser fylles tilbake og komprimeres så det ikke setter seg. | Hvilke masser brukes, og hvem kjører bort overskudd? |
 | Terreng og takvann | Terrenget skal ha fall bort fra huset, omtrent 1:50 minst 3 meter ut. Takvann ledes bort fra huset. | Er terrengarbeid og nedløp med? |
 

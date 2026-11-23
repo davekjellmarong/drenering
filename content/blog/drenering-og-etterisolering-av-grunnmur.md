@@ -54,7 +54,7 @@ Rekkefølgen er viktig. Fra muren og utover er det vanlige oppsettet slik:
 
 1. Muren, utbedret og eventuelt pusset slik at platene ligger tett inntil. Rockwool skriver at murte vegger må pusses og støpte vegger bør sårutbedres før platene settes.
 2. Isolasjon av et dampåpent materiale, slik at muren kan tørke ut. SINTEF anbefaler dampåpent produkt, ifølge Rockwool.
-3. Grunnmursplate (knasteplate) på utsiden av isolasjonen, hvis ikke isolasjonsplaten selv er laget med drensspor. Rockwool skriver at deres Drensplate ikke trenger egen grunnmursplate; det er en produktegenskap, ikke en regel for alle.
+3. [Grunnmursplate](/blog/grunnmursplate-knotteplast) (knasteplate) på utsiden av isolasjonen, hvis ikke isolasjonsplaten selv er laget med drensspor. Rockwool skriver at deres Drensplate ikke trenger egen grunnmursplate; det er en produktegenskap, ikke en regel for alle.
 4. Fiberduk og [drenerende masser](/blog/drenerende-masser) rundt drensrøret.
 
 Selve drensrøret, fallet og materialene er beskrevet i [guiden til drenering rundt hus](/drenering/drenering-rundt-hus).

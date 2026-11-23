@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img">
+  <rect width="1200" height="600" fill="#eff6ff"/>
+  <!-- soil -->
+  <path d="M0 250 L1200 190 V600 H0Z" fill="#c9a27e"/>
+  <path d="M0 250 L1200 190 V215 L0 275Z" fill="#7fae6b"/>
+  <g fill="#b08968"><circle cx="820" cy="380" r="9"/><circle cx="960" cy="450" r="8"/><circle cx="1090" cy="360" r="10"/><circle cx="900" cy="530" r="9"/></g>
+  <!-- house wall above ground -->
+  <rect x="60" y="40" width="330" height="230" fill="#bfdbfe"/>
+  <rect x="120" y="90" width="80" height="80" fill="#eff6ff" stroke="#1e3a8a" stroke-width="5"/>
+  <!-- foundation wall -->
+  <rect x="330" y="240" width="80" height="320" fill="#9aa3b2" stroke="#6b7280" stroke-width="3"/>
+  <!-- footing -->
+  <rect x="300" y="560" width="440" height="40" fill="#9aa3b2" stroke="#6b7280" stroke-width="3"/>
+  <!-- dimpled plate: dimples face wall -->
+  <rect x="418" y="230" width="10" height="340" fill="#1f2937"/>
+  <g fill="#1f2937"><circle cx="414" cy="255" r="4"/><circle cx="414" cy="285" r="4"/><circle cx="414" cy="315" r="4"/><circle cx="414" cy="345" r="4"/><circle cx="414" cy="375" r="4"/><circle cx="414" cy="405" r="4"/><circle cx="414" cy="435" r="4"/><circle cx="414" cy="465" r="4"/><circle cx="414" cy="495" r="4"/><circle cx="414" cy="525" r="4"/></g>
+  <!-- top strip: plate ends above terrain -->
+  <path d="M410 214 H448 V240 H428 V226 H410Z" fill="#1e3a8a"/>
+  <!-- nails in top dimple row -->
+  <g stroke="#1e3a8a" stroke-width="4"><path d="M405 255 H430"/></g>
+  <!-- fiberduk -->
+  <path d="M470 232 V540 Q470 575 505 575 H690 Q725 575 725 540 V400" stroke="#2563eb" stroke-width="6" fill="none" stroke-dasharray="16 8"/>
+  <!-- gravel -->
+  <rect x="478" y="470" width="236" height="98" fill="#d6dbe3" opacity="0.8"/>
+  <g fill="#bfc6d1" stroke="#8b93a1" stroke-width="2"><circle cx="500" cy="545" r="11"/><circle cx="535" cy="555" r="10"/><circle cx="690" cy="545" r="11"/><circle cx="660" cy="500" r="10"/><circle cx="520" cy="490" r="10"/></g>
+  <!-- drain pipe with face -->
+  <circle cx="600" cy="520" r="30" fill="#2563eb" stroke="#1e3a8a" stroke-width="5"/>
+  <circle cx="590" cy="514" r="4" fill="#eff6ff"/><circle cx="610" cy="514" r="4" fill="#eff6ff"/>
+  <path d="M588 528 Q600 539 612 528" stroke="#eff6ff" stroke-width="3" fill="none"/>
+  <!-- plate bottom level with pipe marker -->
+  <path d="M436 520 H560" stroke="#1e3a8a" stroke-width="3" stroke-dasharray="8 6"/>
+  <!-- water drops running down inside the dimples -->
+  <g fill="#60a5fa"><path d="M440 300 q8 16 0 22 q-8 -6 0 -22z"/><path d="M440 380 q8 16 0 22 q-8 -6 0 -22z"/><path d="M440 450 q8 16 0 22 q-8 -6 0 -22z"/></g>
+  <!-- terrain fall arrow -->
+  <path d="M520 150 L720 130" stroke="#1e3a8a" stroke-width="5" fill="none"/>
+  <path d="M700 112 L728 129 L702 146" stroke="#1e3a8a" stroke-width="5" fill="none"/>
+</svg>

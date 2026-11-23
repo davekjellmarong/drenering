@@ -39,7 +39,7 @@ Se illustrasjonen over. Regn og smeltevann siger ned i jorden, og uten en vei bo
 - **Drensrør** ligger langs foten av grunnmuren, med fall mot et utløp. Rørene er perforerte, så vannet kommer inn i dem.
 - **Drenerende masser** som grus, pukk eller lettklinker rundt røret lar vannet komme fram til røret i stedet for å bli stående mot muren.
 - **Fiberduk** rundt rør og masser hindrer at finstoff fra jorden vaskes inn og tetter dem.
-- **Grunnmursplate** (knotteplast) lar vann renne ned langs muren til drenslaget, i stedet for inn i betongen.
+- **[Grunnmursplate](/blog/grunnmursplate-knotteplast)** (knotteplast) lar vann renne ned langs muren til drenslaget, i stedet for inn i betongen.
 - **Terreng med fall bort fra huset** gjør at mindre vann havner ved muren i utgangspunktet.
 
 Målene på hver av delene, som kornstørrelse, fall og lag under og over røret, står i guiden om [drenering rundt hus](/drenering/drenering-rundt-hus).
