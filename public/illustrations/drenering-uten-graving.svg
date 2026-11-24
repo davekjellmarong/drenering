@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img">
+  <rect width="1200" height="600" fill="#eff6ff"/>
+  <path d="M0 260 L1200 260 V600 H0Z" fill="#c9a27e"/>
+  <rect y="260" width="1200" height="26" fill="#7fae6b"/>
+  <g fill="#b08968"><circle cx="760" cy="400" r="10"/><circle cx="950" cy="470" r="9"/><circle cx="1090" cy="380" r="10"/></g>
+  <rect x="60" y="60" width="340" height="200" fill="#bfdbfe"/>
+  <rect x="120" y="110" width="80" height="80" fill="#eff6ff" stroke="#1e3a8a" stroke-width="5"/>
+  <rect x="330" y="260" width="80" height="300" fill="#9aa3b2" stroke="#6b7280" stroke-width="3"/>
+  <rect x="300" y="560" width="440" height="40" fill="#9aa3b2" stroke="#6b7280" stroke-width="3"/>
+  <!-- downpipe with arrow away -->
+  <rect x="396" y="90" width="12" height="150" fill="#1e3a8a"/>
+  <path d="M402 240 Q430 262 520 250" stroke="#2563eb" stroke-width="10" fill="none"/>
+  <path d="M520 232 L560 250 L520 268Z" fill="#2563eb"/>
+  <!-- gravel + pipe with face -->
+  <rect x="440" y="470" width="300" height="90" fill="#d6dbe3"/>
+  <circle cx="580" cy="515" r="34" fill="#2563eb" stroke="#1e3a8a" stroke-width="5"/>
+  <circle cx="568" cy="508" r="5" fill="#eff6ff"/><circle cx="592" cy="508" r="5" fill="#eff6ff"/>
+  <path d="M566 524 Q580 536 594 524" stroke="#eff6ff" stroke-width="3" fill="none"/>
+  <!-- camera cable from manhole -->
+  <rect x="820" y="270" width="60" height="150" fill="#60a5fa" stroke="#1e3a8a" stroke-width="4"/>
+  <path d="M850 420 Q850 515 700 515 L640 515" stroke="#1e3a8a" stroke-width="6" fill="none"/>
+  <rect x="610" y="503" width="32" height="24" rx="6" fill="#1e3a8a"/>
+  <circle cx="626" cy="515" r="6" fill="#bfdbfe"/>
+  <!-- shovel crossed out -->
+  <g transform="translate(980 120)">
+    <rect x="-8" y="0" width="16" height="130" fill="#8b5e34"/>
+    <path d="M-40 130 H40 L30 200 Q0 225 -30 200Z" fill="#9aa3b2" stroke="#6b7280" stroke-width="4"/>
+    <path d="M-70 -20 L70 220" stroke="#1e3a8a" stroke-width="12"/>
+    <circle cx="0" cy="100" r="105" fill="none" stroke="#1e3a8a" stroke-width="12"/>
+  </g>
+</svg>

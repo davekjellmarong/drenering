@@ -104,7 +104,7 @@ Status: ✔ exists and is good, ◐ exists but needs work, ○ planned.
 | Price | drenering og isolering pris / etterisolering grunnmur | /blog/drenering-og-etterisolering-av-grunnmur | ✓ 2026-11-19 |
 | Process | drenering rundt hus, hvordan drenere hus | /drenering/drenering-rundt-hus | ◐ basic, needs sources |
 | Process | grunnmursplate, knotteplast | /blog/grunnmursplate-knotteplast | ✓ 2026-11-23 |
-| Process | drenering uten graving | /blog/drenering-uten-graving | ◐ fact-check |
+| Process | drenering uten graving | /blog/drenering-uten-graving | ✓ rewritten 2026-11-24 |
 | Process | drenering egeninnsats | /blog/drenering-egeninnsats | ○ |
 | Process | hvor lang tid tar drenering | section in rundt-hus pillar | ○ |
 | Process | drensrør spyling / rørinspeksjon | /blog/spyling-og-inspeksjon-av-drensror | ○ |

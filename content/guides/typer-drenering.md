@@ -37,7 +37,7 @@ Handler om alt vannet fra tak, innkjørsel og tomt, og hvor det skal ta veien: k
 
 ## Kombinert løsning
 
-Mange hus trenger mer enn én ting. Et typisk eksempel er ny grunnmursdrenering, nytt fall på terrenget og at takvannet ledes bort i egne rør. Et firma som ser på tomten, kan vurdere hva som gir mest effekt.
+Mange hus trenger mer enn én ting. Et typisk eksempel er ny grunnmursdrenering, nytt fall på terrenget og at takvannet ledes bort i egne rør. Et firma som ser på tomten, kan vurdere hva som gir mest effekt. Om det finnes metoder uten graving, se [drenering uten graving](/blog/drenering-uten-graving).
 
 ## Hvor går vannet til slutt?
 
