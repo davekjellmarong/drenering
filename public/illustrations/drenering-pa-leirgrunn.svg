@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img">
+  <rect width="1200" height="600" fill="#eff6ff"/>
+  <!-- ground layers -->
+  <rect y="230" width="1200" height="370" fill="#c9a27e"/>
+  <rect y="400" width="1200" height="200" fill="#8fa3b5"/>
+  <path d="M0 400 Q300 380 600 405 T1200 395" fill="none" stroke="#6b7f92" stroke-width="4"/>
+  <rect y="190" width="1200" height="50" fill="#7fae6b"/>
+  <!-- house wall -->
+  <rect x="80" y="40" width="260" height="330" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="6"/>
+  <rect x="60" y="360" width="300" height="30" fill="#60a5fa" stroke="#1e3a8a" stroke-width="5"/>
+  <!-- roof drip + puddle on clay -->
+  <ellipse cx="560" cy="398" rx="150" ry="16" fill="#60a5fa" opacity=".85"/>
+  <g fill="#2563eb"><path d="M500 260 q-10 22 0 30 q10 -8 0 -30z"/><path d="M560 280 q-10 22 0 30 q10 -8 0 -30z"/><path d="M620 262 q-10 22 0 30 q10 -8 0 -30z"/><path d="M530 320 q-10 22 0 30 q10 -8 0 -30z"/><path d="M590 335 q-10 22 0 30 q10 -8 0 -30z"/></g>
+  <!-- fabric trench beside wall -->
+  <path d="M370 250 H470 V440 H370 Z" fill="#eff6ff" stroke="#2563eb" stroke-width="5" stroke-dasharray="14 8"/>
+  <g fill="#bfc6d1" stroke="#8b93a1" stroke-width="2"><circle cx="395" cy="285" r="14"/><circle cx="440" cy="300" r="13"/><circle cx="400" cy="340" r="13"/><circle cx="445" cy="355" r="14"/><circle cx="398" cy="400" r="13"/></g>
+  <!-- pipe with face -->
+  <circle cx="420" cy="420" r="30" fill="#1e3a8a"/><circle cx="420" cy="420" r="20" fill="#60a5fa"/>
+  <circle cx="412" cy="414" r="3.5" fill="#1e3a8a"/><circle cx="428" cy="414" r="3.5" fill="#1e3a8a"/>
+  <path d="M410 427 q10 8 20 0" fill="none" stroke="#1e3a8a" stroke-width="3" stroke-linecap="round"/>
+  <!-- arrow water into trench -->
+  <path d="M520 380 Q470 380 460 400" fill="none" stroke="#1e3a8a" stroke-width="5" stroke-linecap="round"/>
+  <path d="M470 392 l-12 10 l16 4z" fill="#1e3a8a"/>
+  <!-- outlet pipe -->
+  <path d="M450 420 H800" stroke="#1e3a8a" stroke-width="14" stroke-linecap="round"/>
+  <!-- clay particles -->
+  <g fill="#6b7f92"><circle cx="700" cy="480" r="6"/><circle cx="780" cy="520" r="7"/><circle cx="900" cy="470" r="6"/><circle cx="1000" cy="540" r="7"/><circle cx="1100" cy="480" r="6"/><circle cx="200" cy="500" r="7"/><circle cx="300" cy="545" r="6"/></g>
+  <g fill="#b08968"><circle cx="900" cy="300" r="8"/><circle cx="1010" cy="330" r="7"/><circle cx="1110" cy="290" r="9"/><circle cx="760" cy="300" r="7"/></g>
+</svg>

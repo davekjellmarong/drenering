@@ -100,3 +100,5 @@ Finnes det en vei uten graving? Det har vi gått gjennom i [drenering uten gravi
 Vær forsiktig med innvendige løsninger i fuktige kjellere. Huseierne anbefaler for eksempel ikke å isolere uisolerte kjellerrom, og ikke mer enn 5 cm isolasjon på innsiden av yttervegger under bakken, siden tykkere lag kan gi kondens bak isolasjonen.
 
 Er du usikker på hva som er årsaken, kan du [be om tilbud](/tilbud) og beskrive hva du ser, så kan firmaene vurdere hva som passer for din bolig.
+
+Står huset på leire, blir vannet ofte stående mot muren. Se [drenering på leirgrunn](/blog/drenering-pa-leirgrunn) for hva som er annerledes, og når kvikkleire gjør at du bør sjekke grunnen før graving.

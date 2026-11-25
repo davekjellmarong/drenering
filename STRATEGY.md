@@ -115,7 +115,7 @@ Status: ✔ exists and is good, ◐ exists but needs work, ○ planned.
 | Problem | saltutslag grunnmur | /blog/saltutslag-pa-grunnmur | ○ |
 | Problem | tegn på dårlig drenering, levetid drenering, når bør man drenere | /blog/tegn-pa-at-boligen-trenger-ny-drenering | ✓ (2026-11-13) |
 | Problem | vann i kjeller snøsmelting / vårflom | /blog/vann-i-kjeller-ved-snosmelting | ○ publish by early Feb |
-| Problem | drenering leirgrunn | /blog/drenering-pa-leirgrunn | ○ |
+| Problem | drenering leirgrunn | /blog/drenering-pa-leirgrunn | ✓ (2026-11-25) |
 | Housing | TG2 drenering, TG3 drenering, tilstandsrapport drenering | /blog/tg2-tg3-drenering-tilstandsrapport | ✓ published 2026-11-09 |
 | Housing | forsikring vann i kjeller, eierskifteforsikring drenering | /blog/dekker-forsikringen-drenering | ○ |
 | Hiring | dreneringsfirma, velge dreneringsfirma, kontrakt drenering | /blog/hvordan-velge-riktig-dreneringsfirma | ✓ rewritten 2026-11-18 |

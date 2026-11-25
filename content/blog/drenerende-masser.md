@@ -95,3 +95,5 @@ Over de drenerende massene kan du ifølge Huseierne bruke stedlige masser hvis d
 - Er levering og bortkjøring av gamle masser med i prisen?
 
 Massene er bare en del av prisen. Meter vegg, dybde, adkomst og fjell påvirker mer, som du ser i [drenering pris](/drenering/pris). Hele arbeidet beskrives steg for steg i [drenering rundt hus](/drenering/drenering-rundt-hus), og selve røret og utløpet står under [drensrør](/tjenester/drensror-installasjon). Du kan også se hvilke [typer drenering](/drenering/typer-drenering) som finnes. Vil du ha tilbud der massene er spesifisert, kan du [be om tilbud](/tilbud) og skrive i meldingen at du vil ha det spesifisert.
+
+Bor du på leirtomt, er duk og rene masser ekstra viktige. Det står mer i [drenering på leirgrunn](/blog/drenering-pa-leirgrunn).
