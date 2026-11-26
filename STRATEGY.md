@@ -111,7 +111,7 @@ Status: ✔ exists and is good, ◐ exists but needs work, ○ planned.
 | Process | pumpekum, pumpesump | /blog/pumpekum | ○ |
 | Process | dreneringsrenne | /drenering/drenerings-renne | ◐ |
 | Problem | vann i kjeller, vanninntrenging | /drenering/vanninntrenging | ✓ (2026-11-10) |
-| Problem | fukt i kjeller (damp, smell, mould; not running water) | /blog/fukt-i-kjeller | ○ |
+| Problem | fukt i kjeller (damp, smell, mould; not running water) | /blog/fukt-i-kjeller | ✓ (2026-11-26) |
 | Problem | saltutslag grunnmur | /blog/saltutslag-pa-grunnmur | ○ |
 | Problem | tegn på dårlig drenering, levetid drenering, når bør man drenere | /blog/tegn-pa-at-boligen-trenger-ny-drenering | ✓ (2026-11-13) |
 | Problem | vann i kjeller snøsmelting / vårflom | /blog/vann-i-kjeller-ved-snosmelting | ○ publish by early Feb |

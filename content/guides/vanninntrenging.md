@@ -54,7 +54,7 @@ Huseierne lister disse tegnene på at dreneringen ikke fungerer som den skal:
 - Mugg eller råte på ting som står mot veggen
 - Du vet ikke hvor gammel dreneringen er, eller det finnes ingen drenskum du kan åpne og se i
 
-Sjekk også lukten. Muggen lukt kan spre seg til etasjene over.
+Sjekk også lukten. Muggen lukt kan spre seg til etasjene over. Er det mest lukt, kondens eller fuktig luft uten vann på gulvet, se [fukt i kjeller og krypkjeller](/blog/fukt-i-kjeller).
 
 ## De vanligste årsakene
 

@@ -63,6 +63,8 @@ Huseierne er tydelige på rekkefølgen når muren etterisoleres: dampåpne isola
 
 Her kan produktene være ulike. I en forumtråd fra 2011 (privatpersoner, ikke en fagkilde) handlet spørsmålet nettopp om en ekstra plastplate utenpå en bestemt type isolasjonsplate var lurt, og svaret ble henvist til produsentens anvisning. Det er poenget: monteringsanvisningen for isolasjonen du får, avgjør. Spør firmaet hvilken de følger, og om grunnmursplaten er med i prisen.
 
+Gjelder fuktproblemet en krypkjeller, se [fukt i kjeller og krypkjeller](/blog/fukt-i-kjeller) for hva som ellers bør sjekkes.
+
 ## Vanlige feil å spørre om
 
 Dette er ikke en statistikk over feil, men de punktene en monteringsanvisning legger vekt på, og som du kan stille spørsmål om:

@@ -68,7 +68,7 @@ Kjøper eller selger du bolig, ser du ofte alderen igjen som en karakter i tilst
 
 ## Skal kjelleren pusses opp?
 
-Huseierne nevner ikke kjelleroppussing som en egen utløser. Men skal du bruke penger på nye overflater og et rom du vil oppholde deg i, er det fornuftig å vite om fukten kommer utenfra først. Innvendige tiltak fjerner ikke vannet som kommer utenfra.
+Huseierne nevner ikke kjelleroppussing som en egen utløser. Men skal du bruke penger på nye overflater og et rom du vil oppholde deg i, er det fornuftig å vite om fukten kommer utenfra først. Innvendige tiltak fjerner ikke vannet som kommer utenfra. Er det mest mugglukt og fuktig luft uten vann, se [fukt i kjeller og krypkjeller](/blog/fukt-i-kjeller).
 
 ## Hvis det må skiftes
 

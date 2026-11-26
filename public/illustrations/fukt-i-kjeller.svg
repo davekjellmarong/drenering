@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img">
+  <rect width="1200" height="600" fill="#eff6ff"/>
+  <!-- ground -->
+  <rect x="0" y="400" width="1200" height="200" fill="#c9a27e"/>
+  <rect x="0" y="388" width="1200" height="14" fill="#7fae6b"/>
+  <g fill="#a8825f"><circle cx="120" cy="470" r="10"/><circle cx="260" cy="520" r="12"/><circle cx="1040" cy="480" r="11"/><circle cx="930" cy="540" r="9"/></g>
+  <!-- house above -->
+  <rect x="300" y="120" width="600" height="130" fill="#ffffff"/>
+  <polygon points="270,125 600,20 930,125" fill="#1e3a8a"/>
+  <rect x="360" y="150" width="80" height="64" rx="4" fill="#bfdbfe"/>
+  <rect x="760" y="150" width="80" height="64" rx="4" fill="#bfdbfe"/>
+  <!-- crawlspace walls -->
+  <rect x="300" y="250" width="30" height="150" fill="#94a3b8"/>
+  <rect x="870" y="250" width="30" height="150" fill="#94a3b8"/>
+  <rect x="330" y="250" width="540" height="26" fill="#d6b98c"/>
+  <rect x="330" y="276" width="540" height="124" fill="#dbe7f3"/>
+  <!-- vents, bottom edge above ground -->
+  <rect x="304" y="300" width="22" height="34" fill="#1e3a8a"/>
+  <rect x="874" y="300" width="22" height="34" fill="#1e3a8a"/>
+  <g stroke="#60a5fa" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M200 317 H290"/><path d="M270 305 L292 317 L270 329"/>
+    <path d="M910 317 H1000"/><path d="M980 305 L1002 317 L980 329"/>
+  </g>
+  <!-- plastic ground cover -->
+  <path d="M330 398 H870" stroke="#1e3a8a" stroke-width="7"/>
+  <!-- dimpled membrane outside -->
+  <g fill="#2563eb"><rect x="282" y="270" width="14" height="128" rx="5"/><rect x="904" y="270" width="14" height="128" rx="5"/></g>
+  <!-- moisture rising from the ground (blocked by plastic) -->
+  <g stroke="#60a5fa" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M450 470 q-10 -20 0 -40 q10 -20 0 -34"/>
+    <path d="M600 480 q-10 -20 0 -40 q10 -20 0 -34"/>
+    <path d="M750 470 q-10 -20 0 -40 q10 -20 0 -34"/>
+  </g>
+  <!-- friendly mould blob with sniffing nose -->
+  <circle cx="600" cy="340" r="30" fill="#7fae6b"/>
+  <circle cx="590" cy="334" r="4" fill="#102a43"/><circle cx="610" cy="334" r="4" fill="#102a43"/>
+  <path d="M588 350 q12 8 24 0" stroke="#102a43" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- crossed-out drip on ceiling -->
+  <path d="M520 288 q6 12 0 18 q-6 -6 0 -18Z" fill="#60a5fa"/>
+  <path d="M680 288 q6 12 0 18 q-6 -6 0 -18Z" fill="#60a5fa"/>
+</svg>
