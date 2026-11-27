@@ -19,6 +19,8 @@ export const KOMMUNER = [
   { id: "hamar", name: "Hamar" },
   { id: "lillehammer", name: "Lillehammer" },
   { id: "gjovik", name: "Gjøvik" },
+  { id: "baerum", name: "Bærum" },
+  { id: "asker", name: "Asker" },
 ];
 
 // Static fallback data used when the Strapi CMS is unreachable, so city

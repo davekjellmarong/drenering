@@ -32,4 +32,9 @@ export const CITY_DATA: Record<string, CityData> = {
   oslo: { municipality: "Oslo", detachedHouses: { value: 28349, year: "2026", ...SSB_BOLIGER } },
   bergen: { municipality: "Bergen", detachedHouses: { value: 36309, year: "2026", ...SSB_BOLIGER } },
   drammen: { municipality: "Drammen", detachedHouses: { value: 18148, year: "2026", ...SSB_BOLIGER } },
+  // Added 2026-11-27 (same method; region codes 3201, 3203, 3909, 3405; Drammen 18 148 re-checked).
+  baerum: { municipality: "Bærum", detachedHouses: { value: 15987, year: "2026", ...SSB_BOLIGER } },
+  asker: { municipality: "Asker", detachedHouses: { value: 21774, year: "2026", ...SSB_BOLIGER } },
+  larvik: { municipality: "Larvik", detachedHouses: { value: 13032, year: "2026", ...SSB_BOLIGER } },
+  lillehammer: { municipality: "Lillehammer", detachedHouses: { value: 6834, year: "2026", ...SSB_BOLIGER } },
 };

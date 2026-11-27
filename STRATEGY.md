@@ -124,7 +124,7 @@ Status: ✔ exists and is good, ◐ exists but needs work, ○ planned.
 | Outdoor | drenering hage plen | /blog/drenering-av-hage-og-plen | ○ |
 | Services | drensrør installasjon / industriell drenering | /tjenester/* | ◐ thin |
 | Services | boligdrenering | /tjenester/boligdrenering | ✔ expanded 2026-11-17 |
-| Local | drenering <by> | /drenering/<city> | ◐ templated |
+| Local | drenering <by> | /drenering/<city> | ◐ 14 cities have SSB housing data (incl. Bærum, Asker, Larvik, Lillehammer 2026-11-27); rest still templated |
 
 Add rows when you add pages. If GSC shows two URLs ranking for the same query,
 merge them (301 the weaker one) and update this table.
